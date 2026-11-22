@@ -1,0 +1,99 @@
+{
+  "version": "v2",
+  "per_language": {
+    "zulu": {
+      "mf1_mean": 0.8868731439201649,
+      "mf1_std": 0.004937189790047151,
+      "n_test_unique": 1008,
+      "tp": 805.7333333333333,
+      "fp": 24.0,
+      "fn": 202.26666666666668,
+      "tn": 984.0,
+      "incorrect_f1": 0.876846104147008,
+      "correct_f1": 0.8969001836933217,
+      "n_words": 1008,
+      "avg_word_len": 8.643849206349206,
+      "avg_trigrams_per_word": 6.637896825396825,
+      "orthography": "agglutinative"
+    },
+    "xhosa": {
+      "mf1_mean": 0.8525991028228035,
+      "mf1_std": 0.004681778597016521,
+      "n_test_unique": 1082,
+      "tp": 920.0333333333333,
+      "fp": 157.0,
+      "fn": 161.96666666666667,
+      "tn": 925.0,
+      "incorrect_f1": 0.8522388947593214,
+      "correct_f1": 0.8529593108862855,
+      "n_words": 1082,
+      "avg_word_len": 8.504621072088725,
+      "avg_trigrams_per_word": 6.449168207024029,
+      "orthography": "agglutinative"
+    },
+    "ndebele": {
+      "mf1_mean": 0.7260887639356913,
+      "mf1_std": 0.003749222132195144,
+      "n_test_unique": 925,
+      "tp": 854.1,
+      "fp": 418.0,
+      "fn": 70.9,
+      "tn": 507.0,
+      "incorrect_f1": 0.7774653195825991,
+      "correct_f1": 0.6747122082887838,
+      "n_words": 925,
+      "avg_word_len": 8.014054054054053,
+      "avg_trigrams_per_word": 6.014054054054054,
+      "orthography": "agglutinative"
+    },
+    "swati": {
+      "mf1_mean": 0.8622239884254537,
+      "mf1_std": 0.0037787426400216367,
+      "n_test_unique": 1651,
+      "tp": 1437.1,
+      "fp": 241.0,
+      "fn": 213.9,
+      "tn": 1410.0,
+      "incorrect_f1": 0.8633404268033142,
+      "correct_f1": 0.8611075500475928,
+      "n_words": 1651,
+      "avg_word_len": 8.47183525136281,
+      "avg_trigrams_per_word": 6.414900060569352,
+      "orthography": "agglutinative"
+    },
+    "sotho": {
+      "mf1_mean": 0.6953595343937101,
+      "mf1_std": 0.002253809619740034,
+      "n_test_unique": 2053,
+      "tp": 1837.8,
+      "fp": 991.0,
+      "fn": 215.2,
+      "tn": 1062.0,
+      "incorrect_f1": 0.7529136856601502,
+      "correct_f1": 0.63780538312727,
+      "n_words": 2053,
+      "avg_word_len": 4.213833414515343,
+      "avg_trigrams_per_word": 2.3136872868972236,
+      "orthography": "disjunctive"
+    },
+    "tswana": {
+      "mf1_mean": 0.6914008956150887,
+      "mf1_std": 0.0024554192863500534,
+      "n_test_unique": 2121,
+      "tp": 1879.3333333333333,
+      "fp": 1023.0,
+      "fn": 241.66666666666666,
+      "tn": 1098.0,
+      "incorrect_f1": 0.7482351461345984,
+      "correct_f1": 0.634566645095579,
+      "n_words": 2121,
+      "avg_word_len": 4.532296086751533,
+      "avg_trigrams_per_word": 2.623762376237624,
+      "orthography": "disjunctive"
+    }
+  },
+  "group_summary": {
+    "agglutinative_mean_mf1": 0.8319462497760284,
+    "disjunctive_mean_mf1": 0.6933802150043994
+  }
+}

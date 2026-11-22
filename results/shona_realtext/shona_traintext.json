@@ -1,0 +1,84 @@
+{
+  "split": "80/10/10, no corpus cleaning by design",
+  "test_set": "held-out Shona corpus split",
+  "n_test_words": 2000,
+  "seeds": 30,
+  "per_split": [
+    {
+      "split_seed": 1,
+      "mf1_as_typed": 0.5607,
+      "mf1_corrected": 0.5072,
+      "difference": -0.0536
+    },
+    {
+      "split_seed": 2,
+      "mf1_as_typed": 0.5439,
+      "mf1_corrected": 0.5351,
+      "difference": -0.0088
+    },
+    {
+      "split_seed": 3,
+      "mf1_as_typed": 0.522,
+      "mf1_corrected": 0.5276,
+      "difference": 0.0056
+    },
+    {
+      "split_seed": 4,
+      "mf1_as_typed": 0.5313,
+      "mf1_corrected": 0.5169,
+      "difference": -0.0144
+    },
+    {
+      "split_seed": 5,
+      "mf1_as_typed": 0.5274,
+      "mf1_corrected": 0.5308,
+      "difference": 0.0034
+    },
+    {
+      "split_seed": 7,
+      "mf1_as_typed": 0.5318,
+      "mf1_corrected": 0.5308,
+      "difference": -0.001
+    },
+    {
+      "split_seed": 8,
+      "mf1_as_typed": 0.5246,
+      "mf1_corrected": 0.5231,
+      "difference": -0.0014
+    },
+    {
+      "split_seed": 42,
+      "mf1_as_typed": 0.532,
+      "mf1_corrected": 0.537,
+      "difference": 0.0051
+    }
+  ],
+  "summary": {
+    "n_splits": 8,
+    "mean_difference": -0.0081,
+    "sd_difference": 0.0184,
+    "corrected_better_in": 3
+  },
+  "variants_last_split": [
+    {
+      "variant": "as typed",
+      "train_types": 1196,
+      "char_trigrams": 1308,
+      "precision": 0.5505,
+      "recall": 0.9185,
+      "mf1_mean": 0.532,
+      "mf1_std": 0.0024,
+      "seeds": 30
+    },
+    {
+      "variant": "corrected",
+      "train_types": 1195,
+      "char_trigrams": 1233,
+      "precision": 0.5528,
+      "recall": 0.9192,
+      "mf1_mean": 0.537,
+      "mf1_std": 0.0023,
+      "seeds": 30
+    }
+  ]
+}

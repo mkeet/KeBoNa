@@ -1,0 +1,61 @@
+{
+  "version": "v1",
+  "languages": [
+    "zulu",
+    "xhosa",
+    "ndebele",
+    "swati",
+    "shona"
+  ],
+  "seeds": 30,
+  "distance_primary_weighted": "10*zone_hops + 3*group_diff + 1*lang_diff (zone_hops = BFS over the geographic zone-adjacency graph)",
+  "distance_weightless": "lexicographic key on (zone_hops, group_diff, lang_diff)",
+  "distance_legacy_alphabetical": "10*|zone_index diff| + 3*group_diff + 1*lang_diff",
+  "spearman_graphweighted_vs_transfer_ratio": {
+    "rho": -0.7127744821512728,
+    "p": 0.0004202609696833759,
+    "n_pairs": 20
+  },
+  "spearman_weightless_vs_transfer_ratio": {
+    "rho": -0.7127744821512728,
+    "p": 0.0004202609696833759,
+    "n_pairs": 20
+  },
+  "spearman_alphabetical_vs_transfer_ratio": {
+    "rho": -0.7127744821512728,
+    "p": 0.0004202609696833759,
+    "n_pairs": 20
+  },
+  "spearman_graphweighted_vs_mf1": {
+    "rho": -0.7250372689409721,
+    "p": 0.00029829873023630557,
+    "n_pairs": 20
+  },
+  "matrix": {
+    "zulu->zulu": 0.8686576246559246,
+    "zulu->xhosa": 0.7768053092195399,
+    "zulu->ndebele": 0.7674762049632431,
+    "zulu->swati": 0.6737424100313494,
+    "zulu->shona": 0.37193659693389847,
+    "xhosa->zulu": 0.6106199471057775,
+    "xhosa->xhosa": 0.8530757753566084,
+    "xhosa->ndebele": 0.6713951373726672,
+    "xhosa->swati": 0.5445403338375328,
+    "xhosa->shona": 0.3417484244041838,
+    "ndebele->zulu": 0.5938118570362982,
+    "ndebele->xhosa": 0.6355873928528089,
+    "ndebele->ndebele": 0.8743231860355836,
+    "ndebele->swati": 0.5688030417431691,
+    "ndebele->shona": 0.3416733203110723,
+    "swati->zulu": 0.4831039132622704,
+    "swati->xhosa": 0.48803559678828506,
+    "swati->ndebele": 0.5288453934531918,
+    "swati->swati": 0.8755242072017767,
+    "swati->shona": 0.3413844592117233,
+    "shona->zulu": 0.41152122240632594,
+    "shona->xhosa": 0.42319193024754204,
+    "shona->ndebele": 0.4212925485502285,
+    "shona->swati": 0.4032771849172129,
+    "shona->shona": 0.8536284968962782
+  }
+}

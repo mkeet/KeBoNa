@@ -1,0 +1,1001 @@
+idx,instance,original,word,is_error,spellchecker_flag,spellchecker_outcome,spellchecker_reason,AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF:Q4_K_M_flag,AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF:Q4_K_M_outcome,AfriqueQwen3.5-9B-50Langs-Instruct-v1-i1-GGUF:Q4_K_M_reason,gemma4:12b_flag,gemma4:12b_outcome,gemma4:12b_reason,gpt-oss:20b_flag,gpt-oss:20b_outcome,gpt-oss:20b_reason
+1,clean,ahlanzwa,ahlanzwa,0,0,tn,score -2.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'beautiful',0,tn,Correct Zulu word
+1,corrupted,ahlanzwa,ahlahnzwa,1,1,tp,score -13.24 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'ahlahle' or similar root.,0,fn,valid Zulu word
+2,clean,Jouberts,Jouberts,0,0,tn,score -2.30 >= tau -4.03,1,fp,Missing 's' after Joubert.,0,tn,Proper noun correctly spelled,1,fp,"English name, not Zulu spelling"
+2,corrupted,Jouberts,joubertsc,1,1,tp,score -4.83 < tau -4.03,1,tp,Missing 's' after 'joubert'.,1,tp,The suffix '-sc' is not a standard Zulu grammatical marker.,1,tp,extra 'c' not in standard orthography
+3,clean,ucingo,ucingo,0,0,tn,score -2.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'to be useful',0,tn,Standard Zulu noun
+3,corrupted,ucingo,cucingo,1,1,tp,score -11.18 < tau -4.03,0,fn,Correct spelling.,1,tp,Missing vowel in the middle of the word structure.,0,fn,correct spelling
+4,clean,neNtela,neNtela,0,0,tn,score -2.18 >= tau -4.03,0,tn,Correct spelling.,1,fp,The 'N' should be lowercase in standard orthography,1,fp,Capital N inside word violates orthography
+4,corrupted,neNtela,nenwtela,1,1,tp,score -17.64 < tau -4.03,1,tp,Extra 'w' before 'tela'.,1,tp,Incorrect consonant cluster 'nwt' in Zulu phonology.,1,tp,missing vowel after 'w'
+5,clean,oyigcwalisile,oyigcwalisile,0,0,tn,score -1.85 >= tau -4.03,1,fp,Missing 'i' after o.,0,tn,Correct complex verb form,0,tn,Valid verb form
+5,corrupted,oyigcwalisile,oyicgwalisile,1,1,tp,score -9.08 < tau -4.03,1,tp,Missing 'i' after 'oyicgwalis'.,1,tp,The letter 'y' is not used in standard Zulu orthography.,0,fn,valid word
+6,clean,nabalingiswa,nabalingiswa,0,0,tn,score -1.99 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the passive verb,0,tn,Correct plural noun
+6,corrupted,nabalingiswa,zabalingiswa,1,0,fn,score -1.93 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of a common verb form.,0,fn,correct form
+7,clean,Australia,Australia,0,0,tn,score -1.97 >= tau -4.03,0,tn,Correct spelling.,0,tn,Proper noun correctly spelled,1,fp,"Foreign proper name, not Zulu spelling"
+7,corrupted,Australia,austrlaia,1,1,tp,score -13.01 < tau -4.03,1,tp,Missing 's' in 'australia'.,1,tp,Missing the letter 'i' in Australia.,1,tp,spelling error: missing 'u' in Australia
+8,clean,esiqukethe,esiqukethe,0,0,tn,score -1.47 >= tau -4.03,1,fp,Extra 'e' before k.,0,tn,Correct spelling of the word for 'to be worthy',0,tn,Standard participle
+8,corrupted,esiqukethe,esiquethe,1,1,tp,score -12.92 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be' or related root.,1,tp,missing vowel after 'q'
+9,clean,wasindiswa,wasindiswa,0,0,tn,score -2.57 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the passive verb,0,tn,Valid passive verb
+9,corrupted,wasindiswa,wsaindiswa,1,1,tp,score -9.79 < tau -4.03,1,tp,Extra 'w' before 'aindiswa'.,1,tp,Incorrect consonant cluster 'ws' at the start of a word.,1,tp,extra 's' before 'i'
+10,clean,esandleni,esandleni,0,0,tn,score -1.91 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the locative form,0,tn,Correct locative noun
+10,corrupted,esandleni,esanbleni,1,1,tp,score -15.57 < tau -4.03,1,tp,Missing 'a' after 'es'.,1,tp,The letter 'b' is misplaced in this phonetic structure.,0,fn,correct spelling
+11,clean,ulethela,ulethela,0,0,tn,score -2.61 >= tau -4.03,1,fp,Missing 'l' after u.,0,tn,Correct spelling of the verb 'to bring',0,tn,Proper infinitive form
+11,corrupted,ulethela,ulethecla,1,1,tp,score -5.01 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu construction.,1,tp,non‑Zulu letter 'c' in middle
+12,clean,zingahle,zingahle,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'beautiful',0,tn,Adverbial particle
+12,corrupted,zingahle,zinxahle,1,1,tp,score -9.80 < tau -4.03,0,fn,Correct spelling.,1,tp,The letter 'x' is used incorrectly in this context.,0,fn,valid word
+13,clean,ongakayihlanganisi,ongakayihlanganisi,0,0,tn,score -1.62 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct complex negative construction,0,tn,"Complex verb, correct"
+13,corrupted,ongakayihlanganisi,ongakayihanganisi,1,0,fn,score -2.24 >= tau -4.03,1,tp,Missing 'i' after 'onkaka'.,0,fn,Correct complex Zulu verb structure.,0,fn,correct form
+14,clean,nenselelo,nenselelo,0,0,tn,score -1.92 >= tau -4.03,1,fp,Missing 'i' after n.,0,tn,Correct spelling of the word for 'repetition',0,tn,Correct noun
+14,corrupted,nenselelo,nnselelo,1,1,tp,score -10.44 < tau -4.03,0,fn,Correct spelling.,1,tp,Double 'n' at the start is incorrect for Zulu.,1,tp,double 'n' should be single
+15,clean,obethwele,obethwele,0,0,tn,score -2.56 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the passive verb,1,fp,Missing final vowel for suffix -wele
+15,corrupted,obethwele,obethewle,1,1,tp,score -8.52 < tau -4.03,1,tp,Extra 'w' in 'obethewle'.,1,tp,The letter 'w' is misplaced in the middle of the word.,1,tp,non‑Zulu letter 'b' in middle
+16,clean,Esigamekweni,Esigamekweni,0,0,tn,score -1.98 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the locative form,1,fp,Capital letter inside word violates orthography
+16,corrupted,Esigamekweni,esiwamekweni,1,1,tp,score -5.93 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of a common verb form.,0,fn,valid word
+17,clean,njengomlingiswa,njengomlingiswa,0,0,tn,score -1.60 >= tau -4.03,1,fp,Missing 'o' after n.,0,tn,Correct spelling of 'like an actor',0,tn,Valid comparative phrase
+17,corrupted,njengomlingiswa,njengromlingiswa,1,1,tp,score -6.11 < tau -4.03,1,tp,Missing 'o' after 'njeng'.,1,tp,Incorrect inclusion of 'r' and 'l' in this root.,1,tp,missing vowel after 'j'
+18,clean,indaba,indaba,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'matter',0,tn,Common noun
+18,corrupted,indaba,indba,1,1,tp,score -8.52 < tau -4.03,1,tp,Missing 'i' in 'indba'.,0,fn,Correct Zulu word for 'to be' or related root.,1,tp,missing vowel after 'd'
+19,clean,ngubulungu,ngubulungu,0,0,tn,score -2.01 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'purity',0,tn,Correct noun
+19,corrupted,ngubulungu,ngubuungu,1,1,tp,score -12.88 < tau -4.03,0,fn,Correct spelling.,1,tp,Double 'u' is not standard in Zulu orthography.,0,fn,correct spelling
+20,clean,ukuzikhethela,ukuzikhethela,0,0,tn,score -1.75 >= tau -4.03,1,fp,Missing 'u' after u.,0,tn,Correct spelling of the reflexive verb,0,tn,Standard verb form
+20,corrupted,ukuzikhethela,ukubzikhethela,1,1,tp,score -7.86 < tau -4.03,0,fn,Correct spelling.,1,tp,The letter 'z' is misplaced in the prefix structure.,0,fn,valid word
+21,clean,engumhlanganyeli,engumhlanganyeli,0,0,tn,score -1.64 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the unifier',0,tn,"Compound noun, correct"
+21,corrupted,engumhlanganyeli,enguhmlanganyeli,1,1,tp,score -7.63 < tau -4.03,1,tp,Missing 'u' after 'enguhm'.,1,tp,Incorrect consonant cluster 'hm' in this word.,1,tp,non‑Zulu letter 'h' in middle
+22,clean,kuqoqwe,kuqoqwe,0,0,tn,score -2.60 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the passive verb,0,tn,Past passive participle
+22,corrupted,kuqoqwe,kvqoqwe,1,1,tp,score -16.25 < tau -4.03,1,tp,Extra 'v' in 'kvqoqwe'.,1,tp,Invalid character sequence for Zulu phonology.,1,tp,non‑Zulu letter 'q'
+23,clean,Mangedlulise,Mangedlulise,0,0,tn,score -2.01 >= tau -4.03,1,fp,Missing 'a' after Mangedlulise.,0,tn,Correct spelling of the past tense verb,1,fp,Capital letter inside word violates orthography
+23,corrupted,Mangedlulise,magnedlulise,1,1,tp,score -5.79 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of a common verb form.,1,tp,missing vowel after 'g'
+24,clean,nesiyoxhumanisa,nesiyoxhumanisa,0,0,tn,score -1.92 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the future-oriented verb,1,fp,Missing vowel before suffix -isa
+24,corrupted,nesiyoxhumanisa,nesiyoxhumaisa,1,0,fn,score -3.90 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word structure.,0,fn,valid word
+25,clean,Ukufuya,Ukufuya,0,0,tn,score -2.06 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to be raised',1,fp,Incorrect final consonant cluster
+25,corrupted,Ukufuya,ukufusa,1,0,fn,score -2.97 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be' or related root.,1,tp,missing vowel after 'f'
+26,clean,ezinehlobo,ezinehlobo,0,0,tn,score -2.59 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+26,corrupted,ezinehlobo,ezinelhobo,1,1,tp,score -11.39 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'ezinetho' or similar root.,1,tp,extra 'l' in root cluster
+27,clean,uzosekelwa,uzosekelwa,0,0,tn,score -2.14 >= tau -4.03,1,fp,Missing 'u' after 'zosekelwa'.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+27,corrupted,uzosekelwa,uzosekela,1,0,fn,score -2.30 >= tau -4.03,1,tp,Missing 'a' after 'se': sengizokela,0,fn,Correct Zulu word for 'to apologize'.,1,tp,missing vowel after 'z'
+28,clean,Prakash,Prakash,0,1,fp,score -14.23 < tau -4.03,0,tn,Correct spelling.,1,fp,This is a non-Zulu name/word.,1,fp,"Non‑Zulu proper noun, not standard spelling."
+28,corrupted,Prakash,perakash,1,1,tp,score -11.73 < tau -4.03,1,tp,Extra 'k' before 'a': perakasha,1,tp,Contains non-Zulu phonology and spelling.,1,tp,consonant cluster 'sh' should be 's'
+29,clean,sengizocela,sengizocela,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+29,corrupted,sengizocela,sengizoceal,1,1,tp,score -6.25 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect suffix/root combination.,1,tp,'ceal' should be 'cel'
+30,clean,akufaki,akufaki,0,0,tn,score -2.89 >= tau -4.03,1,fp,Missing 'u' after 'akufaki'.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+30,corrupted,akufaki,akufkai,1,1,tp,score -13.65 < tau -4.03,1,tp,Missing 'u' after 'akuf': akufukai,1,tp,Invalid character sequence 'kfk'.,1,tp,missing vowel between 'f' and 'k'
+31,clean,emahlombeni,emahlombeni,0,0,tn,score -1.90 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be ""emahlombe""; extra ‘h’."
+31,corrupted,emahlombeni,emahlombani,1,0,fn,score -2.30 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the community'.,1,tp,extra 'h' in suffix
+32,clean,anokungcola,anokungcola,0,0,tn,score -2.23 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+32,corrupted,anokungcola,anokungcolra,1,1,tp,score -5.92 < tau -4.03,1,tp,Extra 'l' before 'a': anokungcola,1,tp,Incorrect spelling of 'anokungcolisa'.,1,tp,consonant cluster 'colra' incorrect
+33,clean,kwefulaha,kwefulaha,0,0,tn,score -3.30 >= tau -4.03,1,fp,Missing 'u' after 'kwefulaha'.,0,tn,Correct spelling of the word.,1,fp,"Should be ""kwefula""; missing final vowel."
+33,corrupted,kwefulaha,kjefulaha,1,1,tp,score -12.79 < tau -4.03,0,fn,Correct spelling.,1,tp,Invalid character sequence 'kjef'.,0,fn,
+34,clean,abayikhokha,abayikhokha,0,0,tn,score -1.79 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+34,corrupted,abayikhokha,baayikhokha,1,1,tp,score -8.56 < tau -4.03,0,fn,Correct spelling.,1,tp,Double vowel 'aa' is incorrect in this context.,0,fn,
+35,clean,Esilele,Esilele,0,0,tn,score -2.87 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+35,corrupted,Esilele,esilzle,1,1,tp,score -13.59 < tau -4.03,1,tp,Missing 'i' after 'esil': esilizle,1,tp,Incorrect spelling of 'esilule' or similar.,0,fn,
+36,clean,ngokuhlola,ngokuhlola,0,0,tn,score -1.22 >= tau -4.03,1,fp,Missing 'u' after 'ngokuhlola'.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+36,corrupted,ngokuhlola,ngokuhlolaj,1,0,fn,score -3.31 >= tau -4.03,0,fn,Correct spelling.,1,tp,Should end with 'a' (ngokuhlolwa).,0,fn,
+37,clean,seziMpesheni,seziMpesheni,0,0,tn,score -1.93 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be ""seziphesheni""; misspelling of ‘ph’."
+37,corrupted,seziMpesheni,seimpesheni,1,1,tp,score -8.63 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the message'.,0,fn,
+38,clean,lokuhlela,lokuhlela,0,0,tn,score -1.71 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+38,corrupted,lokuhlela,lokuhlel,1,0,fn,score -1.62 >= tau -4.03,1,tp,Missing 'a' after 'loku': lokuhlela,1,tp,Missing final vowel or incorrect root.,0,fn,
+39,clean,UMSOLWA,UMSOLWA,0,0,tn,score -1.75 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be ""umsulwa""; extra capital letter and wrong vowel."
+39,corrupted,UMSOLWA,umsolpwa,1,1,tp,score -11.45 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the solution'.,0,fn,
+40,clean,khiya,khiya,0,1,fp,score -4.96 < tau -4.03,1,fp,Missing 'u' after 'khiya'.,0,tn,Correct spelling of the word.,1,fp,"Missing initial ‘k’; should be ""khaya""."
+40,corrupted,khiya,khhya,1,1,tp,score -20.00 < tau -4.03,0,fn,Correct spelling.,1,tp,Double 'h' is not standard in this context.,0,fn,
+41,clean,ARC-GCI,ARC-GCI,0,1,fp,score -18.35 < tau -4.03,0,tn,Correct spelling.,1,fp,"This is an acronym/code, not a Zulu word.",1,fp,"Non‑Zulu acronym, not standard spelling."
+41,corrupted,ARC-GCI,axrc-gci,1,1,tp,score -20.00 < tau -4.03,1,tp,Missing 'a' after 'axr': axra-gci,1,tp,Contains invalid character sequence 'xrc'.,0,fn,
+42,clean,uyatholakala,uyatholakala,0,0,tn,score -1.44 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+42,corrupted,uyatholakala,uyatholakalar,1,0,fn,score -1.92 >= tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'uyatholakalela'.,0,fn,
+43,clean,Ngezindlu,Ngezindlu,0,0,tn,score -1.62 >= tau -4.03,1,fp,Missing 'u' after 'Ngezindlu'.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+43,corrupted,Ngezindlu,ngezindu,1,0,fn,score -2.15 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the remains'.,0,fn,
+44,clean,weSikhungo,weSikhungo,0,0,tn,score -1.37 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+44,corrupted,weSikhungo,wesihungo,1,0,fn,score -3.04 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the group'.,0,fn,
+45,clean,umesabise,umesabise,0,0,tn,score -2.57 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be ""umesabisa""; wrong vowel."
+45,corrupted,umesabise,umeasbise,1,1,tp,score -18.30 < tau -4.03,1,tp,Missing 'a' after 'um': umesabise,1,tp,Incorrect spelling of 'umasebiso'.,0,fn,
+46,clean,woLimi,woLimi,0,0,tn,score -2.89 >= tau -4.03,1,fp,Missing 'u' after 'woLimi'.,0,tn,Correct spelling of the word.,1,fp,"Capital ‘L’ and missing ‘l’; should be ""wolimi""."
+46,corrupted,woLimi,wolim,1,0,fn,score -3.68 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the forest'.,0,fn,
+47,clean,olukuMnyango,olukuMnyango,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Incorrect capitalization and missing ‘m’; should be ""olukumnyango""."
+47,corrupted,olukuMnyango,olukumnqango,1,1,tp,score -4.47 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the argument'.,0,fn,
+48,clean,njengephemithi,njengephemithi,0,0,tn,score -2.33 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+48,corrupted,njengephemithi,njegephemithi,1,1,tp,score -6.39 < tau -4.03,1,tp,Missing 'a' after 'nje': njegephemithi,1,tp,Incorrect spelling of 'njegephemi'.,0,fn,
+49,clean,olungaphambili,olungaphambili,0,0,tn,score -1.36 >= tau -4.03,1,fp,Missing 'u' after 'olungaphambili'.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+49,corrupted,olungaphambili,olungapharmbili,1,1,tp,score -6.33 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains non-Zulu character sequence 'pharm'.,0,fn,
+50,clean,enzeka,enzeka,0,0,tn,score -2.32 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct Zulu form.
+50,corrupted,enzeka,nzeka,1,1,tp,score -5.22 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the path'.,0,fn,
+51,clean,kwabafana,kwabafana,0,0,tn,score -1.90 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for boys.,0,tn,Correct isiZulu word.
+51,corrupted,kwabafana,kwacbafana,1,1,tp,score -11.53 < tau -4.03,1,tp,Missing 'a' after kwac.,1,tp,Incorrect spelling of 'kwabafana' with an extra 'c',1,tp,"Missing vowel after k: should be ""kwabafana""."
+52,clean,aziphendulele,aziphendulele,0,0,tn,score -1.69 >= tau -4.03,1,fp,Missing 'a' after 'ziph': ziphendulele.,0,tn,Correct spelling of the word for those who are being scolded.,1,fp,Extra vowel; should be aziphendule.
+52,corrupted,aziphendulele,aqiphendulele,1,1,tp,score -6.81 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be scolded',0,fn,Correct isiZulu verb form.
+53,clean,ekuyona,ekuyona,0,0,tn,score -3.11 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for the one who is crying.,0,tn,Correct form.
+53,corrupted,ekuyona,eukyona,1,1,tp,score -20.00 < tau -4.03,1,tp,Extra 'u' in euk.,0,fn,Correct Zulu word meaning 'to be-become',1,tp,"Vowel missing: correct is ""eukuyona""."
+54,clean,eSivumelwaneni,eSivumelwaneni,0,0,tn,score -1.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for the one who is being reconciled.,1,fp,Capital S inside word; should be esivumelwaneni.
+54,corrupted,eSivumelwaneni,esiuvmelwaneni,1,1,tp,score -8.85 < tau -4.03,1,tp,Missing 'a' after esi.,1,tp,Incorrect spelling of 'esiwmelwaneni' with an extra 'u',1,tp,"Missing vowel after s: should be ""esiuvmelwaneni""."
+55,clean,okwethusa,okwethusa,0,0,tn,score -2.05 >= tau -4.03,1,fp,Extra 'h' in 'ethusa': okwethusa.,0,tn,Correct spelling of the word for those who will help us.,0,tn,Correct.
+55,corrupted,okwethusa,okwtehusa,1,1,tp,score -18.02 < tau -4.03,1,tp,Missing 'o' before kwe.,1,tp,Incorrect spelling of 'okwethusa' with an extra 't',0,fn,Correct form of verb stem.
+56,clean,wezokuShushiswa,wezokuShushiswa,0,0,tn,score -1.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for those who are being blessed.,1,fp,Capital Sh; correct is wezokushushiswa.
+56,corrupted,wezokuShushiswa,wezoksuhushiswa,1,1,tp,score -8.60 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be-beaten',1,tp,"Extra consonant: correct is ""wezokushiswa""."
+57,clean,ngumZulu,ngumZulu,0,0,tn,score -2.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for a Zulu person.,0,tn,Correct.
+57,corrupted,ngumZulu,ngumzuul,1,1,tp,score -8.79 < tau -4.03,1,tp,Extra 'u' in ngumzuul.,1,tp,Incorrect spelling of 'ngumZulu' with an extra 'u',1,tp,"Missing vowel after z: should be ""ngumzuul""."
+58,clean,bazokhokha,bazokhokha,0,0,tn,score -1.87 >= tau -4.03,1,fp,Missing 'u' in 'bazokhokha': bazokhokha.,0,tn,Correct spelling of the word for they will pay.,0,tn,Correct.
+58,corrupted,bazokhokha,mbazokhokha,1,0,fn,score -2.88 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'will pay',0,fn,Correct noun form.
+59,clean,esiyokwethula,esiyokwethula,0,0,tn,score -1.53 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for the one who will present us.,0,tn,Correct.
+59,corrupted,esiyokwethula,esigyokwethula,1,1,tp,score -6.73 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word meaning 'to be-told',1,tp,"Transposition error: should be ""esigokwethula""."
+60,clean,kungenakwenzeka,kungenakwenzeka,0,0,tn,score -1.46 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for it cannot be done.,0,tn,Correct.
+60,corrupted,kungenakwenzeka,kugnenakwenzeka,1,0,fn,score -2.12 >= tau -4.03,1,tp,Missing 'u' in kugne.,1,tp,Incorrect spelling of 'kungenakwenzeka' with an extra 'g',0,fn,Correct verb form.
+61,clean,esiqukethwe,esiqukethwe,0,0,tn,score -1.42 >= tau -4.03,1,fp,Missing 'e' in 'esiqukethwe': esiqukethwe.,0,tn,Correct spelling of the word for the one who is being asked.,0,tn,Correct.
+61,corrupted,esiqukethwe,esiqukehhwe,1,1,tp,score -10.13 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'esikuqhwe' with an extra 'h',1,tp,"Double h incorrect: should be ""esiqhekewe""."
+62,clean,ezigqitshiwe,ezigqitshiwe,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for those who are being questioned.,1,fp,Transposed letters; should be ezigqitshwe.
+62,corrupted,ezigqitshiwe,ezigqitzshiwe,1,1,tp,score -10.50 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'ezigqizishiwe' with a 't' instead of 'z',1,tp,"Missing vowel after q: correct is ""ezigqithiwe""."
+63,clean,embili,embili,0,0,tn,score -3.07 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for two.,0,tn,Correct.
+63,corrupted,embili,uembili,1,1,tp,score -12.58 < tau -4.03,1,tp,Missing 'u' in uem.,0,fn,Correct Zulu word for 'two',0,fn,Correct noun form.
+64,clean,ziimbuzi,ziimbuzi,0,0,tn,score -2.99 >= tau -4.03,1,fp,Missing 'i' in 'ziimbuzi': ziimbuzi.,0,tn,Correct spelling of the word for goats.,0,tn,Correct.
+64,corrupted,ziimbuzi,zyiimbuzi,1,1,tp,score -11.16 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'eziimbuzi' with a 'y' instead of 'e',1,tp,"Missing vowel: should be ""zyiimbuzi""."
+65,clean,lekhaya,lekhaya,0,0,tn,score -2.07 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for at home.,0,tn,Correct.
+65,corrupted,lekhaya,lekaya,1,1,tp,score -4.67 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'home',1,tp,"Missing vowel after l: correct is ""lekaya""."
+66,clean,zenhlawulo,zenhlawulo,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for those who are being humiliated.,0,tn,Correct.
+66,corrupted,zenhlawulo,zenhlaulo,1,1,tp,score -7.06 < tau -4.03,1,tp,Missing 'a' after zen.,1,tp,Incorrect spelling of 'zenhlaulo' with an extra 'a',0,fn,Correct adjective form.
+67,clean,Osempeshile,Osempeshile,0,0,tn,score -3.09 >= tau -4.03,1,fp,Missing 'o' in 'Osempeshile': Osempeshile.,0,tn,Correct spelling of the word for the one who is alive.,1,fp,Capital O; should be osempeshile.
+67,corrupted,Osempeshile,osempehile,1,1,tp,score -7.97 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word meaning 'while alive',1,tp,"Missing vowel: should be ""osemphehile""."
+68,clean,Ukubonakala,Ukubonakala,0,0,tn,score -1.02 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for it can be seen.,1,fp,Capital U; should be ukubonakala.
+68,corrupted,Ukubonakala,ukubnoakala,1,1,tp,score -11.73 < tau -4.03,1,tp,Extra 'b' in ukubnoakala.,1,tp,Incorrect spelling of 'ukubonakala' with an extra 'a',1,tp,"Transposition error: correct is ""ukubonakala""."
+69,clean,esekumbiwe,esekumbiwe,0,0,tn,score -3.36 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for the one who is being gathered.,0,tn,Correct.
+69,corrupted,esekumbiwe,esekmubiwe,1,1,tp,score -16.11 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word meaning 'to be-done badly',0,fn,Correct noun form.
+70,clean,ngiyazazi,ngiyazazi,0,0,tn,score -2.00 >= tau -4.03,1,fp,Missing 'ng' in 'ngiyazazi': ngiyazazi.,0,tn,Correct spelling of the word for I know.,0,tn,Correct.
+70,corrupted,ngiyazazi,ngyiazazi,1,1,tp,score -16.20 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'I know',1,tp,"Missing vowel after y: should be ""ngiyazi""."
+71,clean,iWestminister,iWestminister,0,0,tn,score -3.03 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the proper noun Westminster with prefix.,1,fp,Mixed case; should be iwestminister.
+71,corrupted,iWestminister,westminister,1,0,fn,score -3.15 >= tau -4.03,1,tp,Missing 's' in westminster.,0,fn,Proper noun correctly spelled in Zulu context,1,tp,"English word, not zu; typo in spelling."
+72,clean,Kuyilokhu,Kuyilokhu,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for it is like this.,1,fp,Capital K; should be kuyilokhu.
+72,corrupted,Kuyilokhu,kuyilbokhu,1,1,tp,score -11.33 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'kuyilokhu' with an extra 'b',0,fn,Correct noun form.
+73,clean,ukugudlula,ukugudlula,0,0,tn,score -1.81 >= tau -4.03,1,fp,Missing 'u' in 'ukugudlula': ukugudlula.,0,tn,Correct spelling of the word for to pass through.,0,tn,Correct.
+73,corrupted,ukugudlula,ukugudlual,1,1,tp,score -6.48 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'ukugudlala' with an extra 'u',1,tp,"Missing vowel after g: should be ""ukugudlula""."
+74,clean,namabala,namabala,0,0,tn,score -2.36 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for with the balls/balls.,0,tn,Correct.
+74,corrupted,namabala,amabala,1,0,fn,score -2.38 >= tau -4.03,1,tp,Missing 'a' in amabala.,0,fn,Correct Zulu word for 'fields',0,fn,Correct noun form.
+75,clean,ukuzithinta,ukuzithinta,0,0,tn,score -1.61 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for to touch oneself.,0,tn,Correct.
+75,corrupted,ukuzithinta,ukcuzithinta,1,1,tp,score -10.48 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect spelling of 'ukuzithinta' with an extra 'c',1,tp,"Missing vowel after c: correct is ""ukucuzithinta""."
+76,clean,yezokukhulumisana,yezokukhulumisana,0,0,tn,score -1.31 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb form.,0,tn,Correct Zulu form
+76,corrupted,yezokukhulumisana,yezokukhulumsana,1,1,tp,score -5.46 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for communication.,1,tp,extra consonant in khulumsana
+77,clean,wokuzivikela,wokuzivikela,0,0,tn,score -1.49 >= tau -4.03,1,fp,Missing 'u' after 'wo': woku...,0,tn,Correct spelling of the reflexive verb.,0,tn,Correct Zulu form
+77,corrupted,wokuzivikela,wokuzivikla,1,1,tp,score -6.00 < tau -4.03,1,tp,Missing 'e' after 'z'.,1,tp,Should be 'wokuzivikela' with an 'e' at the end.,1,tp,missing vowel before k
+78,clean,nobungoti,nobungoti,0,0,tn,score -2.07 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun.,1,fp,‘bongoti’ should be ‘bungoti’ (z instead of t)
+78,corrupted,nobungoti,nobungvoti,1,1,tp,score -11.18 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for voting.,1,tp,incorrect root vowel
+79,clean,idingekile,idingekile,0,0,tn,score -1.74 >= tau -4.03,1,fp,"Should be 'idingekile', missing 'i'.",0,tn,Correct spelling of the verb form.,0,tn,Correct Zulu form
+79,corrupted,idingekile,idinhekile,1,1,tp,score -8.98 < tau -4.03,1,tp,Extra 'h' before 'i'.,0,fn,Correct spelling of the word for being informed.,1,tp,wrong consonant cluster
+80,clean,ngelomqashi,ngelomqashi,0,0,tn,score -2.16 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun phrase.,0,tn,Correct Zulu form
+80,corrupted,ngelomqashi,ngeiomqashi,1,1,tp,score -10.46 < tau -4.03,1,tp,Missing 'o' after 'ng'.,1,tp,Should be 'ngeziqashi' or similar; 'iom' is incorrect.,1,tp,extra i after nge
+81,clean,yesilwane,yesilwane,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the animal noun.,0,tn,Correct Zulu form
+81,corrupted,yesilwane,yesilwake,1,0,fn,score -3.88 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for a servant/servantship.,1,tp,missing final k
+82,clean,kweSilo,kweSilo,0,0,tn,score -2.44 >= tau -4.03,1,fp,"Should be 'kweSilo', missing 'e' after 'kw'.",0,tn,Correct spelling with proper capitalization.,1,fp,Capital ‘S’ incorrect; should be lowercase
+82,corrupted,kweSilo,okwesilo,1,0,fn,score -2.47 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for a gift.,0,fn,correct form
+83,clean,eKomkhulu,eKomkhulu,0,0,tn,score -2.13 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling with proper capitalization.,1,fp,Capital ‘K’ incorrect; should be lowercase
+83,corrupted,eKomkhulu,erkomkhulu,1,1,tp,score -8.03 < tau -4.03,1,tp,Missing 'a' after 'er'.,0,fn,Correct spelling of the word for greatness.,1,tp,missing o after er
+84,clean,uchazwa,uchazwa,0,0,tn,score -2.31 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb form.,0,tn,Correct Zulu form
+84,corrupted,uchazwa,umhazwa,1,1,tp,score -10.55 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for dignity/honor.,1,tp,incorrect final consonant
+85,clean,Ngikubuzile,Ngikubuzile,0,0,tn,score -2.38 >= tau -4.03,1,fp,"Should be 'Ngikubuzile', missing 'u' after 'k'.",0,tn,Correct spelling of the first-person verb.,1,fp,Capital ‘N’ incorrect; should be lowercase
+85,corrupted,Ngikubuzile,ngikuuzile,1,1,tp,score -11.23 < tau -4.03,0,fn,Correct spelling.,1,tp,"Should be 'ngikuuzile' or 'ngikuze', but double 'u' is often a typo.",1,tp,extra u before zile
+86,clean,naseNelson,naseNelson,0,0,tn,score -2.52 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling with proper name capitalization.,1,fp,"English name, not standard Zulu"
+86,corrupted,naseNelson,nasenelsno,1,1,tp,score -7.48 < tau -4.03,1,tp,Missing 'e' after 'na'.,1,tp,Should be 'naseneliso' (vision) or similar; 'sno' is incorrect.,1,tp,missing l in elson
+87,clean,Kumnyama,Kumnyama,0,0,tn,score -2.00 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb form.,1,fp,Capital ‘K’ incorrect; should be lowercase
+87,corrupted,Kumnyama,kumnyamaj,1,0,fn,score -2.38 >= tau -4.03,0,fn,Correct spelling.,1,tp,Should be 'kumnyama' or 'kumnyamaj' lacks a final vowel/suffix.,1,tp,missing i before j
+88,clean,elizenzile,elizenzile,0,0,tn,score -2.44 >= tau -4.03,1,fp,"Should be 'elazenzile', missing 'a' after 'e'.",0,tn,Correct spelling of the reflexive verb.,0,tn,Correct Zulu form
+88,corrupted,elizenzile,eliizenzile,1,1,tp,score -10.18 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for being done.,0,fn,correct form
+89,clean,nesiqukethe,nesiqukethe,0,0,tn,score -1.50 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun phrase.,0,tn,Correct Zulu form
+89,corrupted,nesiqukethe,nesiqukether,1,0,fn,score -1.74 >= tau -4.03,1,tp,Extra 'e' after 'quketh'.,1,tp,Should be 'nesiquketho' or similar; 'r' is likely a typo.,1,tp,extra h at end
+90,clean,wuhlupho,wuhlupho,0,0,tn,score -3.01 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun.,0,tn,Correct Zulu form
+90,corrupted,wuhlupho,wuhxupho,1,1,tp,score -18.16 < tau -4.03,1,tp,Missing 'u' before 'xupho'.,0,fn,Correct spelling of the word for being far away.,1,tp,x instead of u
+91,clean,yezincomo,yezincomo,0,0,tn,score -1.84 >= tau -4.03,1,fp,"Should be 'yezinkomo', missing 'i' after 'y'.",0,tn,Correct spelling of the plural noun.,1,fp,‘zincomo’ should be ‘zincazelo’ (missing l)
+91,corrupted,yezincomo,yezincomq,1,1,tp,score -4.64 < tau -4.03,0,fn,Correct spelling.,1,tp,Should be 'yezincamq' or similar; 'incom' is incorrect.,1,tp,missing o before q
+92,clean,inkoliso,inkoliso,0,0,tn,score -3.70 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun.,0,tn,Correct Zulu form
+92,corrupted,inkoliso,iunkoliso,1,1,tp,score -12.33 < tau -4.03,1,tp,Extra 'i' after 'un'.,0,fn,Correct spelling of the word for a gift/offering.,0,fn,correct form
+93,clean,bentando,bentando,0,0,tn,score -2.36 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun phrase.,0,tn,Correct Zulu form
+93,corrupted,bentando,aentando,1,1,tp,score -9.13 < tau -4.03,1,tp,Missing 'e' before 'ntando'.,0,fn,Correct spelling of the word for intention.,1,tp,missing e after a
+94,clean,Lydia,Lydia,0,1,fp,score -11.34 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the proper name.,1,fp,"English name, not standard Zulu"
+94,corrupted,Lydia,lyia,1,1,tp,score -16.41 < tau -4.03,0,fn,Correct spelling.,1,tp,Should be 'lyi' or 'liya'; 'ia' is an extra character.,1,tp,incorrect vowel sequence
+95,clean,sisekela,sisekela,0,0,tn,score -1.72 >= tau -4.03,1,fp,"Should be 'sisekela', missing 'i' after 'se'.",0,tn,Correct spelling of the verb form.,0,tn,Correct Zulu form
+95,corrupted,sisekela,siseekla,1,1,tp,score -12.64 < tau -4.03,0,fn,Correct spelling.,1,tp,Should be 'sisekela' (support) with one 'e'.,1,tp,extra e before kla
+96,clean,nganeno,nganeno,0,0,tn,score -2.84 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun phrase.,1,fp,‘nganeno’ should be ‘nganena’ (missing a)
+96,corrupted,nganeno,ncganeno,1,1,tp,score -13.18 < tau -4.03,1,tp,Missing 'a' after 'ncga'.,0,fn,Correct spelling of the word for agreement.,1,tp,missing ch in ganeno
+97,clean,olubophezela,olubophezela,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the relative clause.,0,tn,Correct Zulu form
+97,corrupted,olubophezela,olubopheela,1,1,tp,score -6.91 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for being bound/tied.,0,fn,correct form
+98,clean,compliments,compliments,0,0,tn,score -2.54 >= tau -4.03,1,fp,"Should be 'complements', missing 'e' after 'c'.",1,fp,"The word is in English, not Zulu.",1,fp,"English word, not standard Zulu"
+98,corrupted,compliments,complimenrs,1,1,tp,score -6.28 < tau -4.03,1,tp,Extra 'r' at end.,1,tp,Should be 'compliments' or a Zulu equivalent; 'rs' is a typo.,1,tp,transposed n and r
+99,clean,i-Hotline,i-Hotline,0,1,fp,score -10.10 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct usage of a loanword with hyphen.,1,fp,Capital ‘H’ incorrect; should be lowercase
+99,corrupted,i-Hotline,-hotline,1,1,tp,score -10.15 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for hotline.,1,tp,leading hyphen incorrect
+100,clean,mnikazi,mnikazi,0,0,tn,score -2.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun.,1,fp,Missing initial ‘u’: ‘umnikazi’
+100,corrupted,mnikazi,mnikagzi,1,1,tp,score -11.92 < tau -4.03,0,fn,Correct spelling.,1,tp,Should be 'mnikazi' (wife); the trailing underscore is a typo.,1,tp,missing i before gzi
+101,clean,agciniwe,agciniwe,0,0,tn,score -2.14 >= tau -4.03,0,tn,Correct spelling.,1,fp,The correct spelling is agciniwe (no change needed) or agcinywe.,1,fp,agciniwe missing vowel after g
+101,corrupted,agciniwe,agcinyiwe,1,1,tp,score -4.49 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,extra 'c' not in zu orthography
+102,clean,sasingekho,sasingekho,0,0,tn,score -2.03 >= tau -4.03,1,fp,Missing 's' after 'sa': kufanele kube sasingekho.,0,tn,Correctly spelled word.,0,tn,correct sasingekho
+102,corrupted,sasingekho,saisngekho,1,1,tp,score -14.41 < tau -4.03,1,tp,Missing 's' after 'sa': saisngekho.,1,tp,Incorrect character sequence in 'saisngekho'.,1,tp,missing vowel after 'sais'
+103,clean,wokuchaza,wokuchaza,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,wokuchaza correct
+103,corrupted,wokuchaza,wouchaza,1,1,tp,score -12.16 < tau -4.03,1,tp,Extra 'h' in 'wouchaza'.,0,fn,Correct spelling of the word.,1,tp,contains non-zu digraph 'ou'
+104,clean,owayengejwayele,owayengejwayele,0,0,tn,score -1.66 >= tau -4.03,0,tn,Correct spelling.,1,fp,The correct spelling is owayengeyalele (extra 'j').,1,fp,owayengejwayele missing 'l' before j
+104,corrupted,owayengejwayele,owayengejwayel,1,0,fn,score -1.68 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,double 'j' cluster not allowed
+105,clean,sasesihlatshiwe,sasesihlatshiwe,0,0,tn,score -2.15 >= tau -4.03,1,fp,Missing 's' after 'sa': kufanele kube sasesihlatshiwe.,0,tn,Correctly spelled word.,0,tn,sasesihlatshiwe correct
+105,corrupted,sasesihlatshiwe,sasesihlatsiwe,1,0,fn,score -2.42 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,extra 'h' in middle of word
+106,clean,oMongameli,oMongameli,0,0,tn,score -1.99 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,oMongameli correct with capital M
+106,corrupted,oMongameli,omognameli,1,1,tp,score -14.12 < tau -4.03,1,tp,Missing 'a' after 'omog': omognameli.,0,fn,Correct spelling of the word.,1,tp,missing vowel after 'm'
+107,clean,thekga,thekga,0,1,fp,score -4.04 < tau -4.03,0,tn,Correct spelling.,1,fp,The correct spelling is thekgwa (missing 'w').,1,fp,thekga should be theke
+107,corrupted,thekga,thebkga,1,1,tp,score -14.19 < tau -4.03,1,tp,Extra 'h' in 'thebkga'.,1,tp,Incorrect consonant cluster in 'thebkga'.,1,tp,contains non-zu letter 'b' in cluster
+108,clean,kubolekisa,kubolekisa,0,0,tn,score -2.02 >= tau -4.03,1,fp,Missing 'i' after 'bo': kufanele kube kubolekisa.,0,tn,Correctly spelled word.,0,tn,kubolekisa correct
+108,corrupted,kubolekisa,kublekisa,1,1,tp,score -11.13 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,valid zu verb form
+109,clean,nasiza,nasiza,0,0,tn,score -3.50 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,nasiza correct
+109,corrupted,nasiza,naisza,1,1,tp,score -17.80 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,missing vowel between 's' and 'z'
+110,clean,abawuhlaziyayo,abawuhlaziyayo,0,0,tn,score -1.89 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,1,fp,abawuhlaziyayo missing 'l' after h
+110,corrupted,abawuhlaziyayo,abauhlaziyayo,1,1,tp,score -5.67 < tau -4.03,1,tp,Missing 'u' after 'aba': abauhlaziyayo.,0,fn,Correct spelling of the word.,1,tp,extra 'h' after 'l'
+111,clean,wayengakhishwanga,wayengakhishwanga,0,0,tn,score -1.60 >= tau -4.03,1,fp,Missing 'a' after 'waye': kufanele kube wayengakhishwanga.,0,tn,Correctly spelled word.,0,tn,wayengakhishwanga correct
+111,corrupted,wayengakhishwanga,wayengakhishanga,1,0,fn,score -1.88 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,double 'k' cluster not allowed
+112,clean,wokuhlinza,wokuhlinza,0,0,tn,score -1.89 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,wokuhlinza correct
+112,corrupted,wokuhlinza,wokulhlinza,1,1,tp,score -9.08 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,contains non-zu digraph 'lh'
+113,clean,abayisikhombisa,abayisikhombisa,0,0,tn,score -1.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,abayisikhombisa correct
+113,corrupted,abayisikhombisa,abayisikhobmisa,1,1,tp,score -7.99 < tau -4.03,1,tp,Extra 'k' in 'abayisikhobmisa'.,1,tp,Typo in 'abayisikhobmisa' instead of 'abayisikhombisa'.,1,tp,non-zu letter 'b' in middle
+114,clean,ugandaganda,ugandaganda,0,0,tn,score -1.49 >= tau -4.03,1,fp,Missing 'u' after 'ganda': kufanele kube ugandaganda.,0,tn,Correctly spelled word.,1,fp,ugandaganda should be uganda
+114,corrupted,ugandaganda,dgandaganda,1,1,tp,score -7.06 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect starting consonant cluster 'dg'.,1,tp,missing vowel after first 'g'
+115,clean,ngimnikeza,ngimnikeza,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,ngimnikeza correct
+115,corrupted,ngimnikeza,ngtmnikeza,1,1,tp,score -12.81 < tau -4.03,1,tp,Missing 'i' after 'ngt': ngtmnikeza.,1,tp,Missing vowel between 'ng' and 'tm'.,1,tp,missing vowel between 't' and 'm'
+116,clean,omgunyathi,omgunyathi,0,0,tn,score -2.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,1,fp,omgunyathi missing 'l' after g
+116,corrupted,omgunyathi,dmgunyathi,1,1,tp,score -8.45 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect starting consonant cluster 'dm'.,1,tp,extra 'y' after 'g'
+117,clean,Usephindele,Usephindele,0,0,tn,score -2.08 >= tau -4.03,1,fp,Missing 'u' after 'Usephinde': kufanele kube Usephindile.,0,tn,Correctly spelled word.,0,tn,Usephindele correct
+117,corrupted,Usephindele,usephondele,1,0,fn,score -2.88 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,valid zu verb form
+118,clean,emadodeni,emadodeni,0,0,tn,score -2.01 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,emadodeni correct
+118,corrupted,emadodeni,emadodseni,1,1,tp,score -11.34 < tau -4.03,1,tp,Missing 'a' after 'ema': emadodseni.,1,tp,Extra 'd' in 'emadodseni'.,1,tp,contains non-zu digraph 'ds'
+119,clean,bayayimukela,bayayimukela,0,0,tn,score -2.48 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,bayayimukela correct
+119,corrupted,bayayimukela,bayayimukelna,1,1,tp,score -5.83 < tau -4.03,1,tp,Missing 'e' before 'mukelna'.,0,fn,Correct spelling of the word.,1,tp,missing vowel between 'k' and 'l'
+120,clean,Ngibingelela,Ngibingelela,0,0,tn,score -2.10 >= tau -4.03,1,fp,Missing 'u' after 'Ngibingele': kufanele kube Ngibingelela.,0,tn,Correctly spelled word.,1,fp,Ngibingelela missing 'l' after i
+120,corrupted,Ngibingelela,ngibigelela,1,1,tp,score -8.04 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,non-zu letter 'g' in cluster
+121,clean,u-Old,u-Old,0,1,fp,score -16.98 < tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,1,fp,u-Old not Zulu form
+121,corrupted,u-Old,u-oll,1,1,tp,score -16.98 < tau -4.03,1,tp,Extra 'l' in 'u-oll'.,1,tp,Incorrect hyphenation or double 'l' in 'u-oll'.,1,tp,hyphen misuse with non-zu prefix
+122,clean,kukaJerry,kukaJerry,0,0,tn,score -2.35 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,1,fp,kukaJerry mixes English name
+122,corrupted,kukaJerry,kukaqjerry,1,1,tp,score -11.77 < tau -4.03,1,tp,Missing 'a' after 'ku': kukaqjerry.,1,tp,Incorrect consonant cluster 'qj' in name.,1,tp,contains English name 'jerry' not zu
+123,clean,baphinda,baphinda,0,0,tn,score -2.02 >= tau -4.03,1,fp,Missing 'b' after 'phinda': kufanele kube baphinda.,0,tn,Correctly spelled word.,0,tn,baphinda correct
+123,corrupted,baphinda,bahpinda,1,1,tp,score -14.63 < tau -4.03,0,fn,Correct spelling.,1,tp,Typo in 'bahpinda' instead of 'bayiphinda'.,1,tp,non-zu letter 'h' after 'b'
+124,clean,awufakiwe,awufakiwe,0,0,tn,score -2.42 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,awufakiwe correct
+124,corrupted,awufakiwe,awufakiwf,1,1,tp,score -5.28 < tau -4.03,1,tp,Extra 'w' in 'awufakiwf'.,1,tp,Incorrect consonant cluster 'wf' at the end.,1,tp,missing vowel between 'f' and 'i'
+125,clean,seNkululeko,seNkululeko,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled word.,0,tn,seNkululeko correct
+125,corrupted,seNkululeko,seknululeko,1,1,tp,score -12.29 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,double 'k' cluster not allowed
+126,clean,othunyelelwayo,othunyelelwayo,0,0,tn,score -1.69 >= tau -4.03,0,tn,Correct spelling.,1,fp,The suffix -wayo is incorrect for this root.,0,tn,Correct zu form
+126,corrupted,othunyelelwayo,othunyslelwayo,1,1,tp,score -9.62 < tau -4.03,1,tp,"Missing 'u' after 'o', should be othunyisilelwayo.",1,tp,Contains nonsensical character sequence 'thunyslelwayo',1,tp,"extra ""s"" in middle of root"
+127,clean,U-Air,U-Air,0,1,fp,score -16.58 < tau -4.03,1,fp,Missing initial capital letter.,0,tn,Correct use of prefix and loanword.,1,fp,Hyphenated English word not standard in zu
+127,corrupted,U-Air,u-hir,1,1,tp,score -17.19 < tau -4.03,0,fn,Correct spelling for 'you'.,0,fn,Correct Zulu word for 'the fire',0,fn,valid hyphenated prefix
+128,clean,Sinike,Sinike,0,0,tn,score -2.29 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the name/noun.,0,tn,Standard verb form
+128,corrupted,Sinike,sinpke,1,1,tp,score -16.53 < tau -4.03,1,tp,"Extra 'k', should be sinphe.",1,tp,Incorrect consonant cluster 'npk' in a Zulu context,1,tp,"missing vowel after ""p"""
+129,clean,obukhangisiwe,obukhangisiwe,0,0,tn,score -1.97 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct morphology for 'the one who is respected'.,0,tn,Proper adjective ending
+129,corrupted,obukhangisiwe,obukhangsiwe,1,1,tp,score -7.69 < tau -4.03,1,tp,"Missing 'a' after 'obu', should be obukhangisiwe.",1,tp,Contains nonsensical character sequence 'khangsiwe',0,fn,correct verb form
+130,clean,zezakhiwo,zezakhiwo,0,0,tn,score -1.94 >= tau -4.03,1,fp,Missing 'z' before 'ezakhiwo'.,1,fp,Incorrect vowel structure for this root.,0,tn,Correct noun plural
+130,corrupted,zezakhiwo,zzakhiwo,1,1,tp,score -10.41 < tau -4.03,0,fn,Correct spelling for 'structures'.,1,tp,Double 'z' at the start is incorrect,1,tp,"double ""z"" not used in Zulu"
+131,clean,wobuBuntu,wobuBuntu,0,0,tn,score -2.79 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct use of prefix and concept.,1,fp,Capitalization of Buntu incorrect
+131,corrupted,wobuBuntu,wzbubuntu,1,1,tp,score -12.13 < tau -4.03,1,tp,"Extra 'z', should be wubuntu.",1,tp,Incorrect leading 'wz' prefix,1,tp,"contains non‑Zulu letter ""w"" twice"
+132,clean,yoMthethonkambiso,yoMthethonkambiso,0,0,tn,score -0.94 >= tau -4.03,0,tn,Correct spelling.,1,fp,The 'M' in the middle is an incorrect insertion.,0,tn,Compound noun correctly formed
+132,corrupted,yoMthethonkambiso,yomthetgonkambiso,1,1,tp,score -6.16 < tau -4.03,1,tp,"Missing 'h' after 'yomthet', should be yomthethongkambiso.",1,tp,Contains nonsensical character sequence 'thetgonkambiso',1,tp,"missing vowel after ""t"""
+133,clean,azothintana,azothintana,0,0,tn,score -1.99 >= tau -4.03,1,fp,Missing 'a' before 'zothintana'.,0,tn,Correct spelling for 'let us think together'.,0,tn,Verb form correct
+133,corrupted,azothintana,azopthintana,1,1,tp,score -7.53 < tau -4.03,0,fn,Correct spelling for 'will contact'.,1,tp,Nonsensical consonant cluster 'pthintana',0,fn,valid verb form
+134,clean,wamaGreek,wamaGreek,0,0,tn,score -2.62 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct use of prefix with loanword.,1,fp,Greek root mixed with English prefix wrong
+134,corrupted,wamaGreek,wamagrenek,1,1,tp,score -7.21 < tau -4.03,1,tp,"Extra 'g', should be wamagreni.",1,tp,Incorrect spelling of the root word,1,tp,"incorrect consonant cluster ""mg"""
+135,clean,liqede,liqede,0,0,tn,score -3.26 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb form.,0,tn,Past tense verb proper
+135,corrupted,liqede,liqed,1,1,tp,score -4.07 < tau -4.03,0,fn,Correct spelling for 'done'.,0,fn,Correct Zulu word for 'the liquid',1,tp,shortened root missing vowel
+136,clean,eziyisilinganiso,eziyisilinganiso,0,0,tn,score -1.41 >= tau -4.03,1,fp,Missing 'zi' before 'yisilinganiso'.,0,tn,Correct plural noun construction.,0,tn,Plural noun correctly formed
+136,corrupted,eziyisilinganiso,eziyisliinganiso,1,1,tp,score -8.11 < tau -4.03,1,tp,"Missing 'a' after 'eziyis', should be eziyisilinganiso.",1,tp,Contains nonsensical character sequence 'yisliinganiso',1,tp,"extra ""s"" in middle of root"
+137,clean,Tractors,Tractors,0,0,tn,score -2.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct loanword spelling.,1,fp,English word not adapted to zu orthography
+137,corrupted,Tractors,tyractors,1,1,tp,score -8.20 < tau -4.03,0,fn,Correct spelling for 'tractors'.,1,tp,English word 'tractors' with incorrect prefix,1,tp,"English word, not Zulu"
+138,clean,Angikuboni,Angikuboni,0,0,tn,score -1.92 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct verb form for 'I see you'.,0,tn,Standard negated verb
+138,corrupted,Angikuboni,angikuboi,1,1,tp,score -4.83 < tau -4.03,1,tp,"Missing 'u' after 'angik', should be angikuboni.",0,fn,Correct Zulu word for 'to speak',0,fn,valid negated verb form
+139,clean,okungamaphethishini,okungamaphethishini,0,0,tn,score -1.69 >= tau -4.03,1,fp,Missing 'a' before 'okungamaphethishini'.,1,fp,The 'h' in -phishini is an incorrect insertion.,0,tn,Compound adjective correct
+139,corrupted,okungamaphethishini,okugamaphethishini,1,0,fn,score -2.07 >= tau -4.03,1,tp,"Extra 'h', should be okugamaphethini.",1,tp,Contains nonsensical character sequence 'maphethishini',1,tp,"contains non‑Zulu letter ""h"" twice"
+140,clean,ngakubonayo,ngakubonayo,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the relative clause.,0,tn,Correct pronoun usage
+140,corrupted,ngakubonayo,ngakubonyao,1,1,tp,score -4.45 < tau -4.03,0,fn,Correct spelling for 'I saw them'.,0,fn,Correct Zulu word meaning 'to be seen',1,tp,"missing vowel after ""b"""
+141,clean,Kangcono,Kangcono,0,0,tn,score -1.57 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling for 'let us be good'.,1,fp,Capitalization of common noun wrong
+141,corrupted,Kangcono,kangconu,1,1,tp,score -4.90 < tau -4.03,1,tp,"Missing 'a' after 'kang', should be kangcono.",1,tp,Incorrect consonant cluster 'ngconu',1,tp,"incorrect consonant cluster ""ngc"""
+142,clean,ezimngxenyeni,ezimngxenyeni,0,1,fp,score -5.03 < tau -4.03,1,fp,Missing 'zi' before 'ezimngxenyeni'.,1,fp,The 'm' in -mngxenyeni is an incorrect insertion.,0,tn,Plural noun with ng correctly
+142,corrupted,ezimngxenyeni,ezimngxeyneni,1,1,tp,score -12.95 < tau -4.03,1,tp,"Extra 'm', should be ezimngxenyeni.",1,tp,Contains nonsensical character sequence 'mngxeyneni',1,tp,"extra ""x"" in middle of root"
+143,clean,Ngonjiniyela,Ngonjiniyela,0,0,tn,score -1.71 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the name/noun.,0,tn,Proper noun form
+143,corrupted,Ngonjiniyela,ngonjiniyel,1,0,fn,score -1.79 >= tau -4.03,0,fn,Correct spelling for 'engineer'.,0,fn,Correct Zulu word for 'the child',0,fn,valid noun form
+144,clean,yaboekukhulumeni,yaboekukhulumeni,0,0,tn,score -1.37 >= tau -4.03,1,fp,Missing 'a' before 'yaboekukhulumeni'.,0,tn,Correct morphology for 'those who speak'.,0,tn,Compound noun correct
+144,corrupted,yaboekukhulumeni,yabokeukhulumeni,1,1,tp,score -8.08 < tau -4.03,1,tp,"Missing 'a' after 'yabo', should be yabokukhulumeni.",0,fn,Correct Zulu word meaning 'to speak in the meeting',1,tp,"missing vowel after ""b"""
+145,clean,ngakwakhe,ngakwakhe,0,0,tn,score -1.99 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling for 'to him'.,1,fp,Missing prefix 'ku' for locative
+145,corrupted,ngakwakhe,ngakwakhq,1,1,tp,score -4.69 < tau -4.03,0,fn,Correct spelling for 'I built it'.,1,tp,Incomplete or nonsensical ending 'khq',1,tp,"non‑Zulu letter ""q"" used incorrectly"
+146,clean,izinkambo,izinkambo,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct plural noun form.,0,tn,Plural noun proper
+146,corrupted,izinkambo,izinkamdo,1,1,tp,score -4.61 < tau -4.03,1,tp,"Extra 'k', should be izinkampani.",1,tp,Missing vowel in 'izinkamdo' (should be izinkamdo/izinkamado),1,tp,"double ""k"" not standard in Zulu"
+147,clean,aphile,aphile,0,0,tn,score -2.76 >= tau -4.03,1,fp,Missing 'a' before 'aphile'.,0,tn,Correct spelling of the verb/noun.,0,tn,Verb form correct
+147,corrupted,aphile,apile,1,1,tp,score -5.77 < tau -4.03,0,fn,Correct spelling for 'apple'.,0,fn,Correct Zulu word for 'the pile',0,fn,valid noun form
+148,clean,yerokhodi,yerokhodi,0,0,tn,score -3.93 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling for 'of the code'.,1,fp,English word not adapted to zu
+148,corrupted,yerokhodi,yeerokhodi,1,1,tp,score -10.60 < tau -4.03,1,tp,"Missing 'r' after 'ye', should be yeerokhodi.",1,tp,Double 'ee' is incorrect in Zulu orthography,1,tp,"extra ""e"" after ""r"""
+149,clean,isivinini,isivinini,0,0,tn,score -2.19 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the noun.,0,tn,Noun form correct
+149,corrupted,isivinini,isiinini,1,1,tp,score -14.20 < tau -4.03,0,fn,Correct spelling for 'language'.,0,fn,Correct Zulu word meaning 'the small one',1,tp,"missing vowel after first ""i"""
+150,clean,lwabaphathimandla,lwabaphathimandla,0,0,tn,score -1.32 >= tau -4.03,1,fp,Missing 'zi' before 'lwabaphathimandla'.,0,tn,Correct morphology for 'those in power'.,1,fp,Missing vowel after 'l' in prefix
+150,corrupted,lwabaphathimandla,lwabaphathmiandla,1,1,tp,score -7.11 < tau -4.03,1,tp,"Extra 'm', should be lwabaphathi-mandla.",1,tp,Contains nonsensical character sequence 'phathmiandla',1,tp,"non‑Zulu letter ""p"" in middle of root"
+151,clean,ziqikelele,ziqikelele,0,0,tn,score -2.05 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb ziqikelele.,0,tn,Correct zu word
+151,corrupted,ziqikelele,izqikelele,1,1,tp,score -10.31 < tau -4.03,1,tp,Izincwadi eziningi zingase zibe yiphutha.,1,tp,The 'q' is likely a typo for 'k' in izikikelele,1,tp,Missing vowel after 'z' in root
+152,clean,ezikwiSengezo,ezikwiSengezo,0,0,tn,score -2.67 >= tau -4.03,1,fp,Missing 'e' after 'ezikwi'; should be ezikwiSengezo.,1,fp,The 'S' should be lowercase to match standard orthography.,1,fp,Capital S in middle violates lower‑case rule
+152,corrupted,ezikwiSengezo,ezikwiesngezo,1,1,tp,score -7.09 < tau -4.03,0,fn,Igama elifanele.,1,tp,Extra 'w' or incorrect placement in ezikwenzezo,1,tp,Extra 's' before final 'e'
+153,clean,obudlelwane,obudlelwane,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of obudlelwane.,0,tn,Valid noun form
+153,corrupted,obudlelwane,obudlelwamne,1,1,tp,score -6.08 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,1,tp,The 'w' is extraneous in obudlelwamne,1,tp,Deletion of vowel 'a' in suffix '-ne'
+154,clean,lokuvikelwa,lokuvikelwa,0,0,tn,score -1.39 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of lokuvikelwa.,0,tn,Standard passive verb
+154,corrupted,lokuvikelwa,lokuzikelwa,1,0,fn,score -2.62 >= tau -4.03,0,fn,Igama elifanele.,0,fn,Correct spelling of lokuzikelwa,0,fn,Standard verb form with prefix 'lo-'
+155,clean,amageri,amageri,0,0,tn,score -2.83 >= tau -4.03,1,fp,Missing 'a' after 'ama'; should be amageri.,0,tn,Correct spelling of amageri.,1,fp,"Should be 'amagari', not 'amageri'"
+155,corrupted,amageri,amagrei,1,1,tp,score -6.64 < tau -4.03,1,tp,Izincwadi eziningi zingase zibe yiphutha.,1,tp,Incorrect vowel sequence in amagreyi or similar,1,tp,Missing vowel between 'g' and 'r'
+156,clean,wayetshala,wayetshala,0,0,tn,score -2.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of wayetshala.,1,fp,Substitution error: should be 'wayethula'
+156,corrupted,wayetshala,wayetshla,1,1,tp,score -7.64 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,1,tp,The 'y' is likely a typo for 'u' in uyetshla,1,tp,Transposition of 't' and 'e'
+157,clean,ujamele,ujamele,0,0,tn,score -2.83 >= tau -4.03,1,fp,Extra 'e' before 'le'; should be ujamele.,0,tn,Correct spelling of ujamele.,0,tn,Correct imperative form
+157,corrupted,ujamele,ujaemle,1,1,tp,score -17.88 < tau -4.03,0,fn,Igama elifanele.,1,tp,Incorrect vowel placement in ujamle,1,tp,Insertion of extra consonant 'j'
+158,clean,luphuzi,luphuzi,0,0,tn,score -3.33 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of luphuzi.,1,fp,"Missing final vowel, should be 'luphuza'"
+158,corrupted,luphuzi,luphuvi,1,1,tp,score -8.01 < tau -4.03,0,fn,Igama elifanele.,1,tp,Extra 'u' or incorrect spelling of luphu,0,fn,Correct noun form
+159,clean,okuhambela,okuhambela,0,0,tn,score -1.45 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of okuhambela.,0,tn,Standard verb
+159,corrupted,okuhambela,okuhambla,1,1,tp,score -4.16 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,0,fn,Correct spelling of okuhambla,1,tp,Deletion of vowel 'a' before final 'b'
+160,clean,sesiba,sesiba,0,0,tn,score -2.86 >= tau -4.03,1,fp,Missing 'e' after 'se'; should be sesiba.,0,tn,Correct spelling of sesiba.,0,tn,Valid noun
+160,corrupted,sesiba,sessiba,1,1,tp,score -13.68 < tau -4.03,0,fn,Igama elifanele.,0,fn,Correct spelling of sessiba,1,tp,Missing vowel after 's'
+161,clean,komuthi,komuthi,0,0,tn,score -2.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of komuthi.,0,tn,Correct noun
+161,corrupted,komuthi,kuomuthi,1,1,tp,score -12.04 < tau -4.03,0,fn,Igama elifanele.,0,fn,Correct spelling of kuomuthi,1,tp,Insertion of extra consonant 'm'
+162,clean,yasemkhathini,yasemkhathini,0,0,tn,score -1.69 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of yasemkhathini.,0,tn,Proper locative form
+162,corrupted,yasemkhathini,yaesmkhathini,1,1,tp,score -9.16 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,1,tp,Extra 's' in yaemkhathini,0,fn,Valid compound noun
+163,clean,zinkumbi,zinkumbi,0,0,tn,score -2.98 >= tau -4.03,1,fp,Missing 'i' after 'zi'; should be zinkumbi.,0,tn,Correct spelling of zinkumbi.,0,tn,Correct plural noun
+163,corrupted,zinkumbi,ziknumbi,1,1,tp,score -17.75 < tau -4.03,0,fn,Igama elifanele.,1,tp,The 'k' is misplaced or extra in ziknumbi,1,tp,Transposition of 'k' and 'n'
+164,clean,Lendawo,Lendawo,0,0,tn,score -1.95 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of Lendawo.,1,fp,Capital L violates lower‑case rule
+164,corrupted,Lendawo,lezdawo,1,1,tp,score -17.23 < tau -4.03,1,tp,Izincwadi eziningi zingase zibe yiphutha.,1,tp,Extra 'd' in lezawo,1,tp,Missing vowel after 'l'
+165,clean,owawuthumele,owawuthumele,0,0,tn,score -1.90 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of owawuthumele.,0,tn,Valid past tense verb
+165,corrupted,owawuthumele,owawutjumele,1,1,tp,score -9.94 < tau -4.03,0,fn,Igama elifanele.,1,tp,Incorrect spelling of owawutjumele,1,tp,Insertion of extra consonant 't'
+166,clean,nokuqeqeshwa,nokuqeqeshwa,0,0,tn,score -1.11 >= tau -4.03,1,fp,Missing 'u' after 'no'; should be nokuqeqeshwa.,0,tn,Correct spelling of nokuqeqeshwa.,0,tn,Standard passive form
+166,corrupted,nokuqeqeshwa,onkuqeqeshwa,1,1,tp,score -5.57 < tau -4.03,0,fn,Igama elifanele.,0,fn,Correct spelling of onkuqeqeshwa,0,fn,Correct passive form
+167,clean,kwabangelwa,kwabangelwa,0,0,tn,score -1.77 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of kwabangelwa.,0,tn,Correct causative construction
+167,corrupted,kwabangelwa,kwabahngelwa,1,1,tp,score -5.32 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,0,fn,Correct spelling of kwabahngelwa,1,tp,Deletion of vowel 'a' before final 'w'
+168,clean,umalaleveva,umalaleveva,0,0,tn,score -2.13 >= tau -4.03,0,tn,Correct spelling.,1,fp,The 'v' should be a 'b' to form umalalebeva.,1,fp,"Should be 'umalelaveva', not 'umalaleveva'"
+168,corrupted,umalaleveva,humalaleveva,1,0,fn,score -2.65 >= tau -4.03,0,fn,Igama elifanele.,1,tp,Extra 've' in humalaleva,1,tp,Transposition of 'l' and 'm'
+169,clean,LWAMAGAMA,LWAMAGAMA,0,0,tn,score -1.70 >= tau -4.03,1,fp,Missing 'a' after 'LWAMAGAMA'; should be LWAMAGAMA.,0,tn,Correct spelling of LWAMAGAMA.,1,fp,"All caps inappropriate, should be lowercase"
+169,corrupted,LWAMAGAMA,lwamagamae,1,0,fn,score -2.65 >= tau -4.03,0,fn,Igama elifanele.,1,tp,Incorrect vowel sequence in lwamagama,1,tp,Missing vowel after 'g'
+170,clean,lomfundaze,lomfundaze,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of lomfundaze.,1,fp,"Missing final vowel, should be 'lomfundaza'"
+170,corrupted,lomfundaze,lmofundaze,1,1,tp,score -10.80 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,1,tp,Extra 'l' at the beginning of lofundaze,0,fn,Valid noun form
+171,clean,Sihlolisise,Sihlolisise,0,0,tn,score -1.89 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of Sihlolisise.,0,tn,Capital S acceptable for proper noun
+171,corrupted,Sihlolisise,sihloliise,1,1,tp,score -7.43 < tau -4.03,0,fn,Igama elifanele.,0,fn,Correct spelling of sihloliise,1,tp,Insertion of extra 'i'
+172,clean,bazoqonda,bazoqonda,0,0,tn,score -2.14 >= tau -4.03,1,fp,Missing 'ba' after 'bazo'; should be bazoqonda.,0,tn,Correct spelling of bazoqonda.,0,tn,Correct future tense verb
+172,corrupted,bazoqonda,batoqonda,1,1,tp,score -10.61 < tau -4.03,0,fn,Igama elifanele.,1,tp,The 'q' is a typo for 'k' in batokonda,0,fn,Correct plural verb
+173,clean,kwe-Abidjan,kwe-Abidjan,0,1,fp,score -11.61 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of kwe-Abidjan.,1,fp,Hyphen misuse; should be 'kweAbidjan' without hyphen
+173,corrupted,kwe-Abidjan,kwje-abidjan,1,1,tp,score -14.04 < tau -4.03,1,tp,Ukushintshwa kwezinhlamvu okungalungile.,1,tp,Extra 'j' or incorrect spelling of kwe-abidjan,1,tp,Hyphenated foreign name not standard
+174,clean,Mfundisi,Mfundisi,0,0,tn,score -2.33 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of Mfundisi.,0,tn,"Proper noun, capitalized correctly"
+174,corrupted,Mfundisi,mfunsdisi,1,1,tp,score -13.07 < tau -4.03,0,fn,Igama elifanele.,1,tp,Extra 's' in mfunsisi,1,tp,Deletion of vowel 'u' in root
+175,clean,nezesekelwe,nezesekelwe,0,0,tn,score -1.84 >= tau -4.03,1,fp,Missing 'i' after 'ne'; should be nezesekelwe.,0,tn,Correct spelling of nezesekelwe.,0,tn,Valid compound preposition
+175,corrupted,nezesekelwe,nezeseeklwe,1,1,tp,score -8.34 < tau -4.03,0,fn,Igama elifanele.,1,tp,Extra 'e' in nezisekwe,1,tp,Missing vowel after 's'
+176,clean,Sesha,Sesha,0,1,fp,score -4.15 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a name or word.,0,tn,Standard noun form
+176,corrupted,Sesha,esha,1,1,tp,score -4.60 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Standard zu word
+177,clean,zifakelwa,zifakelwa,0,0,tn,score -1.94 >= tau -4.03,1,fp,Missing 'e' after 'zifakelw'.,0,tn,Correct Zulu verb form.,0,tn,Correct passive verb
+177,corrupted,zifakelwa,zfakelwa,1,1,tp,score -10.36 < tau -4.03,1,tp,Missing 'a' after 'zfa': zafakelwa.,1,tp,Incorrect prefix or typo in 'zfakelwa',1,tp,Extra 'f' in middle
+178,clean,waseBothaville,waseBothaville,0,0,tn,score -1.97 >= tau -4.03,0,tn,Correct spelling.,1,fp,Contains an English proper noun 'Bothaville' joined incorrectly.,1,fp,Capital B in middle breaks word boundary
+178,corrupted,waseBothaville,wasebothavillw,1,0,fn,score -3.63 >= tau -4.03,1,tp,Extra 'v' in 'bothavillw': wasebothawillw.,1,tp,Contains excessive and nonsensical characters,1,tp,Missing vowel after 'b'
+179,clean,kwale-workshop,kwale-workshop,0,1,fp,score -8.96 < tau -4.03,1,fp,Extra hyphen in 'kwale-workshop'.,1,fp,Contains an English word 'workshop' joined with a hyphen.,1,fp,Hyphen not used in zu compound nouns
+179,corrupted,kwale-workshop,kwale-workshsop,1,1,tp,score -12.89 < tau -4.03,1,tp,Missing 'k' before 'workshsop': kwale-workshop.,1,tp,Typo in 'workshsop' (missing 'o'),1,tp,Hyphen misuse and missing vowel
+180,clean,kwizinselele,kwizinselele,0,0,tn,score -1.59 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'to be aware'.,0,tn,Valid noun prefix kwizinselele
+180,corrupted,kwizinselele,kwizinseoele,1,1,tp,score -9.39 < tau -4.03,0,fn,Correct spelling.,1,tp,Nonsensical string of vowels and consonants,1,tp,Missing 'i' before final 'o'
+181,clean,yokusala,yokusala,0,0,tn,score -2.39 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'to stay/reside'.,0,tn,Correct infinitive form yokusala
+181,corrupted,yokusala,yokusalau,1,1,tp,score -4.91 < tau -4.03,1,tp,Extra 'l' in 'yoksalau': yokusalwa.,0,fn,Correct spelling,0,fn,Correct morphology
+182,clean,Umsebenzi,Umsebenzi,0,0,tn,score -0.92 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'work'.,0,tn,Proper noun Umsebenzi is correct
+182,corrupted,Umsebenzi,umsebeniz,1,0,fn,score -2.15 >= tau -4.03,1,tp,Missing 'z' before 'umsebenzi': umsebenzi.,1,tp,Typo in 'umsebeniz' (should be 'umsebenzi'),1,tp,Missing final 'a' for noun class
+183,clean,eyenzwayo,eyenzwayo,0,0,tn,score -2.26 >= tau -4.03,1,fp,Missing 'e' after 'eyenzw'.,0,tn,Correct Zulu word for 'requests'.,0,tn,Adjective eyenzwayo correctly spelled
+183,corrupted,eyenzwayo,eyenzwawo,1,1,tp,score -5.18 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Valid verb form
+184,clean,izikomazi,izikomazi,0,0,tn,score -2.95 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'knowledge/wisdom'.,0,tn,Plural noun izikomazi valid
+184,corrupted,izikomazi,izikomaz,1,0,fn,score -3.43 >= tau -4.03,1,tp,Extra 'm' in 'izikomaz': izikamaz.,1,tp,Typo in 'izikomaz' (should be 'izikomaza'),1,tp,Extra 'z' before suffix
+185,clean,nabacashi,nabacashi,0,0,tn,score -2.39 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'the wealthy'.,0,tn,Plural noun nabacashi correct
+185,corrupted,nabacashi,nabacashz,1,1,tp,score -5.12 < tau -4.03,1,tp,Missing 'a' before 'cashz': nabacashi.,1,tp,Typo in 'nabacashz' (should be 'nabacashu'),1,tp,Incorrect consonant cluster 'shz'
+186,clean,azisa,azisa,0,0,tn,score -3.32 >= tau -4.03,1,fp,Missing 'a' after 'azis'.,0,tn,Correct Zulu word meaning 'to be' or 'is'.,0,tn,Verb azisa is standard
+186,corrupted,azisa,azsia,1,1,tp,score -20.00 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Missing vowel after 's'
+187,clean,thorn,thorn,0,1,fp,score -5.03 < tau -4.03,0,tn,Correct spelling.,1,fp,English word 'thorn' instead of a Zulu word.,1,fp,Non‑zu word thorn
+187,corrupted,thorn,horn,1,1,tp,score -7.56 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Non‑zu root 'horn'
+188,clean,ezixoxwayo,ezixoxwayo,0,0,tn,score -2.19 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'explanations'.,0,tn,Adjective ezixoxwayo correct
+188,corrupted,ezixoxwayo,ezioxxwayo,1,1,tp,score -15.78 < tau -4.03,1,tp,Extra 'x' in 'ezioxxwayo': ezixwayo.,1,tp,Nonsensical string of characters,1,tp,Double 'x' not allowed
+189,clean,Singuhulumeni,Singuhulumeni,0,0,tn,score -1.29 >= tau -4.03,1,fp,Missing 'u' after 'Singuhulume'.,0,tn,Correct Zulu word for 'in the government'.,1,fp,Capital S in middle of compound
+189,corrupted,Singuhulumeni,singuuhlumeni,1,1,tp,score -8.44 < tau -4.03,0,fn,Correct spelling.,1,tp,Extra 'u' in 'singuuhlumeni',0,fn,Correct long vowel cluster
+190,clean,ihanjiswe,ihanjiswe,0,0,tn,score -1.82 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu verb form.,0,tn,Verb ihanjiswe correctly formed
+190,corrupted,ihanjiswe,ihqnjiswe,1,1,tp,score -14.44 < tau -4.03,1,tp,Missing 'h' after 'ihq': ihlqnjiswe.,1,tp,Nonsensical character sequence,1,tp,Missing vowel after 'h'
+191,clean,okuzoqondisa,okuzoqondisa,0,0,tn,score -1.89 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu future tense verb.,0,tn,Future tense okuzoqondisa valid
+191,corrupted,okuzoqondisa,okuzoiondisa,1,1,tp,score -11.08 < tau -4.03,1,tp,Extra 'o' in 'okuzoiondisa': okuzindisa.,0,fn,Correct spelling,1,tp,Extra 'o' before suffix
+192,clean,nginganivezela,nginganivezela,0,0,tn,score -2.06 >= tau -4.03,1,fp,Missing 'a' after 'ngingani'.,0,tn,Correct Zulu reflexive verb construction.,0,tn,Compound nginganivezela correct
+192,corrupted,nginganivezela,nginganiaezela,1,1,tp,score -8.37 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Missing vowel between 'g' and 'e'
+193,clean,ngabaHoli,ngabaHoli,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,1,fp,Contains an English proper noun 'Holi' joined incorrectly.,1,fp,Capital H in middle of word
+193,corrupted,ngabaHoli,nabaholi,1,0,fn,score -1.84 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Valid plural noun
+194,clean,zokuma,zokuma,0,0,tn,score -2.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'to stand'.,0,tn,Noun zokuma correctly spelled
+194,corrupted,zokuma,zokmua,1,1,tp,score -16.31 < tau -4.03,1,tp,Missing 'z' before 'okmua': zokumua.,1,tp,Typo in 'zokmua' (should be 'zokuma'),1,tp,Missing vowel after 'k'
+195,clean,Mpumalang,Mpumalang,0,0,tn,score -2.07 >= tau -4.03,1,fp,Missing 'a' after 'Mpumala'.,0,tn,Correct Zulu name or place.,1,fp,Non‑zu name Mpumalang
+195,corrupted,Mpumalang,mpumalag,1,0,fn,score -3.18 >= tau -4.03,0,fn,Correct spelling.,1,tp,Missing final vowel in 'mpumalag',1,tp,Missing final 'a' for noun class
+196,clean,abasebancane,abasebancane,0,0,tn,score -1.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'the small ones'.,0,tn,Plural abasebancane correct
+196,corrupted,abasebancane,abasebacnane,1,1,tp,score -9.56 < tau -4.03,1,tp,Extra 'c' in 'abasebacnane': abasebancane.,1,tp,Typo in 'abasebacnane' (should be 'abasebacane'),1,tp,Incorrect consonant cluster 'cna'
+197,clean,Umthethosisekelo,Umthethosisekelo,0,0,tn,score -0.66 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'constitutional'.,0,tn,Proper noun Umthethosisekelo valid
+197,corrupted,Umthethosisekelo,umthethoshisekelo,1,0,fn,score -1.43 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Correct compound noun
+198,clean,U-AA,U-AA,0,1,fp,score -14.87 < tau -4.03,1,fp,Missing 'u' after 'U-A'.,0,tn,Correct abbreviation or code.,1,fp,A‑A not a zu word
+198,corrupted,U-AA,u-a,1,1,tp,score -9.75 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Hyphen and isolated vowel wrong
+199,clean,ngaphanye,ngaphanye,0,0,tn,score -1.86 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word meaning 'to find'.,0,tn,Verb ngaphanye correctly spelled
+199,corrupted,ngaphanye,ngaphanre,1,1,tp,score -6.54 < tau -4.03,1,tp,Missing 'a' after 'ngaphan': ngaphandle.,0,fn,Correct spelling,1,tp,Missing vowel after 'p'
+200,clean,kokufuhlelwa,kokufuhlelwa,0,0,tn,score -1.90 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu verb for 'to be explained'.,0,tn,Adjective kokufuhlelwa correct
+200,corrupted,kokufuhlelwa,kokufuhllewa,1,1,tp,score -7.61 < tau -4.03,1,tp,Extra 'l' in 'kokufuhllewa': kokufihlewa.,1,tp,Extra 'l' in 'kokufuhllewa',0,fn,
+201,clean,licinana,licinana,0,0,tn,score -3.58 >= tau -4.03,0,tn,Correct spelling.,1,fp,The word 'licinana' is not a standard Zulu word.,1,fp,licinana missing final 'e' in standard form
+201,corrupted,licinana,liicnana,1,1,tp,score -18.80 < tau -4.03,1,tp,Missing 'l' after first i.,1,tp,Double 'i' is incorrect in standard Zulu spelling.,1,tp,Double 'i' before 'c' is non‑standard
+202,clean,neSikhwama,neSikhwama,0,0,tn,score -1.53 >= tau -4.03,1,fp,Missing 's' after 'ne': nesikhwama.,0,tn,Correctly spelled with proper prefix and capitalization.,0,tn,neSikhwama is correctly spelled
+202,corrupted,neSikhwama,nsikhwama,1,1,tp,score -5.55 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be heavy/heavy.',0,fn,Standard noun form
+203,clean,Vietnamese,Vietnamese,0,1,fp,score -4.57 < tau -4.03,0,tn,Correct spelling.,1,fp,"This is an English word, not a Zulu word.",1,fp,"Vietnamese is English, not zu"
+203,corrupted,Vietnamese,vyetnamese,1,1,tp,score -10.52 < tau -4.03,1,tp,Extra 'e' in Vietnamese.,1,tp,"This is an English word, not a Zulu word.",1,tp,Missing vowel between 't' and 'm'
+204,clean,amandla,amandla,0,0,tn,score -1.58 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled meaning 'power' or 'strength'.,0,tn,amandla correct
+204,corrupted,amandla,aandla,1,1,tp,score -4.26 < tau -4.03,1,tp,Missing 'a' after first a.,1,tp,Double 'a' is incorrect in standard Zulu spelling.,0,fn,Correct verb form
+205,clean,okuzobhekwa,okuzobhekwa,0,0,tn,score -1.96 >= tau -4.03,1,fp,Extra 'o': okuzobhekwa.,0,tn,Correctly spelled Zulu word.,0,tn,okuzobhekwa correct
+205,corrupted,okuzobhekwa,okuzbohekwa,1,1,tp,score -14.28 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be humiliated.',1,tp,Extra 'z' in middle of word
+206,clean,ka-Safcol,ka-Safcol,0,1,fp,score -14.61 < tau -4.03,0,tn,Correct spelling.,1,fp,Contains an English brand name with a prefix.,0,tn,ka-Safcol acceptable hyphenation
+206,corrupted,ka-Safcol,kh-safcol,1,1,tp,score -14.61 < tau -4.03,1,tp,Extra hyphen in kh-safcol.,1,tp,Contains non-Zulu characters and hyphenation.,1,tp,Hyphenated cluster not allowed
+207,clean,isigujana,isigujana,0,0,tn,score -2.39 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled meaning 'the people'.,1,fp,isigujana should be isigubhu
+207,corrupted,isigujana,iskgujana,1,1,tp,score -13.36 < tau -4.03,1,tp,Missing 's' after i.,0,fn,Correct Zulu word for 'the people.',0,fn,Valid noun stem
+208,clean,kuleli,kuleli,0,0,tn,score -2.30 >= tau -4.03,1,fp,Missing 'l': kuleli.,0,tn,Correctly spelled Zulu word.,0,tn,kuleli correct
+208,corrupted,kuleli,kueli,1,1,tp,score -4.76 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be able.',1,tp,Missing vowel after 'k'
+209,clean,samalayisense,samalayisense,0,0,tn,score -1.73 >= tau -4.03,0,tn,Correct spelling.,1,fp,Contains an English-based suffix '-sense' and is not standard.,1,fp,samalayisense missing final 'i' in loanword
+209,corrupted,samalayisense,samalayijsense,1,1,tp,score -8.00 < tau -4.03,1,tp,Extra 'y' in samalayijsense.,1,tp,Contains non-Zulu characters and is not a valid word.,1,tp,Incorrect consonant cluster 'js'
+210,clean,Dondolo,Dondolo,0,0,tn,score -2.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu name or word.,0,tn,Dondolo correct
+210,corrupted,Dondolo,dondoo,1,1,tp,score -4.86 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the door.',0,fn,
+211,clean,Isizwe,Isizwe,0,0,tn,score -2.42 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled meaning 'the nation'.,0,tn,Isizwe correct
+211,corrupted,Isizwe,siizwe,1,1,tp,score -8.68 < tau -4.03,1,tp,Missing 'z' after first i.,1,tp,Double 'i' is incorrect in standard Zulu spelling.,0,fn,
+212,clean,Abadala,Abadala,0,0,tn,score -1.90 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,Abadala correct
+212,corrupted,Abadala,abaqala,1,0,fn,score -2.16 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to begin.',0,fn,
+213,clean,emgomeni,emgomeni,0,0,tn,score -3.20 >= tau -4.03,1,fp,Missing 'e': emgomeni.,0,tn,Correctly spelled Zulu word.,0,tn,emgomeni correct
+213,corrupted,emgomeni,mgomeni,1,0,fn,score -3.56 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'in the village.',0,fn,
+214,clean,ajwayele,ajwayele,0,0,tn,score -2.06 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,ajwayele correct
+214,corrupted,ajwayele,jawayele,1,1,tp,score -6.36 < tau -4.03,1,tp,Missing 'a' after j.,0,fn,Correct Zulu word for 'to be patient.',0,fn,
+215,clean,naboSekela,naboSekela,0,0,tn,score -2.38 >= tau -4.03,1,fp,Extra 'b': naboSekela.,0,tn,Correctly spelled with proper prefix and capitalization.,1,fp,naboSekela missing space after 'nabo'
+215,corrupted,naboSekela,naboseklea,1,1,tp,score -7.20 < tau -4.03,1,tp,Extra 'e' in naboseklea.,1,tp,Contains non-Zulu characters and is not a valid word.,0,fn,
+216,clean,we-Promotion,we-Promotion,0,1,fp,score -10.26 < tau -4.03,0,tn,Correct spelling.,1,fp,Contains an English word 'Promotion' with a prefix.,1,fp,"we-Promotion is English, not zu"
+216,corrupted,we-Promotion,wee-promotion,1,1,tp,score -10.32 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains English words and hyphenation.,0,fn,
+217,clean,muthi,muthi,0,0,tn,score -3.59 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled meaning 'medicine'.,0,tn,muthi correct
+217,corrupted,muthi,huthi,1,1,tp,score -12.01 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the truth.',0,fn,
+218,clean,eyayingahambisani,eyayingahambisani,0,0,tn,score -1.58 >= tau -4.03,1,fp,Missing 'h': eyayingahambisani.,0,tn,Correctly spelled complex verb phrase.,0,tn,eyayingahambisani correct
+218,corrupted,eyayingahambisani,eyayinghaambisani,1,1,tp,score -5.26 < tau -4.03,1,tp,Missing 'a' after eya.,1,tp,Incorrect spelling of the word for 'to be honest.',0,fn,
+219,clean,neNtshonalanga,neNtshonalanga,0,0,tn,score -1.21 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled with proper prefix and capitalization.,0,tn,neNtshonalanga correct
+219,corrupted,neNtshonalanga,nentshoanlanga,1,1,tp,score -6.80 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the language.',0,fn,
+220,clean,yangena,yangena,0,0,tn,score -2.74 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,yangena correct
+220,corrupted,yangena,yangent,1,0,fn,score -3.19 >= tau -4.03,1,tp,Missing 'y' in yangent.,0,fn,Correct Zulu word for 'you are going.',0,fn,
+221,clean,ziyilaba,ziyilaba,0,0,tn,score -3.11 >= tau -4.03,1,fp,Missing 'zi': ziyilaba.,0,tn,Correctly spelled Zulu word.,0,tn,ziyilaba correct
+221,corrupted,ziyilaba,tiyilaba,1,0,fn,score -3.58 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'to be able.',0,fn,
+222,clean,kobuphansi,kobuphansi,0,0,tn,score -2.24 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,kobuphansi correct
+222,corrupted,kobuphansi,kobuuphansi,1,1,tp,score -10.29 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains non-Zulu characters and is not a valid word.,0,fn,
+223,clean,kucatsangwa,kucatsangwa,0,0,tn,score -2.45 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,kucatsangwa correct
+223,corrupted,kucatsangwa,kuhcatsangwa,1,1,tp,score -9.78 < tau -4.03,1,tp,Missing 'u' after k.,1,tp,Incorrect spelling of the word for 'to be joined.',0,fn,
+224,clean,umzuzu,umzuzu,0,0,tn,score -2.92 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,umzuzu correct
+224,corrupted,umzuzu,uamzuzu,1,1,tp,score -14.49 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct Zulu word for 'the people.',0,fn,
+225,clean,Mutsi,Mutsi,0,1,fp,score -5.39 < tau -4.03,0,tn,Correct spelling.,0,tn,Correctly spelled Zulu word.,0,tn,Mutsi correct
+225,corrupted,Mutsi,musti,1,1,tp,score -10.97 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an invalid character at the end.,0,fn,
+226,clean,Cheslyn,Cheslyn,0,0,tn,score -3.12 >= tau -4.03,1,fp,Should be Cheslin (missing 'i').,0,tn,Proper noun spelling is correct.,1,fp,"Non‑zu name, lacks typical vowel harmony."
+226,corrupted,Cheslyn,chesljn,1,1,tp,score -11.12 < tau -4.03,1,tp,"Missing 'e' after 'ch', should be 'cheslje'.",1,tp,The 'j' and 'l' are transposed in the word cheljni.,1,tp,Missing vowel after ch; should be chesljan.
+227,clean,ezilahlekisa,ezilahlekisa,0,0,tn,score -1.93 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu verb conjugation.,0,tn,Standard verb form ezilahlekisa (to be disappointed).
+227,corrupted,ezilahlekisa,eizlahlekisa,1,1,tp,score -10.05 < tau -4.03,0,fn,Correct spelling for 'to deceive'.,0,fn,Correct spelling of a complex verb form.,0,fn,Correct isiZulu word.
+228,clean,Nabaqaphi,Nabaqaphi,0,0,tn,score -2.18 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'is it true?',1,fp,Missing vowel after q; should be Nabaqaphi.
+228,corrupted,Nabaqaphi,naboqaphi,1,1,tp,score -7.21 < tau -4.03,0,fn,Correct spelling for 'watcher'.,0,fn,Correct spelling of the question 'where is it?',1,tp,Extra q; correct form naboqaphi.
+229,clean,kae,kae,0,1,fp,score -11.53 < tau -4.03,1,fp,Should be kae (missing 'a').,0,tn,Correct spelling of the word 'where',0,tn,Common interrogative particle kae.
+229,corrupted,kae,ka,1,0,fn,skipped (<3 chars),0,fn,Correct spelling for 'and'.,0,fn,Correct Zulu word for 'but' or 'however'.,0,fn,Common conjunction 'ka' is correct.
+230,clean,kwabashayela,kwabashayela,0,0,tn,score -1.41 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct verb construction.,0,tn,Correct form kwabashayela (they called).
+230,corrupted,kwabashayela,kwdbashayela,1,1,tp,score -10.35 < tau -4.03,1,tp,"Missing 'a', should be 'kwashayela'.",1,tp,The 'd' and 'b' are transposed in kwebashayela.,1,tp,Missing vowel after kwd; should be kwdbashayela.
+231,clean,lingalusebenzisa,lingalusebenzisa,0,0,tn,score -1.52 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct relative clause structure.,1,fp,Missing vowel after l; should be lingalusebenzisa.
+231,corrupted,lingalusebenzisa,lingalusepenzisa,1,1,tp,score -6.17 < tau -4.03,0,fn,Correct spelling for 'can use'.,0,fn,Correct spelling of the verb form.,0,fn,Correct morphological construction.
+232,clean,wanelisekile,wanelisekile,0,0,tn,score -2.38 >= tau -4.03,1,fp,Should be wanelisekile (missing 'i').,0,tn,Correct spelling of 'he/she is blessed',0,tn,Standard adjective wanelisekile.
+232,corrupted,wanelisekile,wanelisekiln,1,1,tp,score -4.38 < tau -4.03,1,tp,"Missing 'i', should be 'wanelisekile'.",1,tp,The 'l' and 'n' are transposed at the end.,1,tp,Typo in 'kiln'; correct is wanelisekilini.
+233,clean,wayamukela,wayamukela,0,0,tn,score -2.12 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct verb conjugation for 'they accepted'.,0,tn,Correct past tense wayamukela.
+233,corrupted,wayamukela,wayamuklea,1,1,tp,score -9.51 < tau -4.03,1,tp,"Extra 'l', should be 'wayamukela'.",0,fn,Correct spelling of the verb form.,1,tp,Missing vowel after m; should be wayamuklea.
+234,clean,lizokuya,lizokuya,0,0,tn,score -3.02 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct future tense construction.,0,tn,Future verb lizokuya (will go).
+234,corrupted,lizokuya,lizokuxya,1,1,tp,score -7.76 < tau -4.03,0,fn,Correct spelling for 'will eat you'.,0,fn,Correct spelling of the verb form.,0,fn,Correct verb form.
+235,clean,elingusingaye,elingusingaye,0,0,tn,score -2.37 >= tau -4.03,1,fp,Should be elingusingaye (missing 'i').,0,tn,Correct relative clause structure.,1,fp,Missing vowel after l; should be elingusingaye.
+235,corrupted,elingusingaye,clingusingaye,1,0,fn,score -2.99 >= tau -4.03,1,tp,"Missing 'i', should be 'clingusingayekile'.",1,tp,The 'c' is an incorrect substitution for 'k' in kusingaye.,1,tp,Transposition of 's' and 'u'; correct is clingusingaye.
+236,clean,azizilwi,azizilwi,0,0,tn,score -3.66 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct reflexive verb form.,1,fp,Typo in suffix; correct is azizilwe.
+236,corrupted,azizilwi,azizsilwi,1,1,tp,score -13.47 < tau -4.03,1,tp,"Extra 'z', should be 'azizilwi'.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after z; should be azizsilwi.
+237,clean,ngaphasi,ngaphasi,0,0,tn,score -1.74 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'underneath'.,0,tn,Standard preposition ngaphasi (below).
+237,corrupted,ngaphasi,ngaphas,1,0,fn,score -2.03 >= tau -4.03,0,fn,Correct spelling for 'over there'.,0,fn,Correct spelling of the word.,0,fn,Correct prepositional phrase.
+238,clean,besonto,besonto,0,0,tn,score -2.77 >= tau -4.03,1,fp,Should be besonto (missing 'e').,0,tn,Correct spelling of 'Sunday'.,0,tn,Common noun besonto (week).
+238,corrupted,besonto,beosnto,1,1,tp,score -20.00 < tau -4.03,1,tp,"Missing 'o', should be 'besonto'.",1,tp,The 's' and 'n' are transposed in beosnto/beosnto.,1,tp,Extra 's'; correct is beonto.
+239,clean,limbopha,limbopha,0,0,tn,score -3.08 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct verb construction.,1,fp,Missing vowel after m; should be limbopha.
+239,corrupted,limbopha,limbohpa,1,1,tp,score -9.76 < tau -4.03,1,tp,"Extra 'h', should be 'limboha'.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after h; should be limbohpa.
+240,clean,Ebusuku,Ebusuku,0,0,tn,score -2.13 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'at night'.,0,tn,Correct noun Ebusuku (night).
+240,corrupted,Ebusuku,ebusukul,1,0,fn,score -2.39 >= tau -4.03,0,fn,Correct spelling for 'at night'.,0,fn,Correct spelling of the word.,0,fn,Correct noun form.
+241,clean,Ngakhononda,Ngakhononda,0,0,tn,score -1.37 >= tau -4.03,1,fp,Should be Ngakhononda (missing 'o').,0,tn,Correct spelling of 'he/she was sorry'.,1,fp,Missing vowel after k; should be Ngakhononda.
+241,corrupted,Ngakhononda,ngakhononde,1,0,fn,score -1.66 >= tau -4.03,0,fn,Correct spelling for 'complained'.,0,fn,Correct spelling of the word.,1,tp,Transposition of 'k' and 'o'; correct is ngakhononde.
+242,clean,kwesigameko,kwesigameko,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct relative clause structure.,0,tn,Standard locative kwesigameko.
+242,corrupted,kwesigameko,kwesigxmeko,1,1,tp,score -10.32 < tau -4.03,1,tp,"Extra 'x', should be 'kwesimo'.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after g; should be kwesigxmeko.
+243,clean,nokubolekwa,nokubolekwa,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'and being told'.,0,tn,Correct noun nokubolekwa (borrowing).
+243,corrupted,nokubolekwa,nokubolewka,1,1,tp,score -6.59 < tau -4.03,1,tp,"Missing 'k', should be 'nokuboleka'.",1,tp,The 'w' and 'k' are transposed at the end.,0,fn,Correct verb form.
+244,clean,elizofinyelela,elizofinyelela,0,0,tn,score -1.65 >= tau -4.03,1,fp,Should be elizofinyelela (missing 'i').,0,tn,Correct future tense construction.,0,tn,Future verb elizofinyelela.
+244,corrupted,elizofinyelela,elizoifinyelela,1,1,tp,score -7.11 < tau -4.03,0,fn,Correct spelling for 'will reach it'.,0,fn,Correct spelling of the verb form.,1,tp,Extra 'i'; correct is elizoifinyelela.
+245,clean,esinganqamuki,esinganqamuki,0,0,tn,score -1.88 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct relative clause structure.,1,fp,Missing vowel after n; should be esinganqamuki.
+245,corrupted,esinganqamuki,esinganqmauki,1,1,tp,score -10.21 < tau -4.03,1,tp,"Extra 'q', should be 'esinganqamuki'.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after n; should be esinganqamu.
+246,clean,azibanga,azibanga,0,0,tn,score -2.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'they are causing'.,0,tn,Past tense azibanga (were).
+246,corrupted,azibanga,azibangao,1,0,fn,score -3.43 >= tau -4.03,1,tp,"Missing 'a', should be 'azibangeni'.",0,fn,Correct spelling of the word.,0,fn,Correct verb form.
+247,clean,nama­akhawunti,nama­akhawunti,0,0,tn,score -2.18 >= tau -4.03,1,fp,Should be nama-akhawunti (missing hyphen).,1,fp,Contains an invisible soft hyphen character between ama and akhawunti.,1,fp,Hyphen misuse; correct is nama‑akhawunti.
+247,corrupted,nama­akhawunti,nama­akhawunti,0,0,tn,score -2.18 >= tau -4.03,0,tn,Correct spelling for 'accounts'.,0,tn,Correct spelling of the word.,1,fp,Hyphen misuse; correct is nama-akhawunti.
+248,clean,emvulophini,emvulophini,0,0,tn,score -2.57 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'in the rain'.,1,fp,Missing vowel after v; should be emvulophini.
+248,corrupted,emvulophini,emvulophizi,1,0,fn,score -2.87 >= tau -4.03,0,fn,Correct spelling for 'envelopes'.,0,fn,Correct spelling of the word.,1,tp,Missing vowel after v; should be emvulophizi.
+249,clean,kwezinhlobo,kwezinhlobo,0,0,tn,score -1.23 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct relative clause structure.,0,tn,Correct noun kwezinhlobo (types).
+249,corrupted,kwezinhlobo,wkezinhlobo,1,1,tp,score -7.67 < tau -4.03,1,tp,"Missing 'a', should be 'wezinhlobo'.",1,tp,The 'k' and 'z' are transposed in wezinhlobo.,0,fn,Correct noun form.
+250,clean,sinikezelwe,sinikezelwe,0,0,tn,score -1.44 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'we are given'.,1,fp,Missing vowel after n; should be sinikezelwe.
+250,corrupted,sinikezelwe,siniezelwe,1,1,tp,score -8.87 < tau -4.03,0,fn,Correct spelling for 'added'.,0,fn,Correct spelling of the word.,1,tp,Typo in 'zelwe'; correct is siniezelwe.
+251,clean,sesizwe,sesizwe,0,0,tn,score -2.36 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'voice',0,tn,Correct isiZulu word.
+251,corrupted,sesizwe,essizwe,1,1,tp,score -11.10 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,Missing prefix 'si-' for verb root
+252,clean,njengesinqumo,njengesinqumo,0,0,tn,score -1.24 >= tau -4.03,1,fp,Missing 's' after 'njenge': njengesinqumo.,0,tn,Correct formation of 'decision-making',0,tn,Standard isiZulu form.
+252,corrupted,njengesinqumo,njengesinquo,1,0,fn,score -3.27 >= tau -4.03,1,tp,Missing 'u' after 'njengesin': njengesinquo,1,tp,Incorrect suffix or typo in njengesinqo.,1,tp,Incorrect vowel in suffix '-inqo' should be '-inqo'
+253,clean,sekuke,sekuke,0,0,tn,score -3.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'because',1,fp,Missing vowel; should be 'sekukhe'.
+253,corrupted,sekuke,sekunke,1,1,tp,score -6.99 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,Correct form of noun class 6
+254,clean,esivunywe,esivunywe,0,0,tn,score -1.98 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct passive form for 'heard',0,tn,Valid passive verb.
+254,corrupted,esivunywe,esivunydwe,1,1,tp,score -8.92 < tau -4.03,1,tp,Extra 'y' in 'esivunydwe': should be esivundwe,0,fn,Correct spelling of the word.,1,tp,Typo 'vunydwe' should be 'vunyuwe'
+255,clean,nemiklomelo,nemiklomelo,0,0,tn,score -1.57 >= tau -4.03,1,fp,Missing 'i' before 'miklomelo': nemiklomelo.,0,tn,Correct plural for 'respects',0,tn,Correct noun phrase.
+255,corrupted,nemiklomelo,nemikloelo,1,1,tp,score -6.69 < tau -4.03,0,fn,Correct spelling.,1,tp,Typo in nemikloelo; likely intended as nemikoloelo.,1,tp,Missing vowel in root 'mikloelo' should be 'mikhlolo'
+256,clean,Vusa,Vusa,0,1,fp,score -6.58 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'wake up',0,tn,"Proper noun, capitalization acceptable."
+256,corrupted,Vusa,vuna,1,1,tp,score -6.04 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,Valid noun 'vuna' (fire)
+257,clean,iyi,iyi,0,1,fp,score -7.25 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct word for 'good',0,tn,Common demonstrative pronoun.
+257,corrupted,iyi,yii,1,1,tp,score -13.73 < tau -4.03,1,tp,Missing 'i' after 'y': yiyi,0,fn,Correct spelling of the word.,1,tp,"Single letter missing, should be 'yoo'"
+258,clean,Dotforce,Dotforce,0,1,fp,score -15.36 < tau -4.03,1,fp,Incorrect capitalization: Dotforce should be dotForce or dot force.,1,fp,Contains an English proper noun/brand name,1,fp,"English word, not isiZulu."
+258,corrupted,Dotforce,dotfore,1,1,tp,score -18.43 < tau -4.03,1,tp,Extra 'f' in 'dotfore': should be dotfora,1,tp,Incorrect spelling; likely dotofore or similar.,1,tp,"Transposition of 't' and 'o', correct 'dotfor'"
+259,clean,Umthelela,Umthelela,0,0,tn,score -1.59 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'impact',0,tn,Correct noun.
+259,corrupted,Umthelela,uthelela,1,0,fn,score -1.98 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,Correct verb form
+260,clean,kulemBhalo,kulemBhalo,0,0,tn,score -2.22 >= tau -4.03,0,tn,Correct spelling.,1,fp,Incorrect capitalization of the letter B in the middle,1,fp,Incorrect capital B; should be 'kulembhalo'.
+260,corrupted,kulemBhalo,kulemhbalo,1,1,tp,score -13.72 < tau -4.03,1,tp,Missing 'b' after 'kulem': kulembalo,1,tp,Typo in kulemhbalo; should be kulembalo.,0,fn,
+261,clean,i-dependant,i-dependant,0,1,fp,score -9.39 < tau -4.03,1,fp,Incorrect 'd' in 'dependant': i-dependent.,1,fp,Uses an English word with incorrect spelling 'dependant',1,fp,"Hyphenated English adjective, not isiZulu."
+261,corrupted,i-dependant,k-dependant,1,1,tp,score -10.61 < tau -4.03,1,tp,Extra hyphen: should be dependent,1,tp,Incorrect hyphenation and spelling of k-dependant.,1,tp,"Hyphen not used, should be 'kdependant'"
+262,clean,Akahambi,Akahambi,0,0,tn,score -2.56 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling for 'he/she is going',0,tn,Valid verb form.
+262,corrupted,Akahambi,akahamib,1,1,tp,score -4.42 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+263,clean,ngompompi,ngompompi,0,0,tn,score -2.19 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'for the people',0,tn,Correct noun phrase.
+263,corrupted,ngompompi,ngompmopi,1,1,tp,score -12.82 < tau -4.03,1,tp,Missing 'a' after 'ngom': ngompopi,1,tp,Typo in ngompmopi; likely ngompopi.,0,fn,
+264,clean,Isebenzisana,Isebenzisana,0,0,tn,score -1.10 >= tau -4.03,1,fp,Missing 'i' before 'sebenzisana': Isebenzisana.,0,tn,Correct word for 'working together',0,tn,Standard verb form.
+264,corrupted,Isebenzisana,isebenzsiana,1,1,tp,score -9.01 < tau -4.03,1,tp,Extra 's' in 'isebenziana': should be isebenzana,1,tp,Missing vowel in isebenzsiana; should be isebenzisiana.,0,fn,
+265,clean,osolelwa,osolelwa,0,0,tn,score -2.98 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'being excluded',1,fp,Missing initial vowel; should be 'osolelwa'.
+265,corrupted,osolelwa,osoelwa,1,1,tp,score -17.73 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+266,clean,kabusa,kabusa,0,0,tn,score -2.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to rule',0,tn,Valid verb.
+266,corrupted,kabusa,kabsa,1,1,tp,score -15.62 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+267,clean,Cabanga,Cabanga,0,0,tn,score -2.45 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct word for 'think',0,tn,"Proper noun, capitalization fine."
+267,corrupted,Cabanga,cabanag,1,0,fn,score -3.78 >= tau -4.03,1,tp,Missing 'a' after 'caban': cabanga,0,fn,Correct spelling of the word.,0,fn,
+268,clean,kwikhompyutha,kwikhompyutha,0,0,tn,score -1.40 >= tau -4.03,1,fp,Missing 'i' before 'khompyutha': kwikhompyutha.,0,tn,Correct loanword for 'computer',0,tn,Correct loanword form.
+268,corrupted,kwikhompyutha,kwikhopmyutha,1,1,tp,score -7.24 < tau -4.03,1,tp,Extra 'k' in 'kwikhopmyutha': should be kwikhompyutha,1,tp,Typo in kwikhopmyutha; likely kwikhopuyutha.,0,fn,
+269,clean,bemithwalo,bemithwalo,0,0,tn,score -2.09 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct plural for 'responsibilities',0,tn,Standard noun.
+269,corrupted,bemithwalo,bemithwlo,1,1,tp,score -7.86 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+270,clean,lwe-EPWP,lwe-EPWP,0,1,fp,score -17.61 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct use of hyphen for acronym prefix,1,fp,"Hyphenated English acronym, not isiZulu."
+270,corrupted,lwe-EPWP,lwe-ewp,1,1,tp,score -17.14 < tau -4.03,1,tp,Missing 'w' after 'lwe-ew': lwe-ewu,1,tp,Incorrect hyphenation and spelling of lwe-ewp.,0,fn,
+271,clean,edalwa,edalwa,0,0,tn,score -3.21 >= tau -4.03,1,fp,Missing 'i' before 'dalwa': edalwa.,0,tn,Correct spelling of 'being given',0,tn,Valid verb.
+271,corrupted,edalwa,dealwa,1,1,tp,score -13.23 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+272,clean,Ngiyaqonda,Ngiyaqonda,0,0,tn,score -1.69 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct word for 'I understand',0,tn,Correct verb form.
+272,corrupted,Ngiyaqonda,gniyaqonda,1,1,tp,score -8.41 < tau -4.03,1,tp,Extra 'g' in 'gniyaqonda': should be ngyaqonda,0,fn,Correct spelling of the word.,0,fn,
+273,clean,lwesisa,lwesisa,0,0,tn,score -2.75 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'of the conscience',1,fp,Should be 'lwesi' without final a.
+273,corrupted,lwesisa,lwesias,1,1,tp,score -7.27 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,0,fn,
+274,clean,ngezinkulu,ngezinkulu,0,0,tn,score -1.45 >= tau -4.03,1,fp,Missing 'i' before 'zinkulu': ngezinkulu.,0,tn,Correct plural form for 'big ones',0,tn,Standard adjective phrase.
+274,corrupted,ngezinkulu,ngezinkzulu,1,1,tp,score -9.94 < tau -4.03,1,tp,Missing 'i' after 'ngezink': ngezinkulu,1,tp,Typo in ngezinkzulu; should be ngezinkulu.,0,fn,
+275,clean,watholwa,watholwa,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct word for 'was found',0,tn,Valid passive verb.
+275,corrupted,watholwa,watholua,1,1,tp,score -6.54 < tau -4.03,1,tp,Extra 'h' in 'watholua': should be wathola,0,fn,Correct spelling of the word.,0,fn,
+276,clean,nophiko,nophiko,0,0,tn,score -2.63 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a Zulu word.,0,tn,Standard noun form
+276,corrupted,nophiko,nophikw,1,0,fn,score -2.93 >= tau -4.03,1,tp,Missing 'i' after 'no'; should be 'nophikwi'.,1,tp,The word 'nophikw' is missing a final vowel or suffix.,1,tp,Missing vowel after nophik-
+277,clean,kokuvumelekile,kokuvumelekile,0,0,tn,score -1.27 >= tau -4.03,1,fp,Missing 'k' after 'ko': kokuVumelekile.,0,tn,Correct complex verb structure.,1,fp,Missing vowel after 'k' in prefix
+277,corrupted,kokuvumelekile,kokuvmuelekile,1,1,tp,score -9.30 < tau -4.03,0,fn,Correct spelling for 'it is understood'.,1,tp,Contains an extra 'v' in the middle of the root.,0,fn,Correct verb form
+278,clean,we-Flatfoot,we-Flatfoot,0,1,fp,score -11.65 < tau -4.03,0,tn,Correct spelling.,1,fp,Incorrect use of hyphen and English word in Zulu context.,1,fp,Hyphenated English word not Zulu
+278,corrupted,we-Flatfoot,we-Flatfoot,0,1,fp,score -11.65 < tau -4.03,0,tn,Correct spelling for 'we-Flatfoot'.,1,fp,Uses English word 'Flatfoot' instead of a Zulu term.,1,fp,Hyphenated English word not zu
+279,clean,Indiza,Indiza,0,0,tn,score -2.25 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a Zulu name/word.,0,tn,"Proper noun, correct"
+279,corrupted,Indiza,iundiza,1,1,tp,score -11.32 < tau -4.03,1,tp,Missing 'i'; should be 'iyundiza'.,0,fn,Correct spelling for 'teach' or 'instruct'.,0,fn,Valid subject marker + verb
+280,clean,weZomsebenzi,weZomsebenzi,0,0,tn,score -1.35 >= tau -4.03,1,fp,Missing 'u' after 'we': weZomsebenzi.,1,fp,Incorrect capitalization and hyphenation for Zulu grammar.,1,fp,Capitalization inside compound wrong
+280,corrupted,weZomsebenzi,wezymsebenzi,1,1,tp,score -10.61 < tau -4.03,0,fn,Correct spelling for 'work'.,1,tp,Contains an extra 'y' in the prefix/root structure.,1,tp,Missing vowel in we-zymsebenzi
+281,clean,abthole,abthole,0,0,tn,score -3.53 >= tau -4.03,1,fp,"Extra 'b', should be 'athole'.",0,tn,Correct spelling of a Zulu word.,0,tn,Valid verb form
+281,corrupted,abthole,aobthole,1,1,tp,score -13.02 < tau -4.03,1,tp,Extra 'o'; should be 'athole'.,1,tp,The word 'aobthole' is not a standard Zulu word.,1,tp,Incorrect consonant cluster aobthole
+282,clean,e-IRC,e-IRC,0,1,fp,score -16.69 < tau -4.03,0,tn,Correct spelling.,1,fp,Inconsistent use of hyphen with an acronym.,1,fp,Hyphenated acronym not Zulu format
+282,corrupted,e-IRC,b-irc,1,1,tp,score -18.14 < tau -4.03,1,tp,Missing 'a'; should be 'b-irca'.,1,tp,Contains an unnecessary hyphen and incorrect letter sequence.,1,tp,Non‑zu prefix b- and non‑zulu root
+283,clean,Andre,Andre,0,1,fp,score -4.30 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a name.,0,tn,"Proper name, acceptable"
+283,corrupted,Andre,anldre,1,1,tp,score -18.43 < tau -4.03,1,tp,Transposed letters; should be 'andlre'.,1,tp,Missing the characteristic 'u' or 'i' vowel structure.,1,tp,Missing vowel in anldre
+284,clean,uphumile,uphumile,0,0,tn,score -2.52 >= tau -4.03,1,fp,Missing 'u' after 'up': uphumile.,0,tn,Correct Zulu word for 'has arrived'.,0,tn,Correct adjective
+284,corrupted,uphumile,uphmile,1,1,tp,score -17.30 < tau -4.03,0,fn,Correct spelling for 'uphmile'.,1,tp,The word 'uphmile' is not a standard Zulu word.,1,tp,Phoneme sequence uphmile not attested
+285,clean,kubakaki,kubakaki,0,0,tn,score -3.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word.,1,fp,Missing vowel in prefix 'ku-'
+285,corrupted,kubakaki,kuakaki,1,1,tp,score -11.10 < tau -4.03,1,tp,Missing 'u'; should be 'kuakaki'.,0,fn,Correct spelling for 'to be beautiful'.,0,fn,Valid noun phrase kuakaki
+286,clean,generation,generation,0,0,tn,score -2.22 >= tau -4.03,0,tn,Correct spelling.,1,fp,English word instead of a Zulu equivalent.,1,fp,English word not Zulu morphology
+286,corrupted,generation,genreation,1,1,tp,score -11.56 < tau -4.03,1,tp,Extra 'e'; should be 'generation'.,1,tp,Uses the English word 'generation' instead of Zulu.,1,tp,Transposition of e and a in generation
+287,clean,lwezikhundla,lwezikhundla,0,0,tn,score -1.38 >= tau -4.03,1,fp,Missing 'i' after 'le': lwezikhundla.,1,fp,Incorrect prefix 'lwe' for the noun class.,0,tn,Valid noun phrase
+287,corrupted,lwezikhundla,lweikhundla,1,0,fn,score -3.53 >= tau -4.03,0,fn,Correct spelling for 'position'.,1,tp,Contains an extra 'w' in the prefix.,1,tp,Missing vowel after lweikhundla
+288,clean,zezeMpilo,zezeMpilo,0,0,tn,score -1.31 >= tau -4.03,0,tn,Correct spelling.,1,fp,Incorrect capitalization and hyphenation style.,1,fp,Capitalization inside compound wrong
+288,corrupted,zezeMpilo,zezempiio,1,1,tp,score -7.01 < tau -4.03,1,tp,Missing 'a'; should be 'zempiio'.,1,tp,Double 'i' is incorrect in this morphological structure.,1,tp,Extra i in zezempiio
+289,clean,ngezinsizangqangi,ngezinsizangqangi,0,0,tn,score -1.54 >= tau -4.03,1,fp,"Extra 'ng', should be 'ngezinsizangqangi'.",0,tn,Correct complex Zulu word.,0,tn,Correct complex noun
+289,corrupted,ngezinsizangqangi,ngezinsiznagqangi,1,1,tp,score -7.47 < tau -4.03,1,tp,Transposed letters; should be 'ngezinsizangqangi'.,0,fn,Correct complex Zulu word construction.,1,tp,Unattested cluster nsiznagqangi
+290,clean,unga,unga,0,0,tn,score -3.15 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'not'.,0,tn,Common pronoun
+290,corrupted,unga,nga,1,0,fn,score -3.98 >= tau -4.03,0,fn,Correct spelling for 'from'.,0,fn,Correct spelling for 'not'.,0,fn,Correct preposition nga
+291,clean,lehlukane,lehlukane,0,0,tn,score -2.40 >= tau -4.03,1,fp,Missing 'u': lehlukane.,0,tn,Correct Zulu verb form.,1,fp,Missing vowel in prefix 'le-'
+291,corrupted,lehlukane,lehlvkane,1,1,tp,score -15.70 < tau -4.03,1,tp,Missing 'a'; should be 'lehlvane'.,1,tp,Contains an extra 'v' in the middle of the word.,1,tp,Missing vowel after lehlvkane
+292,clean,Britz,Britz,0,1,fp,score -10.58 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a name.,1,fp,English name not Zulu format
+292,corrupted,Britz,brijz,1,1,tp,score -11.71 < tau -4.03,1,tp,Transposed letters; should be 'briaz'.,1,tp,The letter 'j' is not standard in this context.,1,tp,Non‑zulu consonant cluster brijz
+293,clean,nguMcubunguli,nguMcubunguli,0,0,tn,score -1.66 >= tau -4.03,1,fp,"Extra 'ng', should be 'nguMcubunguli'.",1,fp,Incorrect capitalization and hyphenation style.,1,fp,Mixed case and non‑Zulu suffix
+293,corrupted,nguMcubunguli,ngumcubnuguli,1,1,tp,score -10.60 < tau -4.03,0,fn,Correct spelling for 'a patient'.,1,tp,Contains an extra 'b' or incorrect consonant cluster.,1,tp,Incorrect sequence ngumcubnuguli
+294,clean,Itheku,Itheku,0,0,tn,score -3.75 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word.,0,tn,Valid noun
+294,corrupted,Itheku,itheuk,1,1,tp,score -12.11 < tau -4.03,1,tp,Missing 'i'; should be 'itheki'.,0,fn,Correct spelling for a specific noun/verb form.,0,fn,Valid noun itheuk
+295,clean,base-Zimbabwe,base-Zimbabwe,0,1,fp,score -10.00 < tau -4.03,0,tn,Correct spelling.,1,fp,Incorrect use of hyphen with a country name.,1,fp,Hyphenated foreign place wrong
+295,corrupted,base-Zimbabwe,base-zimbabje,1,1,tp,score -13.62 < tau -4.03,1,tp,Transposed letters; should be 'base-zimbabwe'.,1,tp,Uses English word 'base' and has an extra 'j'.,1,tp,Hyphenated English phrase base-zimbabje
+296,clean,bengane,bengane,0,0,tn,score -2.40 >= tau -4.03,1,fp,Missing 'be': bengane.,0,tn,Correct Zulu word for 'I was small'.,0,tn,Correct noun
+296,corrupted,bengane,begnane,1,1,tp,score -13.92 < tau -4.03,0,fn,Correct spelling for 'begane'.,0,fn,Correct Zulu word for 'to be born'.,1,tp,Missing vowel in begnane
+297,clean,ohlanganise,ohlanganise,0,0,tn,score -1.53 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu verb form.,0,tn,Valid verb
+297,corrupted,ohlanganise,ohlanganixse,1,1,tp,score -6.03 < tau -4.03,0,fn,Correct spelling for 'ohlanganixse'.,1,tp,Contains an extra 'x' in the middle of the word.,1,tp,Transposition of h and x in ohlanganixse
+298,clean,iyabuhlanza,iyabuhlanza,0,0,tn,score -2.61 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word.,0,tn,Correct adjective
+298,corrupted,iyabuhlanza,iyauuhlanza,1,1,tp,score -12.49 < tau -4.03,1,tp,Transposed letters; should be 'iyauhlaza'.,1,tp,Double 'u' is incorrect in this spelling.,1,tp,Double u in iyauuhlanza not standard
+299,clean,ngakwezokutshalwa,ngakwezokutshalwa,0,0,tn,score -1.62 >= tau -4.03,1,fp,Missing 'u' after 'ngakwe': ngakwezokutshalwa.,0,tn,Correct complex Zulu word.,0,tn,"Complex noun, correct"
+299,corrupted,ngakwezokutshalwa,ngakweokutshalwa,1,1,tp,score -6.95 < tau -4.03,0,fn,Correct spelling for 'ngakweokutshalwa'.,0,fn,Correct complex Zulu grammatical construction.,1,tp,Unattested cluster ngakweokutshalwa
+300,clean,namba,namba,0,0,tn,score -3.43 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct Zulu word for 'number'.,1,fp,Missing vowel in prefix 'na-'
+300,corrupted,namba,amba,1,1,tp,score -4.82 < tau -4.03,0,fn,Correct spelling for 'amba'.,1,tp,Ends with an unnecessary underscore character.,0,fn,Valid noun amba
+301,clean,kwisiJobelelo,kwisiJobelelo,0,0,tn,score -1.51 >= tau -4.03,1,fp,Kufanele kube 'kwisiJobelelo' hhayi 'kwisiJobelelo'.,1,fp,Incorrect capitalization of 'Jobelelo' in the middle of a word.,1,fp,Capital J in middle violates isiZulu orthography.
+301,corrupted,kwisiJobelelo,kwiszijobelelo,1,1,tp,score -7.61 < tau -4.03,1,tp,Missing 's' after kwiz.,1,tp,The 'j' is likely a typo for 'z' or 'y'.,1,tp,extra 's' in middle of root
+302,clean,kwezidingongqangi,kwezidingongqangi,0,0,tn,score -1.19 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Correct compound noun for 'in the presence of'.
+302,corrupted,kwezidingongqangi,kwezcdingongqangi,1,1,tp,score -7.59 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an extraneous 'c' in the middle of the word.,1,tp,contains non‑Zulu cluster 'zcd'
+303,clean,eyaasiza,eyaasiza,0,1,fp,score -14.65 < tau -4.03,1,fp,Kufanele kube 'eyaasiza' hhayi 'eyaasiza'.,0,tn,Correct spelling and morphology.,0,tn,Standard verb form meaning 'to help'.
+303,corrupted,eyaasiza,eyaasifa,1,1,tp,score -14.59 < tau -4.03,1,tp,Extra 'a' in eyasifa.,1,tp,Double 'a' is incorrect for this root.,1,tp,double 'a' not typical
+304,clean,zesondo,zesondo,0,0,tn,score -2.70 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,1,fp,Missing prefix 'ku-' before 'sondo'.
+304,corrupted,zesondo,zesordo,1,1,tp,score -14.22 < tau -4.03,0,fn,Correct spelling.,1,tp,The 'z' is likely a typo for 's'.,1,tp,"ends with 'o', should be 'u' in this root"
+305,clean,kwanqunywa,kwanqunywa,0,0,tn,score -1.98 >= tau -4.03,1,fp,Kufanele kube 'kwanqunywa' hhayi 'kwanqunywa'.,0,tn,Correct spelling and morphology.,0,tn,Valid passive form of 'kwanqunywa'.
+305,corrupted,kwanqunywa,kwanunywa,1,1,tp,score -10.62 < tau -4.03,1,tp,Missing 'u' after kw.,0,fn,Correct spelling of the verb form.,0,fn,valid Zulu verb form
+306,clean,Ingeyakwabani,Ingeyakwabani,0,0,tn,score -2.31 >= tau -4.03,0,tn,Ukubhalwa kulungile.,1,fp,Incorrect capitalization of 'Ingeyakwabani' at the start of a word.,1,fp,Incorrect capitalization of first letter in noun phrase.
+306,corrupted,Ingeyakwabani,ingeaykwabani,1,1,tp,score -12.00 < tau -4.03,1,tp,Extra 'a' in ingeaykwabani.,1,tp,Contains an extraneous 'y' in the prefix.,1,tp,contains 'ayk' cluster uncommon
+307,clean,Chest,Chest,0,1,fp,score -4.40 < tau -4.03,1,fp,Kufanele kube 'Chest' hhayi 'Chest'.,1,fp,English word instead of Zulu vocabulary.,1,fp,English loanword not adapted to isiZulu spelling.
+307,corrupted,Chest,phest,1,1,tp,score -5.61 < tau -4.03,0,fn,Correct spelling.,1,tp,The 'ph' is not a standard Zulu phoneme.,1,tp,missing vowel after 'ph'
+308,clean,ofanayo,ofanayo,0,0,tn,score -1.90 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Correct adjective meaning 'same'.
+308,corrupted,ofanayo,ofanay,1,0,fn,score -2.37 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,"ends with 'y', should be 'i' in this context"
+309,clean,bokulondoloza,bokulondoloza,0,0,tn,score -1.58 >= tau -4.03,1,fp,Kufanele kube 'bokulondoloza' hhayi 'bokulondoloza'.,0,tn,Correct spelling and morphology.,0,tn,Compound noun for 'to preserve' is correct.
+309,corrupted,bokulondoloza,bokulondlooza,1,1,tp,score -7.13 < tau -4.03,1,tp,Extra 'l' in bokulondlooza.,1,tp,Double 'o' is incorrect in this context.,0,fn,valid noun form
+310,clean,bezinhlangano,bezinhlangano,0,0,tn,score -1.33 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,1,fp,Missing prefix 'be-' before 'zinhlangano'.
+310,corrupted,bezinhlangano,ebzinhlangano,1,1,tp,score -7.65 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an extraneous 'z' in the prefix.,0,fn,correct plural noun
+311,clean,oyibolekile,oyibolekile,0,0,tn,score -1.83 >= tau -4.03,1,fp,Kufanele kube 'oyibolekile' hhayi 'oyibolekile'.,0,tn,Correct spelling and morphology.,0,tn,Valid verb form meaning 'has been promised'.
+311,corrupted,oyibolekile,oyibolelkile,1,0,fn,score -3.95 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,contains 'b' where 'p' expected
+312,clean,bamakhosi,bamakhosi,0,0,tn,score -2.12 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Correct plural noun for 'kings'.
+312,corrupted,bamakhosi,bamakhvsi,1,1,tp,score -10.17 < tau -4.03,1,tp,Extra 'h' in bamakhvsi.,1,tp,The 'v' is likely a typo for 'x'.,1,tp,non‑Zulu cluster 'khv'
+313,clean,eCedara,eCedara,0,0,tn,score -2.91 >= tau -4.03,1,fp,Kufanele kube 'eCedara' hhayi 'eCedara'.,1,fp,Incorrect capitalization of 'Cedara' in the middle of a word.,1,fp,Capital C in middle of word is incorrect.
+313,corrupted,eCedara,ecepdara,1,1,tp,score -18.03 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an extraneous 'p' in the middle.,1,tp,contains 'dara' instead of 'dera'
+314,clean,UMthimkhulu,UMthimkhulu,0,0,tn,score -2.37 >= tau -4.03,0,tn,Ukubhalwa kulungile.,1,fp,Incorrect capitalization of 'Mthimkhulu' in the middle of a word.,1,fp,Mixed case and missing prefix 'u-' before 'mthimkhulu'.
+314,corrupted,UMthimkhulu,umthimkhuhu,1,0,fn,score -3.22 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,double 'm' not allowed in this root
+315,clean,lomlando,lomlando,0,0,tn,score -2.28 >= tau -4.03,1,fp,Kufanele kube 'lomlando' hhayi 'lomlando'.,0,tn,Correct spelling and morphology.,0,tn,Correct noun for 'history'.
+315,corrupted,lomlando,lomladno,1,1,tp,score -11.80 < tau -4.03,1,tp,Missing 'a' in lomladno.,1,tp,The 'd' is likely a typo for 't'.,1,tp,"ends with 'no', should be 'nu'"
+316,clean,Ukuthethelelwa,Ukuthethelelwa,0,0,tn,score -1.51 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Valid passive form of 'kuthethelelwa'.
+316,corrupted,Ukuthethelelwa,uukthethelelwa,1,1,tp,score -4.04 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,extra 'u' after initial 'uu'
+317,clean,lombandela,lombandela,0,0,tn,score -1.84 >= tau -4.03,1,fp,Kufanele kube 'lombandela' hhayi 'lombandela'.,0,tn,Correct spelling and morphology.,1,fp,Missing prefix 'lo-' before 'mbandela'.
+317,corrupted,lombandela,lombpandela,1,1,tp,score -9.89 < tau -4.03,1,tp,Extra 'b' in lombpandela.,1,tp,Contains an extraneous 'p' in the middle.,1,tp,contains 'mpan' cluster uncommon
+318,clean,yokugqugquzela,yokugqugquzela,0,0,tn,score -1.07 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Correct verb meaning 'to encourage'.
+318,corrupted,yokugqugquzela,yokugquguzela,1,0,fn,score -2.02 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,double 'g' not typical
+319,clean,iwili,iwili,0,0,tn,score -3.98 >= tau -4.03,1,fp,Kufanele kube 'yokugqugquzela' hhayi 'yokugqugquzela'.,0,tn,Correct spelling and morphology.,1,fp,Incorrect vowel sequence; should be 'iwili' with double i.
+319,corrupted,iwili,iwlii,1,1,tp,score -20.00 < tau -4.03,1,tp,Missing 'i' after iw.,1,tp,Double 'l' is incorrect for this root.,1,tp,missing vowel between 'w' and 'i'
+320,clean,eyayidle,eyayidle,0,0,tn,score -2.79 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Valid past tense form of 'idle'.
+320,corrupted,eyayidle,eyaydile,1,1,tp,score -14.71 < tau -4.03,1,tp,Extra 'y' in eyaydile.,0,fn,Correct spelling of the word.,1,tp,contains 'yd' cluster unusual
+321,clean,SG,SG,0,0,tn,skipped (<3 chars),1,fp,Kufanele kube 'SG' hhayi 'SG'.,1,fp,Abbreviation 'SG' is not a standard Zulu word.,1,fp,Two-letter abbreviation not a word in isiZulu.
+321,corrupted,SG,SG,0,0,tn,skipped (<3 chars),0,tn,Correct spelling.,0,tn,Standard abbreviation/acronym.,1,fp,non‑linguistic abbreviation
+322,clean,kwerenke,kwerenke,0,0,tn,score -2.98 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,1,fp,Missing prefix 'ke-' before 'wenke'.
+322,corrupted,kwerenke,kwerene,1,1,tp,score -6.47 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word.,1,tp,"ends with 'ene', should be 'eni'"
+323,clean,abazafundwa,abazafundwa,0,0,tn,score -2.43 >= tau -4.03,1,fp,Kufanele kube 'abazafundwa' hhayi 'abazafundwa'.,0,tn,Correct spelling and morphology.,0,tn,Correct future passive form of 'fundwa'.
+323,corrupted,abazafundwa,abazafundaw,1,0,fn,score -2.61 >= tau -4.03,1,tp,Missing 'a' in abazafundaw.,1,tp,The 'w' at the end is an extraneous character.,1,tp,double 'f' not allowed in this root
+324,clean,ukugcinwa,ukugcinwa,0,0,tn,score -1.48 >= tau -4.03,0,tn,Ukubhalwa kulungile.,0,tn,Correct spelling and morphology.,0,tn,Valid passive noun for 'being kept'.
+324,corrupted,ukugcinwa,xkugcinwa,1,1,tp,score -8.94 < tau -4.03,0,fn,Correct spelling.,1,tp,"The prefix should be 'ukugcinwa', not 'xkugcinwa'.",1,tp,contains 'xk' cluster uncommon
+325,clean,abanikelayo,abanikelayo,0,0,tn,score -1.41 >= tau -4.03,1,fp,Kufanele kube 'abanikelayo' hhayi 'abanikelayo'.,0,tn,Correct spelling and morphology.,1,fp,Missing prefix 'ba-' before 'nikelayo'.
+325,corrupted,abanikelayo,abanikealyo,1,1,tp,score -8.61 < tau -4.03,1,tp,Extra 'l' in abanikealyo.,1,tp,Contains an extraneous 'a' before the suffix.,1,tp,"ends with 'yo', should be 'u'"
+326,clean,uyoqinisa,uyoqinisa,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+326,corrupted,uyoqinisa,uvoqinisa,1,1,tp,score -10.37 < tau -4.03,1,tp,"Missing 'o' after 'u', should be uvoqinisao.",0,fn,Correct spelling,1,tp,Unusual vowel sequence not typical in zu
+327,clean,sigwema,sigwema,0,0,tn,score -3.02 >= tau -4.03,1,fp,Missing 'a' after 'g': sigwema → sigwemana.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+327,corrupted,sigwema,migwema,1,1,tp,score -7.14 < tau -4.03,0,fn,Correct spelling for 'migwema'.,0,fn,Correct spelling,1,tp,Missing final consonant for plural marker
+328,clean,Sisebenza,Sisebenza,0,0,tn,score -1.52 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Starts with capital letter, should be lowercase"
+328,corrupted,Sisebenza,sisebencza,1,1,tp,score -7.17 < tau -4.03,1,tp,"Extra 'c' in 'sisebencza', should be sisebenza.",0,fn,Correct spelling,1,tp,Transposition of 'b' and 'c' violates orthography
+329,clean,zingasakhokhisi,zingasakhokhisi,0,0,tn,score -2.00 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+329,corrupted,zingasakhokhisi,zzingasakhokhisi,1,1,tp,score -5.23 < tau -4.03,1,tp,"Missing 'a' after first 'z', should be zzingasakhokhisa.",1,tp,Double 'z' at the start is incorrect,1,tp,Extra 'k' in middle disrupts root pattern
+330,clean,Bathuthukisa,Bathuthukisa,0,0,tn,score -1.48 >= tau -4.03,1,fp,Missing 'i' after 'th': Bathuthukisa → Bathuthukisa.,0,tn,Correct spelling of the word.,1,fp,Capitalized incorrectly
+330,corrupted,Bathuthukisa,bathuthuksa,1,1,tp,score -5.94 < tau -4.03,0,fn,Correct spelling for 'bathuthuksa'.,0,fn,Correct spelling,1,tp,Missing final 'a' for verb infinitive
+331,clean,walithola,walithola,0,0,tn,score -2.12 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+331,corrupted,walithola,walthola,1,1,tp,score -6.01 < tau -4.03,1,tp,"Missing 'w' after 'wa', should be wathola.",0,fn,Correct spelling,1,tp,Incorrect consonant cluster 'thl' not used
+332,clean,anesibophezelo,anesibophezelo,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+332,corrupted,anesibophezelo,anesiophezelo,1,1,tp,score -7.53 < tau -4.03,1,tp,"Extra 'o' in 'anesiophezelo', should be anesiphezelo.",0,fn,Correct spelling,1,tp,Uncommon sequence 'ophe' in root
+333,clean,lokubambela,lokubambela,0,0,tn,score -1.29 >= tau -4.03,1,fp,Missing 'a' after 'lo': lokubambela → lokubambela.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+333,corrupted,lokubambela,lokuebambela,1,1,tp,score -8.70 < tau -4.03,0,fn,Correct spelling for 'lokuebambela'.,0,fn,Correct spelling,0,fn,
+334,clean,liyochazwa,liyochazwa,0,0,tn,score -2.00 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+334,corrupted,liyochazwa,lidochazwa,1,1,tp,score -9.26 < tau -4.03,1,tp,"Missing 'a' after first 'l', should be lidochazwa.",0,fn,Correct spelling,0,fn,
+335,clean,Kweminye,Kweminye,0,0,tn,score -1.65 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Capitalized incorrectly
+335,corrupted,Kweminye,kwaeminye,1,1,tp,score -10.77 < tau -4.03,0,fn,Correct spelling for 'kwaeminye'.,0,fn,Correct spelling,0,fn,
+336,clean,lokugcugcuzela,lokugcugcuzela,0,0,tn,score -1.68 >= tau -4.03,1,fp,Missing 'u' after 'g': lokugcugcuzela → lokugcugcuzela.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+336,corrupted,lokugcugcuzela,lokugcugczela,1,1,tp,score -8.76 < tau -4.03,1,tp,"Extra 'c' in 'lokugcugczela', should be lokugcugcelwa.",1,tp,Extra 'c' in the middle of the word,0,fn,
+337,clean,nohlaka,nohlaka,0,0,tn,score -2.12 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+337,corrupted,nohlaka,nolaka,1,0,fn,score -2.86 >= tau -4.03,0,fn,Correct spelling for 'nolaka'.,0,fn,Correct spelling,0,fn,
+338,clean,egamanxayo,egamanxayo,0,0,tn,score -2.52 >= tau -4.03,1,fp,Missing 'a' after 'e': egamanxayo → egamanxayo.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+338,corrupted,egamanxayo,egamanxaoy,1,1,tp,score -7.17 < tau -4.03,1,tp,"Missing 'a' after first 'e', should be egamanxaoyi.",1,tp,Extra 'y' at the end is incorrect,0,fn,
+339,clean,sebufike,sebufike,0,0,tn,score -3.33 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+339,corrupted,sebufike,sebufikoe,1,1,tp,score -8.47 < tau -4.03,0,fn,Correct spelling for 'sebufikoe'.,0,fn,Correct spelling,0,fn,
+340,clean,ecatshangiwe,ecatshangiwe,0,0,tn,score -2.05 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Missing 's' before 't'
+340,corrupted,ecatshangiwe,ecatshaqngiwe,1,1,tp,score -10.21 < tau -4.03,1,tp,"Missing 'a' after first 'e', should be ecatshazwanga.",0,fn,Correct spelling,0,fn,
+341,clean,ulusebenzise,ulusebenzise,0,0,tn,score -1.86 >= tau -4.03,1,fp,Missing 'u' after 'ul': ulusebenzise → ulusebenzise.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+341,corrupted,ulusebenzise,ulusebenzisze,1,1,tp,score -5.16 < tau -4.03,0,fn,Correct spelling for 'ulusebenzisze'.,1,tp,Extra 'z' at the end is incorrect,0,fn,
+342,clean,okuyinxanxathela,okuyinxanxathela,0,0,tn,score -1.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+342,corrupted,okuyinxanxathela,okuyinxanxatheva,1,0,fn,score -3.50 >= tau -4.03,1,tp,"Extra 'x' in 'okuyinxanxatheva', should be okuyinselelo.",0,fn,Correct spelling,0,fn,
+343,clean,bitÃ…Â¡wa,bitÃ…Â¡wa,0,1,fp,score -6.20 < tau -4.03,1,fp,Incorrect character: bitÃ…Â¡wa → bitshelwa.,1,fp,Contains encoding artifacts instead of a single character.,1,fp,"Encoding error, non‑zu character"
+343,corrupted,bitÃ…Â¡wa,bitÃ…Â¡wa,0,1,fp,score -6.20 < tau -4.03,0,tn,Correct spelling for 'bitÃ…Â¡wa'.,1,fp,Contains encoding artifacts instead of proper characters,0,tn,
+344,clean,bazihlomise,bazihlomise,0,0,tn,score -2.50 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+344,corrupted,bazihlomise,bazihlmoise,1,1,tp,score -10.40 < tau -4.03,1,tp,"Missing 'i' after first 'z', should be bazihlomisile.",0,fn,Correct spelling,0,fn,
+345,clean,FAKA,FAKA,0,1,fp,score -4.61 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,All caps not standard
+345,corrupted,FAKA,fakwa,1,1,tp,score -9.76 < tau -4.03,0,fn,Correct spelling for 'fakwa'.,0,fn,Correct spelling,0,fn,
+346,clean,ngikushiye,ngikushiye,0,0,tn,score -2.03 >= tau -4.03,1,fp,Missing 'u' after 'ngi': ngikushiye → ngikushiye.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+346,corrupted,ngikushiye,nkgikushiye,1,1,tp,score -9.71 < tau -4.03,1,tp,"Extra 'k' in 'nkgikushiye', should be ngingakushiye.",0,fn,Correct spelling,0,fn,
+347,clean,namaThimba,namaThimba,0,0,tn,score -1.66 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Capitalized incorrectly
+347,corrupted,namaThimba,naimathimba,1,1,tp,score -8.56 < tau -4.03,0,fn,Correct spelling for 'naimathimba'.,0,fn,Correct spelling,0,fn,
+348,clean,Ikhithi,Ikhithi,0,0,tn,score -3.31 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Capitalized incorrectly
+348,corrupted,Ikhithi,ikhuthi,1,0,fn,score -3.16 >= tau -4.03,1,tp,"Missing 'i' after first 'k', should be ikhuthi.",0,fn,Correct spelling,0,fn,
+349,clean,ngezintombi,ngezintombi,0,0,tn,score -1.26 >= tau -4.03,1,fp,Missing 'a' after 'nge': ngezintombi → ngezintombi.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+349,corrupted,ngezintombi,ngezintobmi,1,1,tp,score -7.76 < tau -4.03,1,tp,"Extra 't' in 'ngezintobmi', should be ngezimbini.",1,tp,The 'b' should be an 'm' for 'nezintombi',0,fn,
+350,clean,iluchaza,iluchaza,0,0,tn,score -2.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct zu form
+350,corrupted,iluchaza,iuluchaza,1,1,tp,score -7.87 < tau -4.03,0,fn,Correct spelling for 'iuluchaza'.,0,fn,Correct spelling,0,fn,
+351,clean,ekwenabiseni,ekwenabiseni,0,0,tn,score -2.18 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Missing vowel in root 'kebiseni'.
+351,corrupted,ekwenabiseni,ekwenaiseni,1,1,tp,score -4.53 < tau -4.03,1,tp,"Missing 'a' after 'ekwenai', should be ekwenaiseni.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after 'k' in root.
+352,clean,Ziningi,Ziningi,0,0,tn,score -2.11 >= tau -4.03,1,fp,Missing 'i' after Z: Ziningi → Ziningi.,0,tn,Correct spelling of the word.,0,tn,Correct plural form of 'ziningi'.
+352,corrupted,Ziningi,zinngi,1,1,tp,score -8.85 < tau -4.03,0,fn,Correct spelling for 'many'.,1,tp,Double 'n' is incorrect in this context.,0,fn,Standard plural form.
+353,clean,basepulazini,basepulazini,0,0,tn,score -1.64 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Standard noun phrase 'basepulazini'.
+353,corrupted,basepulazini,basepualzini,1,1,tp,score -13.35 < tau -4.03,1,tp,Extra 'l' in basepualzini; should be basepalazini.,0,fn,Correct spelling of the word.,1,tp,Extra 'p' before suffix '-alzini'.
+354,clean,ngobusayense,ngobusayense,0,0,tn,score -2.14 >= tau -4.03,1,fp,Extra 'b': ngobusayense → ngobusayense.,0,tn,Correct spelling of the word.,1,fp,Incorrect final vowel; should be 'ngobusayensi'.
+354,corrupted,ngobusayense,ngobunsayense,1,1,tp,score -7.01 < tau -4.03,0,fn,Correct spelling for 'scientifically'.,0,fn,Correct spelling of the word.,1,tp,Incorrect cluster 'ngobun'; should be 'ngobu'.
+355,clean,yokulihambisa,yokulihambisa,0,0,tn,score -1.60 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct infinitive 'yokulihambisa'.
+355,corrupted,yokulihambisa,yokulehambisa,1,1,tp,score -5.36 < tau -4.03,1,tp,"Missing 'i' after 'yokulehambisa', should be yokulehambisa.",0,fn,Correct spelling of the word.,0,fn,Valid verb form.
+356,clean,Njengamanje,Njengamanje,0,0,tn,score -1.42 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Standard adverbial phrase 'Njengamanje'.
+356,corrupted,Njengamanje,nejngamanje,1,1,tp,score -10.57 < tau -4.03,0,fn,Correct spelling for 'nowadays'.,1,tp,The 'j' is misplaced or extra in this context.,1,tp,Missing vowel between 'j' and 'm'.
+357,clean,yowakwakhe,yowakwakhe,0,0,tn,score -2.75 >= tau -4.03,1,fp,Missing 'o': yowakwakhe → yowakwakhe.,0,tn,Correct spelling of the word.,0,tn,Correct possessive pronoun 'yowakwakhe'.
+357,corrupted,yowakwakhe,ynowakwakhe,1,1,tp,score -7.51 < tau -4.03,1,tp,"Missing 'e' after 'y', should be yonawakwakhe.",0,fn,Correct spelling of the word.,1,tp,Transposed 'k' and 'w' in suffix.
+358,clean,UMsakazo,UMsakazo,0,0,tn,score -2.43 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Proper noun 'UMsakazo'.
+358,corrupted,UMsakazo,umrakazo,1,1,tp,score -15.98 < tau -4.03,0,fn,Correct spelling for 'alarm'.,0,fn,Correct spelling of the word.,0,fn,Correct noun prefix.
+359,clean,i-USSD,i-USSD,0,1,fp,score -17.48 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,International abbreviation 'i-USSD'.
+359,corrupted,i-USSD,i-usse,1,1,tp,score -17.48 < tau -4.03,1,tp,Extra 'u' in i-usse; should be usse.,1,tp,Double 's' is incorrect in this context.,1,tp,Hyphen misuse; should be 'usse'.
+360,clean,sandla,sandla,0,0,tn,score -2.99 >= tau -4.03,1,fp,Missing 'a': sandla → sandla.,0,tn,Correct spelling of the word.,1,fp,Missing final vowel; should be 'sanda'.
+360,corrupted,sandla,asndla,1,1,tp,score -18.29 < tau -4.03,0,fn,Correct spelling for 'hand'.,1,tp,The letters 's' and 'n' are transposed.,1,tp,Missing vowel after 's'.
+361,clean,yekuHlanganyela,yekuHlanganyela,0,0,tn,score -1.79 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,Prefix typo; correct is 'yokuHlanganyela'.
+361,corrupted,yekuHlanganyela,yekuhdanganyela,1,1,tp,score -7.79 < tau -4.03,1,tp,"Missing 'a' after 'yekuh', should be yekudanganyela.",0,fn,Correct spelling of the word.,0,fn,Proper infinitive construction.
+362,clean,ahlephule,ahlephule,0,0,tn,score -2.79 >= tau -4.03,1,fp,Extra 'h': ahlephule → ahlephule.,0,tn,Correct spelling of the word.,1,fp,Incorrect verb form; should be 'ahlephula'.
+362,corrupted,ahlephule,ahephule,1,1,tp,score -9.86 < tau -4.03,0,fn,Correct spelling for 'careful'.,0,fn,Correct spelling of the word.,1,tp,Extra consonant 'h' before 'p'.
+363,clean,ziyadlodlobala,ziyadlodlobala,0,0,tn,score -2.17 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct adjective 'ziya-dlodlobala'.
+363,corrupted,ziyadlodlobala,ziyadlodlobal,1,0,fn,score -2.34 >= tau -4.03,1,tp,Extra 'd' in ziyadlodlobal; should be ziyadlondlobala.,0,fn,Correct spelling of the word.,1,tp,Transposed 'l' and 'd' in root.
+364,clean,Ubugugu,Ubugugu,0,0,tn,score -2.31 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Proper noun 'Ubugugu'.
+364,corrupted,Ubugugu,zbugugu,1,1,tp,score -12.09 < tau -4.03,0,fn,Correct spelling for 'jewels'.,1,tp,The 'b' is misplaced or extra.,0,fn,Valid noun form.
+365,clean,uMakhunga,uMakhunga,0,0,tn,score -3.09 >= tau -4.03,1,fp,Missing 'u': uMakhunga → uMakhunga.,0,tn,Correct spelling of the word.,0,tn,Correct noun 'uMakhunga'.
+365,corrupted,uMakhunga,umakhuga,1,1,tp,score -8.80 < tau -4.03,1,tp,"Missing 'u' after 'umak', should be umakhuga.",0,fn,Correct spelling of the word.,1,tp,Missing vowel after 'k'.
+366,clean,Unelibhizinisi,Unelibhizinisi,0,0,tn,score -2.03 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct phrase 'Unelibhizinisi'.
+366,corrupted,Unelibhizinisi,unelibhizvinisi,1,1,tp,score -9.33 < tau -4.03,0,fn,Correct spelling for 'has a business'.,0,fn,Correct spelling of the word.,1,tp,Incorrect cluster 'bhizv'; should be 'bizvi'.
+367,clean,Ekuhlaziyeni,Ekuhlaziyeni,0,0,tn,score -1.80 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct locative 'Ekuhlaziyeni'.
+367,corrupted,Ekuhlaziyeni,gkuhlaziyeni,1,1,tp,score -5.06 < tau -4.03,1,tp,Extra 'g' in gkuhlaziyeni; should be kuhlaziyeni.,1,tp,The 'z' is misplaced or extra.,1,tp,Missing vowel between 'g' and 'u'.
+368,clean,Wamenzani,Wamenzani,0,0,tn,score -2.66 >= tau -4.03,1,fp,Missing 'a': Wamenzani → Wamenzani.,0,tn,Correct spelling of the word.,0,tn,Standard interrogative 'Wamenzani'.
+368,corrupted,Wamenzani,wamenlani,1,1,tp,score -10.13 < tau -4.03,0,fn,Correct spelling for 'who'.,0,fn,Correct spelling of the word.,0,fn,Correct plural form.
+369,clean,nghlobo,nghlobo,0,0,tn,score -2.58 >= tau -4.03,0,tn,Correct spelling.,1,fp,Should be 'uhlobo' or 'ingxolo' depending on context; 'nghlobo' is incorrect.,1,fp,Missing initial vowel; should be 'nghlobo'.
+369,corrupted,nghlobo,nghlbo,1,1,tp,score -13.20 < tau -4.03,1,tp,"Missing 'h' after 'ng', should be nghlbo.",1,tp,The 'l' and 'b' are transposed.,1,tp,Missing vowel after 'h'.
+370,clean,nesibongo,nesibongo,0,0,tn,score -2.09 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct noun phrase 'nesibongo'.
+370,corrupted,nesibongo,nexsibongo,1,1,tp,score -12.06 < tau -4.03,0,fn,Correct spelling for 'surname'.,1,tp,The 'x' is incorrect in this context.,1,tp,Transposed 'x' and 's' in suffix.
+371,clean,icoleke,icoleke,0,0,tn,score -3.63 >= tau -4.03,1,fp,Missing 'a': icoleke → icoleke.,0,tn,Correct spelling of the word.,1,fp,Incorrect root; should be 'icileke'.
+371,corrupted,icoleke,ixcoleke,1,1,tp,score -13.97 < tau -4.03,1,tp,Extra 'x' in ixcoleke; should be isikoleke.,1,tp,The 'c' is incorrect in this context.,0,fn,Valid verb form.
+372,clean,ezimnandi,ezimnandi,0,0,tn,score -1.79 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Adjective 'ezimnandi' is correct.
+372,corrupted,ezimnandi,ezimnadni,1,1,tp,score -10.32 < tau -4.03,0,fn,Correct spelling for 'in the mountains'.,1,tp,The letters 'n' and 'd' are transposed.,1,tp,Incorrect cluster 'mnd'; should be 'mand'.
+373,clean,izosiza,izosiza,0,0,tn,score -2.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Future tense 'izosiza' is correct.
+373,corrupted,izosiza,izsiza,1,1,tp,score -20.00 < tau -4.03,1,tp,"Missing 'i' after 'iz', should be izinsiza.",1,tp,The 's' and 'z' are transposed.,1,tp,Missing vowel after 'z'.
+374,clean,wokuBhekwa,wokuBhekwa,0,0,tn,score -1.76 >= tau -4.03,1,fp,Missing 'o': wokuBhekwa → wokuBhekwa.,0,tn,Correct spelling of the word.,1,fp,Wrong prefix; should be 'wokubheka'.
+374,corrupted,wokuBhekwa,wokubhekwu,1,1,tp,score -4.15 < tau -4.03,1,tp,Extra 'w' in wokubhekwu; should be ukubhekwa.,0,fn,Correct spelling of the word.,0,fn,Correct noun prefix.
+375,clean,siding,siding,0,0,tn,score -2.22 >= tau -4.03,0,tn,Correct spelling.,1,fp,Should be 'sidenge' or 'sidingi'; 'siding' is incomplete.,1,fp,Missing final vowel; should be 'sidinga'.
+375,corrupted,siding,sfiding,1,1,tp,score -12.11 < tau -4.03,0,fn,Correct spelling for 'need'.,1,tp,The 'f' is incorrect in this context.,1,tp,Missing vowel between 'f' and 'i'.
+376,clean,ekhokhwayo,ekhokhwayo,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'the crowd'.,0,tn,Correct spelling.
+376,corrupted,ekhokhwayo,ekhokhwayoc,1,0,fn,score -3.79 >= tau -4.03,1,tp,Missing 'a' after 'khokho': ekhokhwayo,1,tp,The word 'ekhokhwayoc' contains an incorrect suffix structure.,0,fn,no typo detected
+377,clean,ixoxwe,ixoxwe,0,0,tn,score -3.72 >= tau -4.03,1,fp,Missing 'e' after 'xoxwe'.,0,tn,Correct spelling of the word for 'the truth'.,1,fp,Missing 'l' in past tense form.
+377,corrupted,ixoxwe,ixowxe,1,1,tp,score -17.84 < tau -4.03,0,fn,Correct spelling.,1,tp,The letter 'x' is misplaced in the root structure.,0,fn,no typo detected
+378,clean,neZindlu,neZindlu,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct spelling.,1,fp,The 'Z' should be lowercase in standard orthography.,1,fp,Capitalized Z should be lowercase.
+378,corrupted,neZindlu,neizndlu,1,1,tp,score -6.56 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an extra 'z' or incorrect consonant cluster.,0,fn,no typo detected
+379,clean,ngenhlso,ngenhlso,0,0,tn,score -2.39 >= tau -4.03,1,fp,'ngenhloso' missing 'l' in 'ngenhlso'.,0,tn,Correct spelling of the word for 'the heart'.,1,fp,Omitted final 'o' in ngenkhloso.
+379,corrupted,ngenhlso,ngenhnlso,1,1,tp,score -12.50 < tau -4.03,1,tp,Missing 'a' after 'ngenh': ngenhlu,1,tp,Incorrect consonant clustering for a Zulu word.,0,fn,no typo detected
+380,clean,akulingani,akulingani,0,0,tn,score -1.91 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'equality'.,0,tn,Correct spelling.
+380,corrupted,akulingani,akulingain,1,1,tp,score -5.26 < tau -4.03,0,fn,Correct spelling.,1,tp,The suffix '-ain' is not standard in this context.,0,fn,no typo detected
+381,clean,siyinhlekisa,siyinhlekisa,0,0,tn,score -2.25 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'they make us laugh'.,0,tn,Correct spelling.
+381,corrupted,siyinhlekisa,siyminhlekisa,1,1,tp,score -8.81 < tau -4.03,0,fn,Correct spelling.,1,tp,Contains an extra 'h' or incorrect syllable break.,0,fn,no typo detected
+382,clean,uyokwethula,uyokwethula,0,0,tn,score -1.55 >= tau -4.03,1,fp,'uyokwethula' missing 'u' after 'y'.,0,tn,Correct spelling of the word for 'to present/offer'.,0,tn,Correct spelling.
+382,corrupted,uyokwethula,guyokwethula,1,1,tp,score -5.84 < tau -4.03,1,tp,Missing 'u' after 'guy': guyokwethula,0,fn,Correct spelling of a compound verb form.,0,fn,no typo detected
+383,clean,Kwehlisa,Kwehlisa,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'to lower/humble'.,1,fp,Capitalized K should be lowercase.
+383,corrupted,Kwehlisa,kwhlisa,1,1,tp,score -14.80 < tau -4.03,0,fn,Correct spelling.,1,tp,Missing a vowel between 'w' and 'h' or 'l'.,0,fn,no typo detected
+384,clean,uSizo,uSizo,0,0,tn,score -2.75 >= tau -4.03,0,tn,Correct spelling.,1,fp,The 'S' should be lowercase in standard orthography.,1,fp,Capitalized S should be lowercase.
+384,corrupted,uSizo,usdzo,1,1,tp,score -20.00 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the word for 'the'.,0,fn,no typo detected
+385,clean,emanyuvesi,emanyuvesi,0,0,tn,score -1.95 >= tau -4.03,1,fp,'emanyuvesi' missing 'a' after 'e'.,0,tn,Correct spelling of the word for 'the universe'.,0,tn,Correct spelling.
+385,corrupted,emanyuvesi,emnayuvesi,1,1,tp,score -8.82 < tau -4.03,1,tp,Missing 'a' after 'emna': emnayuvesi,1,tp,The suffix '-esi' is incorrectly applied to this root.,0,fn,no typo detected
+386,clean,ngokwalowomhlaba,ngokwalowomhlaba,0,0,tn,score -1.06 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the phrase 'according to this world'.,0,tn,Correct spelling.
+386,corrupted,ngokwalowomhlaba,ngokwalowomlaba,1,0,fn,score -2.92 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct complex verb construction.,0,fn,no typo detected
+387,clean,yokumbandakanyeka,yokumbandakanyeka,0,0,tn,score -1.18 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'to be involved'.,0,tn,Correct spelling.
+387,corrupted,yokumbandakanyeka,yokumbandakanayeka,1,0,fn,score -1.83 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of a long verbal phrase.,0,fn,no typo detected
+388,clean,zamakhefu,zamakhefu,0,0,tn,score -2.33 >= tau -4.03,1,fp,'zamakhefu' missing 'a' after 'z'.,0,tn,Correct spelling of the word for 'the nostrils'.,0,tn,Correct spelling.
+388,corrupted,zamakhefu,zamakshefu,1,1,tp,score -11.24 < tau -4.03,1,tp,Missing 'a' after 'zamak': zamakshefu,0,fn,Correct spelling of the word for 'the'.,0,fn,no typo detected
+389,clean,ezimbewu,ezimbewu,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'the seeds'.,0,tn,Correct spelling.
+389,corrupted,ezimbewu,ezimbweu,1,1,tp,score -9.31 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct plural form of white.,0,fn,no typo detected
+390,clean,akakubonanga,akakubonanga,0,0,tn,score -2.21 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'he/she has not seen'.,0,tn,Correct spelling.
+390,corrupted,akakubonanga,anakubonanga,1,0,fn,score -2.34 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct future tense construction.,0,fn,no typo detected
+391,clean,nesidwedwe,nesidwedwe,0,0,tn,score -2.59 >= tau -4.03,1,fp,'nesidwedwe' missing 'i' after 's'.,0,tn,Correct spelling of the word for 'the stone'.,0,tn,Correct spelling.
+391,corrupted,nesidwedwe,neuidwedwe,1,1,tp,score -9.94 < tau -4.03,1,tp,Missing 'a' after 'nei': neidwedwe,1,tp,The 'u' in 'neuidwedwe' is an extra character.,0,fn,no typo detected
+392,clean,ukuhlotshaniswa,ukuhlotshaniswa,0,0,tn,score -1.47 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'to be organized/arranged'.,0,tn,Correct spelling.
+392,corrupted,ukuhlotshaniswa,uouhlotshaniswa,1,1,tp,score -7.07 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the passive causative form.,0,fn,no typo detected
+393,clean,kwizinkontileka,kwizinkontileka,0,0,tn,score -1.25 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'the tiles'.,0,tn,Correct spelling.
+393,corrupted,kwizinkontileka,kwizinontileka,1,1,tp,score -4.85 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of a complex verb.,0,fn,no typo detected
+394,clean,okuyodingidwa,okuyodingidwa,0,0,tn,score -1.79 >= tau -4.03,1,fp,'okuyodingidwa' missing 'o' after 'k'.,0,tn,Correct spelling of the word for 'to be counted'.,0,tn,Correct spelling.
+394,corrupted,okuyodingidwa,okuyodjingidwa,1,1,tp,score -8.11 < tau -4.03,1,tp,Missing 'a' after 'okuyod': okuyodjingidwa,0,fn,Correct spelling of the passive construction.,0,fn,no typo detected
+395,clean,wezentela,wezentela,0,0,tn,score -1.96 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'they do for themselves'.,0,tn,Correct spelling.
+395,corrupted,wezentela,wezenela,1,0,fn,score -2.62 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of 'we did'.,0,fn,no typo detected
+396,clean,Ngizokhulekela,Ngizokhulekela,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'I will grow/mature'.,1,fp,Capitalized N should be lowercase.
+396,corrupted,Ngizokhulekela,ngizokhuulekela,1,1,tp,score -5.91 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct future tense for 'I will allow'.,0,fn,no typo detected
+397,clean,yokukhuculula,yokukhuculula,0,0,tn,score -1.70 >= tau -4.03,1,fp,'yokukhuculula' missing 'u' after 'k'.,0,tn,Correct spelling of the word for 'to clarify/explain'.,0,tn,Correct spelling.
+397,corrupted,yokukhuculula,yokukhuculul,1,0,fn,score -1.75 >= tau -4.03,1,tp,Missing 'u' after 'yokukhucul': yokukhuculul,1,tp,The final 'l' is an extra character or misplaced.,0,fn,no typo detected
+398,clean,Ukugubha,Ukugubha,0,0,tn,score -2.03 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the verb 'to swallow'.,1,fp,Capitalized U should be lowercase.
+398,corrupted,Ukugubha,ukuubha,1,1,tp,score -14.88 < tau -4.03,1,tp,Extra 'u' in 'ukuubha': should be ukubha,1,tp,Double 'u' in 'ukuubha' is incorrect.,0,fn,no typo detected
+399,clean,emuntwini,emuntwini,0,0,tn,score -2.99 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'in the person'.,0,tn,Correct spelling.
+399,corrupted,emuntwini,emuftwini,1,1,tp,score -15.38 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling of the locative form.,0,fn,no typo detected
+400,clean,angaguga,angaguga,0,0,tn,score -3.52 >= tau -4.03,1,fp,'angaguga' missing 'a' after 'g'.,0,tn,Correct spelling of the verb 'he/she may grow old'.,0,tn,Correct spelling.
+400,corrupted,angaguga,anygaguga,1,1,tp,score -14.31 < tau -4.03,0,fn,Correct spelling.,1,tp,The repetition of 'guga' is not standard morphology.,0,fn,no typo detected
+401,clean,imnyama,imnyama,0,0,tn,score -2.87 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the animal',0,tn,Correct Zulu word for black.
+401,corrupted,imnyama,imnymaa,1,1,tp,score -14.46 < tau -4.03,1,tp,Missing 'n' after 'imny'.,1,tp,The word 'iminyama' is the standard spelling for meat.,1,tp,Missing vowel after m; should be imnyma
+402,clean,wenyanga,wenyanga,0,0,tn,score -2.35 >= tau -4.03,1,fp,Missing 'e' after 'we': weNyanga.,0,tn,Correct spelling of 'the leopard',0,tn,Valid possessive form of month.
+402,corrupted,wenyanga,wenyagna,1,1,tp,score -6.61 < tau -4.03,0,fn,Correct spelling for 'wenyagna'.,1,tp,The correct spelling is 'wenyanya' or similar; 'wenyagna' is incorrect.,0,fn,Correctly follows noun class prefix pattern
+403,clean,yeMSA,yeMSA,0,1,fp,score -4.94 < tau -4.03,0,tn,Correct abbreviation.,1,fp,Uppercase letters are not standard in Zulu word formation,1,fp,Capitalization error; should be lowercase 'yemsa'.
+403,corrupted,yeMSA,yeesa,1,1,tp,score -17.57 < tau -4.03,0,fn,Correct spelling for 'yeesa'.,0,fn,Correct spelling of a common word.,1,tp,"Ends with a single e, should be yeesa"
+404,clean,ebukhiphile,ebukhiphile,0,0,tn,score -2.44 >= tau -4.03,1,fp,"Extra 'h', should be ebukile.",0,tn,Correct name for the Philippines,1,fp,Missing 'h' after k; correct is 'ebukhishwe'.
+404,corrupted,ebukhiphile,ebukhipihle,1,1,tp,score -10.71 < tau -4.03,1,tp,Extra 'i' in 'ebukhipihle'.,1,tp,The correct spelling is 'ebukhiphile'.,0,fn,Valid verb form ebukhipihle
+405,clean,Olubhekene,Olubhekene,0,0,tn,score -1.55 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the blessing',0,tn,Proper noun form acceptable.
+405,corrupted,Olubhekene,olubhekenb,1,0,fn,score -3.99 >= tau -4.03,1,tp,Missing 'a' after 'olubheke'.,1,tp,The suffix or ending appears truncated or incorrect.,1,tp,Extra k; correct is olubhebenb
+406,clean,engaqedi,engaqedi,0,0,tn,score -2.62 >= tau -4.03,1,fp,Missing 'a' after 'en': engaqedi.,0,tn,Correct spelling of 'the student',0,tn,Correct negated verb form.
+406,corrupted,engaqedi,engaoqedi,1,1,tp,score -15.15 < tau -4.03,0,fn,Correct spelling for 'engaoqedi'.,1,tp,The word 'engaqedi' does not contain an 'o'.,0,fn,Standard noun class 7 pattern
+407,clean,ngoyedwa,ngoyedwa,0,0,tn,score -2.09 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the one who is alone',0,tn,Valid adverbial phrase.
+407,corrupted,ngoyedwa,ngoyejdwa,1,1,tp,score -13.14 < tau -4.03,1,tp,Extra 'j' in 'ngoyejdwa'.,1,tp,The spelling 'ngoyejwa' is standard; 'jdw' is a typo.,1,tp,Missing vowel after j; should be ngoyejdwa
+408,clean,abanogesi,abanogesi,0,0,tn,score -2.12 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the ones who are wise',0,tn,Correct compound noun.
+408,corrupted,abanogesi,abanogesit,1,0,fn,score -2.34 >= tau -4.03,0,fn,Correct spelling for 'abanogesit'.,0,fn,Correct spelling of the word.,0,fn,Valid compound noun abanogesit
+409,clean,izifundazwe,izifundazwe,0,0,tn,score -0.99 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the education',0,tn,Plural of province; correct.
+409,corrupted,izifundazwe,izifundazew,1,0,fn,score -3.68 >= tau -4.03,1,tp,Missing 'u' after 'izifunda'.,1,tp,The correct spelling is 'izifundazela'.,1,tp,Transposed z and w; correct izifundazew
+410,clean,izinhliziyo,izinhliziyo,0,0,tn,score -1.30 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the hearts',0,tn,Plural of heart; correct.
+410,corrupted,izinhliziyo,izinhlizziyo,1,1,tp,score -9.05 < tau -4.03,0,fn,Correct spelling for 'izinhlizziyo'.,0,fn,Correct spelling of the word.,0,fn,Correct plural form izinhlizziyo
+411,clean,elingumqamulajuqu,elingumqamulajuqu,0,0,tn,score -1.56 >= tau -4.03,1,fp,"Extra 'u', should be elingumqamulaju.",0,tn,Correct complex word for 'that which is a primary principle',0,tn,Compound adjective; correct.
+411,corrupted,elingumqamulajuqu,elingumqamlajuqu,1,0,fn,score -3.10 >= tau -4.03,1,tp,Extra 'q' in 'elingumqamlajuqu'.,0,fn,Correct complex morphological structure.,1,tp,Extra q; should be elingumqamlaju
+412,clean,ukuzisusela,ukuzisusela,0,0,tn,score -2.07 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to distance oneself',0,tn,Correct reflexive verb form.
+412,corrupted,ukuzisusela,kuzisusela,1,0,fn,score -2.44 >= tau -4.03,0,fn,Correct spelling for 'kuzisusela'.,0,fn,Correct spelling of the word.,0,fn,Valid verb kuzisusela
+413,clean,Bamfuna,Bamfuna,0,0,tn,score -3.67 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'they want',0,tn,Proper noun acceptable.
+413,corrupted,Bamfuna,bamfuca,1,1,tp,score -10.63 < tau -4.03,0,fn,Correct spelling for 'bamfuca'.,1,tp,The correct spelling is 'bamfuca' or 'bamfuka'.,1,tp,Missing f; correct bamfuca
+414,clean,eMelika,eMelika,0,0,tn,score -2.64 >= tau -4.03,1,fp,Missing 'e' after 'e': eMelika.,0,tn,Correct name for America,0,tn,Prepositional phrase; correct.
+414,corrupted,eMelika,melika,1,0,fn,score -3.77 >= tau -4.03,1,tp,Missing 'a' after 'melik'.,0,fn,Correct spelling of the word.,0,fn,Proper noun melika
+415,clean,nokungabikiwe,nokungabikiwe,0,0,tn,score -1.49 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'not being shown',0,tn,Compound negated verb; correct.
+415,corrupted,nokungabikiwe,nokungaibkiwe,1,1,tp,score -11.65 < tau -4.03,1,tp,Extra 'i' in 'nokungaibkiwe'.,1,tp,The correct spelling is 'nokungabikwe'.,1,tp,Extra b; should be nokungaikwe
+416,clean,komyalelo,komyalelo,0,0,tn,score -1.75 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the instruction',0,tn,Correct command noun.
+416,corrupted,komyalelo,komyaelo,1,1,tp,score -11.72 < tau -4.03,0,fn,Correct spelling for 'komyaelo'.,0,fn,Correct spelling of the word.,0,fn,Valid verb komyaelo
+417,clean,eseqala,eseqala,0,0,tn,score -2.41 >= tau -4.03,1,fp,Missing 'a' after 'es': eseqalile.,0,tn,Correct spelling of 'at the beginning',0,tn,Adverbial form; correct.
+417,corrupted,eseqala,esenala,1,0,fn,score -3.49 >= tau -4.03,0,fn,Correct spelling for 'esenala'.,0,fn,Correct spelling of the word.,1,tp,Missing l; should be esenala
+418,clean,nesifundweni,nesifundweni,0,0,tn,score -1.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'and the study',0,tn,Prepositional phrase; correct.
+418,corrupted,nesifundweni,nesifundweniu,1,0,fn,score -1.83 >= tau -4.03,1,tp,Extra 'u' in 'nesifundweniu'.,1,tp,The correct spelling is 'nesifundweni'.,0,fn,Correct noun nesifundweniu
+419,clean,izinkulunkulungwane,izinkulunkulungwane,0,0,tn,score -1.19 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the complexities',1,fp,Spelling error; should be 'izinkulunkulu'.
+419,corrupted,izinkulunkulungwane,izinkulunkdulungwane,1,1,tp,score -6.64 < tau -4.03,1,tp,Missing 'u' after 'izinkulunkulu'.,1,tp,The correct spelling is 'izinkulunkulu'.,1,tp,Transposed n and k; correct izinkulunkdulungwane
+420,clean,enzalo,enzalo,0,0,tn,score -2.89 >= tau -4.03,1,fp,Missing 'e' after 'en': enzalo.,0,tn,Correct spelling of 'offspring',0,tn,Correct noun for creation.
+420,corrupted,enzalo,enazlo,1,1,tp,score -12.95 < tau -4.03,0,fn,Correct spelling for 'enazlo'.,0,fn,Correct spelling of the word.,0,fn,Valid adjective enazlo
+421,clean,Kucaca,Kucaca,0,0,tn,score -3.18 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to be clear',1,fp,Capitalization wrong; should be lowercase.
+421,corrupted,Kucaca,kuaca,1,1,tp,score -16.93 < tau -4.03,0,fn,Correct spelling for 'kuaca'.,0,fn,Correct spelling of the word.,1,tp,Missing a; should be kuaca
+422,clean,ukusenga,ukusenga,0,0,tn,score -2.04 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to cut',0,tn,Valid verb form.
+422,corrupted,ukusenga,ukusega,1,0,fn,score -3.04 >= tau -4.03,1,tp,Missing 'u' after 'ukuseg'.,0,fn,Correct spelling of the word.,0,fn,Correct verb ukusega
+423,clean,Ossetia,Ossetia,0,0,tn,score -3.04 >= tau -4.03,1,fp,Missing 'O' in Ossetia: Ossetia.,0,tn,Correct name for Ossetia,0,tn,Foreign proper name acceptable.
+423,corrupted,Ossetia,Ossetia,0,0,tn,score -3.04 >= tau -4.03,0,tn,Correct spelling for 'Ossetia'.,1,fp,"This is a proper noun from another language, not Zulu.",1,fp,"Foreign proper noun, not zu spelling"
+424,clean,ze-WHO,ze-WHO,0,1,fp,score -20.00 < tau -4.03,0,tn,Correct abbreviation.,0,tn,Correct use of prefix with acronym,1,fp,Hyphen usage incorrect; should be 'zeWHO'.
+424,corrupted,ze-WHO,zer-who,1,1,tp,score -18.20 < tau -4.03,0,fn,Correct spelling for 'zer-who'.,1,tp,Contains non-Zulu characters and structure.,1,tp,Hyphenated form unusual; correct zerwho
+425,clean,izifungo,izifungo,0,0,tn,score -2.09 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the explanations',0,tn,Correct noun for agreements.
+425,corrupted,izifungo,izwfungo,1,1,tp,score -14.79 < tau -4.03,1,tp,Missing 'u' after 'izwfun'.,1,tp,The correct spelling is 'izwfungo' or 'izifungo'.,0,fn,Valid noun izwfungo
+426,clean,okusungulwayo,okusungulwayo,0,0,tn,score -1.43 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Correct form is 'okusungulwa', missing final a."
+426,corrupted,okusungulwayo,okusungulwvayo,1,1,tp,score -7.69 < tau -4.03,1,tp,v ekupheleni ayilungile; kufanele kube 'o'.,1,tp,Extra 'v' in okusungulwayo,1,tp,invalid 'wv' cluster
+427,clean,wayefika,wayefika,0,0,tn,score -2.38 >= tau -4.03,1,fp,Missing 'e' after 'waya': wayefika.,0,tn,Correct spelling of the word.,0,tn,Standard past tense verb.
+427,corrupted,wayefika,layefika,1,1,tp,score -5.87 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of layefika,1,tp,missing vowel after 'l'
+428,clean,ngemukelwa,ngemukelwa,0,0,tn,score -1.49 >= tau -4.03,1,fp,"Should be 'ngemukelwe', not 'ngemukelwa'.",0,tn,Correct spelling of the word.,0,tn,Valid passive construction.
+428,corrupted,ngemukelwa,ngemuelwa,1,1,tp,score -9.57 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of ngemuelwa,1,tp,extra 'u' in root
+429,clean,isiphepho,isiphepho,0,0,tn,score -2.30 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Common noun for storm.
+429,corrupted,isiphepho,isihpepho,1,1,tp,score -12.71 < tau -4.03,1,tp,h iphindaphindwe; kufanele kube 'i' kuphela.,1,tp,Extra 'h' in isiphepho,0,fn,
+430,clean,Uvikelekile,Uvikelekile,0,0,tn,score -1.51 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,"Correct spelling, capitalization irrelevant."
+430,corrupted,Uvikelekile,uvkelekile,1,1,tp,score -10.27 < tau -4.03,1,tp,k akulungile; kufanele kube 'u'.,0,fn,Correct spelling of uvkelekile,0,fn,
+431,clean,diperekisi,diperekisi,0,0,tn,score -3.00 >= tau -4.03,1,fp,"Should be 'diperekisi', not 'diperekisi'.",0,tn,Correct spelling of the word.,1,fp,"Should be 'diphrikisi', missing h."
+431,corrupted,diperekisi,diperekiysi,1,1,tp,score -8.83 < tau -4.03,0,fn,Ibhaliwe kahle.,1,tp,Extra 'i' in diperekyisi,0,fn,
+432,clean,ngesonto,ngesonto,0,0,tn,score -1.67 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Valid prepositional phrase.
+432,corrupted,ngesonto,ngesoynto,1,1,tp,score -10.73 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of ngesoynto,0,fn,
+433,clean,ezinqwbelane,ezinqwbelane,0,0,tn,score -2.09 >= tau -4.03,1,fp,Missing 'e': ezinqwbelane.,0,tn,Correct spelling of the word.,1,fp,Missing vowel: should be 'ezinqwabelane'.
+433,corrupted,ezinqwbelane,ezniqwbelane,1,1,tp,score -11.78 < tau -4.03,1,tp,z ayilungile; kufanele kube 'i'.,1,tp,Extra 'w' in ezinqubelane,0,fn,
+434,clean,mpu,mpu,0,1,fp,score -10.03 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Common noun for hand.
+434,corrupted,mpu,mp,1,0,fn,skipped (<3 chars),0,fn,Ibhaliwe kahle.,0,fn,Valid abbreviation or short form,0,fn,
+435,clean,lezithiyo,lezithiyo,0,0,tn,score -2.15 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct plural noun.
+435,corrupted,lezithiyo,lezitihyo,1,1,tp,score -10.40 < tau -4.03,0,fn,Ibhaliwe kahle.,1,tp,Extra 'i' in lezitihyo,0,fn,
+436,clean,ngoMohapi,ngoMohapi,0,0,tn,score -2.35 >= tau -4.03,1,fp,"Should be 'ngoMhapi', not 'ngoMohapi'.",0,tn,Correct spelling of the word.,0,tn,Valid locative form.
+436,corrupted,ngoMohapi,ngomohai,1,1,tp,score -5.75 < tau -4.03,1,tp,h iphindaphindwe; kufanele kube 'a' kuphela.,0,fn,Correct spelling of ngomohai,0,fn,
+437,clean,etekisini,etekisini,0,0,tn,score -2.46 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be 'ethekisini', missing h."
+437,corrupted,etekisini,eteiksini,1,1,tp,score -15.84 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of eteiksini,0,fn,
+438,clean,uthintana,uthintana,0,0,tn,score -1.87 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Standard verb.
+438,corrupted,uthintana,uthintaga,1,1,tp,score -4.74 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of uthintaga,0,fn,
+439,clean,nesikulufu,nesikulufu,0,0,tn,score -2.71 >= tau -4.03,1,fp,"Should be 'nesikulufu', not 'nesikulufu'.",0,tn,Correct spelling of the word.,1,fp,"Correct is 'nesikuflu', missing u."
+439,corrupted,nesikulufu,nesikulfuu,1,1,tp,score -9.27 < tau -4.03,1,tp,k akulungile; kufanele kube 'u'.,1,tp,Extra 'u' in nesikulfu,0,fn,
+440,clean,okuqondiswe,okuqondiswe,0,0,tn,score -1.51 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Valid passive form.
+440,corrupted,okuqondiswe,okuqondiwse,1,1,tp,score -6.17 < tau -4.03,1,tp,w ayilungile; kufanele kube 'o'.,0,fn,Correct spelling of okuqondiwse,0,fn,
+441,clean,neqophelo,neqophelo,0,0,tn,score -2.08 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct noun.
+441,corrupted,neqophelo,neqphelo,1,1,tp,score -15.22 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of neqphelo,0,fn,
+442,clean,izimpimpi,izimpimpi,0,0,tn,score -1.91 >= tau -4.03,1,fp,"Should be 'izimpimpi', not 'izimpimpi'.",0,tn,Correct spelling of the word.,0,tn,Standard plural noun.
+442,corrupted,izimpimpi,izimimpi,1,1,tp,score -8.16 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of izimimpi,0,fn,
+443,clean,amakamu,amakamu,0,0,tn,score -3.03 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Common noun.
+443,corrupted,amakamu,amkaamu,1,1,tp,score -14.80 < tau -4.03,1,tp,a ayilungile; kufanele kube 'o'.,0,fn,Correct spelling of amkaamu,0,fn,
+444,clean,okunezinongo,okunezinongo,0,0,tn,score -2.16 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Valid locative phrase.
+444,corrupted,okunezinongo,okunezinongqo,1,0,fn,score -1.88 >= tau -4.03,0,fn,Ibhaliwe kahle.,1,tp,Extra 'q' in okunezinongqo,0,fn,
+445,clean,zidulile,zidulile,0,0,tn,score -2.69 >= tau -4.03,1,fp,"Should be 'zidulile', not 'zidulile'.",0,tn,Correct spelling of the word.,0,tn,Correct past tense verb.
+445,corrupted,zidulile,zzdulile,1,1,tp,score -13.56 < tau -4.03,1,tp,z iphindaphindwe; kufanele kube 's' kuphela.,1,tp,Double 'z' at the start of zdulile,0,fn,
+446,clean,eziyinani,eziyinani,0,0,tn,score -2.17 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,"Should be 'ezinyaneni', missing i."
+446,corrupted,eziyinani,ezyiinani,1,1,tp,score -13.41 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of ezyiinani,0,fn,
+447,clean,kuyofanele,kuyofanele,0,0,tn,score -1.44 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Standard future tense.
+447,corrupted,kuyofanele,kuyoofanele,1,1,tp,score -9.67 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of kuyoofanele,0,fn,
+448,clean,Bamukela,Bamukela,0,0,tn,score -1.97 >= tau -4.03,1,fp,"Should be 'Bamukela', not 'Bamukela'.",0,tn,Correct spelling of the word.,0,tn,Valid imperative form.
+448,corrupted,Bamukela,bamukebla,1,1,tp,score -10.17 < tau -4.03,1,tp,m ayilungile; kufanele kube 'a'.,1,tp,Extra 'b' in bamukela,0,fn,
+449,clean,Bothata,Bothata,0,0,tn,score -3.61 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Common noun.
+449,corrupted,Bothata,bmthata,1,1,tp,score -13.66 < tau -4.03,1,tp,b iphindaphindwe; kufanele kube 'am' kuphela.,1,tp,Missing 'a' in bamthata,0,fn,
+450,clean,ezisesakhiweni,ezisesakhiweni,0,0,tn,score -1.71 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,Correct locative phrase.
+450,corrupted,ezisesakhiweni,eziaesakhiweni,1,1,tp,score -8.16 < tau -4.03,0,fn,Ibhaliwe kahle.,0,fn,Correct spelling of eziaesakhiweni,0,fn,
+451,clean,semazingeni,semazingeni,0,0,tn,score -1.97 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,semazingeni should be semagazini
+451,corrupted,semazingeni,semazingeniu,1,0,fn,score -3.77 >= tau -4.03,1,tp,Missing 'a' after 'se': semazingeni,0,fn,Correct spelling,1,tp,Trailing vowel unnecessary
+452,clean,yasebusuku,yasebusuku,0,0,tn,score -1.98 >= tau -4.03,1,fp,Missing 'e' after 'yaseb' should be 'yasebusuku'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+452,corrupted,yasebusuku,yaebusuku,1,1,tp,score -11.03 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Word appears correctly spelled
+453,clean,ekubuseni,ekubuseni,0,0,tn,score -2.73 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+453,corrupted,ekubuseni,ekbuuseni,1,1,tp,score -17.33 < tau -4.03,1,tp,Extra 'u' before 'b': ekhuzeni,0,fn,Correct spelling,1,tp,Duplicate vowel 'u'
+454,clean,esihlaziywa,esihlaziywa,0,0,tn,score -1.82 >= tau -4.03,1,fp,'hlaziya' is incorrect; correct form is 'esihlaziywa'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+454,corrupted,esihlaziywa,esihlazyiwa,1,1,tp,score -8.81 < tau -4.03,1,tp,Missing 'a' after 'si': esihlaziyiwa,0,fn,Correct spelling,1,tp,Missing consonant 'z'
+455,clean,ezolanda,ezolanda,0,0,tn,score -2.75 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+455,corrupted,ezolanda,iezolanda,1,1,tp,score -8.79 < tau -4.03,1,tp,Missing 'e' after 'ie': iezolanda,0,fn,Correct spelling,0,fn,Correctly spelled
+456,clean,eyisihluku,eyisihluku,0,0,tn,score -2.28 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+456,corrupted,eyisihluku,eyisihluu,1,1,tp,score -5.10 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Duplicate vowel 'u'
+457,clean,eziphephile,eziphephile,0,0,tn,score -1.69 >= tau -4.03,1,fp,'ziphephile' is incorrect; correct form is 'eziphephile'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+457,corrupted,eziphephile,eizphephile,1,1,tp,score -10.73 < tau -4.03,1,tp,Extra 'i' before 'phephile': eziphephile,0,fn,Correct spelling,1,tp,Missing vowel after 'z'
+458,clean,Kusolakala,Kusolakala,0,0,tn,score -1.57 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,capital K should be lowercase kusolakala
+458,corrupted,Kusolakala,kusoakala,1,1,tp,score -12.65 < tau -4.03,1,tp,Missing 'o' after 'ku': kusokala,0,fn,Correct spelling,0,fn,Word appears correctly spelled
+459,clean,abangeke,abangeke,0,0,tn,score -1.88 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+459,corrupted,abangeke,abangee,1,0,fn,score -3.22 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Duplicate vowel 'e'
+460,clean,yompopoli,yompopoli,0,0,tn,score -2.23 >= tau -4.03,1,fp,'yompopoli' is incorrect; correct form is 'yompopoli'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+460,corrupted,yompopoli,ymopopoli,1,1,tp,score -11.59 < tau -4.03,1,tp,Extra 'm' before 'opo': yopopoli,0,fn,Correct spelling,1,tp,Missing vowel after initial consonant
+461,clean,ongizalayo,ongizalayo,0,0,tn,score -3.26 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+461,corrupted,ongizalayo,ongizalaoy,1,1,tp,score -7.93 < tau -4.03,1,tp,Missing 'o' after 'on': ongizala,0,fn,Correct spelling,1,tp,Missing vowel before final 'y'
+462,clean,Abasathuthukayo,Abasathuthukayo,0,0,tn,score -1.49 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,capital A should be lowercase abasathuthukayo
+462,corrupted,Abasathuthukayo,abasathuthuayo,1,1,tp,score -5.38 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Extra consonant cluster
+463,clean,izinto,izinto,0,0,tn,score -1.75 >= tau -4.03,1,fp,'izinto' is incorrect; correct form is 'izinto'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+463,corrupted,izinto,ziinto,1,0,fn,score -3.64 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Correctly spelled
+464,clean,elinjalo,elinjalo,0,0,tn,score -2.07 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+464,corrupted,elinjalo,elinjao,1,1,tp,score -6.32 < tau -4.03,1,tp,Missing 'e' after 'eli': elinjalo,0,fn,Correct spelling,0,fn,Correctly spelled
+465,clean,meter,meter,0,1,fp,score -4.30 < tau -4.03,1,fp,'meter' is incorrect; correct form is 'mita'.,1,fp,The correct Zulu word is 'imitha' or similar; 'meter' is English.,1,fp,meter should be metri
+465,corrupted,meter,metelr,1,1,tp,score -8.86 < tau -4.03,1,tp,Extra 'l' before 'te': metela,1,tp,Missing vowel between 'l' and 'r',1,tp,Missing vowel before final 'r'
+466,clean,akusazwakali,akusazwakali,0,0,tn,score -2.02 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+466,corrupted,akusazwakali,akusazpwakali,1,1,tp,score -10.53 < tau -4.03,1,tp,Extra 'z' in 'akusazwakhali',1,tp,Extra 'z' in the middle of the word,1,tp,Unnecessary consonant 'z'
+467,clean,kuphunyeleliswe,kuphunyeleliswe,0,0,tn,score -1.77 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+467,corrupted,kuphunyeleliswe,kuphuyneleliswe,1,1,tp,score -8.97 < tau -4.03,1,tp,Missing 'u' after 'ku': kuphunyeliwe,0,fn,Correct spelling,1,tp,Missing consonant in middle
+468,clean,Waziveza,Waziveza,0,0,tn,score -3.09 >= tau -4.03,1,fp,'Waziveza' is incorrect; correct form is 'waziveza'.,0,tn,Correct spelling of the word.,1,fp,capital W should be lowercase waziveza
+468,corrupted,Waziveza,wazivzeza,1,1,tp,score -13.49 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Duplicate consonant 'z'
+469,clean,izigi,izigi,0,0,tn,score -3.14 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+469,corrupted,izigi,zigi,1,1,tp,score -5.87 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Correctly spelled
+470,clean,asondele,asondele,0,0,tn,score -2.44 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+470,corrupted,asondele,asbndele,1,1,tp,score -16.96 < tau -4.03,1,tp,Missing 'a' after 'as': asbndele,1,tp,Transposed 'b' and 'n' in the root,1,tp,Missing vowel between s and n
+471,clean,uBelelesi,uBelelesi,0,0,tn,score -2.28 >= tau -4.03,1,fp,'uBelelesi' is incorrect; correct form is 'ubelelesi'.,1,fp,Incorrect capitalization of the letter 'B' in the middle of a word.,1,fp,uBelelesi likely misspelt uBhelelesi
+471,corrupted,uBelelesi,ubzlelesi,1,1,tp,score -14.73 < tau -4.03,1,tp,Extra 'z' in 'ubzlelesi',1,tp,Missing vowel between 'b' and 'z',1,tp,Missing vowel after initial consonant
+472,clean,ieksireyi,ieksireyi,0,0,tn,score -2.51 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,1,fp,ieksireyi should be ikiseriyi
+472,corrupted,ieksireyi,ieskireyi,1,1,tp,score -13.61 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,1,tp,Duplicate vowel 'e'
+473,clean,nokuqashisa,nokuqashisa,0,0,tn,score -1.50 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+473,corrupted,nokuqashisa,nokuqashisay,1,0,fn,score -1.40 >= tau -4.03,1,tp,Missing 'a' after 'no': nokuqashisa,0,fn,Correct spelling,1,tp,Extra consonant at end
+474,clean,noju,noju,0,1,fp,score -6.35 < tau -4.03,1,fp,'noju' is incorrect; correct form is 'uju'.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+474,corrupted,noju,nogju,1,1,tp,score -16.44 < tau -4.03,1,tp,Extra 'g' in 'nogju',1,tp,Extra 'j' in the word structure,0,fn,Correctly spelled
+475,clean,ngamafasilithi,ngamafasilithi,0,0,tn,score -1.78 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word.,0,tn,correct spelling
+475,corrupted,ngamafasilithi,gamafasilithi,1,0,fn,score -2.33 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling,0,fn,Correctly spelled
+476,clean,inombolo,inombolo,0,0,tn,score -1.58 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'the rule',0,tn,Correct spelling.
+476,corrupted,inombolo,inomboso,1,0,fn,score -3.16 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,extra vowel 'o' in root
+477,clean,iphenduke,iphenduke,0,0,tn,score -2.03 >= tau -4.03,1,fp,Should be 'iphendukele' (missing 'e').,0,tn,Correct spelling of a common name,0,tn,Correct spelling.
+477,corrupted,iphenduke,iphjenduke,1,1,tp,score -13.73 < tau -4.03,1,tp,Missing 'i' after 'phj': iphijenduke.,1,tp,Incorrect 'ph' cluster in Zulu phonology.,1,tp,consonant cluster 'hj' unlikely
+478,clean,lokufunda,lokufunda,0,0,tn,score -1.50 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to read',0,tn,Correct spelling.
+478,corrupted,lokufunda,lokufiunda,1,1,tp,score -11.28 < tau -4.03,1,tp,Extra 'u' in 'fiunda': lokufunda.,0,fn,Correct spelling.,0,fn,valid verb form
+479,clean,limininingi,limininingi,0,0,tn,score -1.44 >= tau -4.03,1,fp,Should be 'liminingi' (extra 'n').,0,tn,Correct spelling of 'many things',1,fp,Missing space between limini and nginingi.
+479,corrupted,limininingi,liminimingi,1,1,tp,score -5.03 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,double 'm' not allowed
+480,clean,ngase,ngase,0,0,tn,score -2.51 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the word for 'but',0,tn,Correct spelling.
+480,corrupted,ngase,ngsae,1,1,tp,score -20.00 < tau -4.03,1,tp,Missing initial vowel: ngesae.,1,tp,Missing vowel between 'ng' and 's'.,1,tp,missing vowel after 'ng'
+481,clean,lababaleki,lababaleki,0,0,tn,score -2.35 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the ones who are beautiful',1,fp,"Final consonant should be ka, not ki."
+481,corrupted,lababaleki,lababalkei,1,1,tp,score -9.29 < tau -4.03,1,tp,Extra 'b' in 'babalkei': lababalkei.,1,tp,Incorrect 'lb' consonant cluster.,1,tp,cluster 'lkb' invalid
+482,clean,ngoPamela,ngoPamela,0,0,tn,score -2.45 >= tau -4.03,1,fp,Should be 'ngoPamela' (missing 'o').,1,fp,The 'P' should be lowercase in standard orthography,1,fp,Prefix should be capitalized: Ngopamela.
+482,corrupted,ngoPamela,nyopamela,1,1,tp,score -10.39 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,0,fn,correct noun form
+483,clean,kunamabhakede,kunamabhakede,0,0,tn,score -2.19 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the phrase,0,tn,Correct spelling.
+483,corrupted,kunamabhakede,kunamabhaekde,1,1,tp,score -8.64 < tau -4.03,1,tp,Transposed letters: kunamabhaekde.,1,tp,Extra 'k' in the middle of the word.,1,tp,extra consonant 'k' before 'de'
+484,clean,kufakazela,kufakazela,0,0,tn,score -1.42 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to confirm',0,tn,Correct spelling.
+484,corrupted,kufakazela,kufakazea,1,1,tp,score -4.21 < tau -4.03,1,tp,Missing 'i' in 'kufakazea': kufakazela.,0,fn,Correct spelling.,0,fn,valid verb ending
+485,clean,Lucia,Lucia,0,1,fp,score -4.46 < tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of a common name,0,tn,"Proper noun, acceptable."
+485,corrupted,Lucia,klucia,1,1,tp,score -13.74 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect 'kl' consonant cluster.,0,fn,
+486,clean,ezihlomile,ezihlomile,0,0,tn,score -1.78 >= tau -4.03,1,fp,Should be 'ezihlomileyo' (missing 'yo').,0,tn,Correct spelling of 'the ones who are joined',0,tn,Correct spelling.
+486,corrupted,ezihlomile,ezihlomule,1,0,fn,score -1.80 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,cluster 'hlm' unlikely
+487,clean,Amakhemikhali,Amakhemikhali,0,0,tn,score -1.43 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of the chemical term,0,tn,Correct spelling.
+487,corrupted,Amakhemikhali,amakhemikhai,1,0,fn,score -2.15 >= tau -4.03,1,tp,Missing 'a' in 'amakhemikhai': amakhemikhali.,0,fn,Correct spelling.,1,tp,double 'k' cluster wrong
+488,clean,esingayithola,esingayithola,0,0,tn,score -1.60 >= tau -4.03,1,fp,Should be 'esingayitholayo' (missing 'a').,0,tn,Correct spelling of 'that which can be found',0,tn,Correct spelling.
+488,corrupted,esingayithola,seingayithola,1,1,tp,score -4.11 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,0,fn,correct verb form
+489,clean,yicala,yicala,0,0,tn,score -2.40 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'it will happen',1,fp,Vowel should be e: yicela.
+489,corrupted,yicala,yicaoa,1,1,tp,score -12.36 < tau -4.03,1,tp,Transposed letters: yicaoa.,1,tp,Incorrect 'oa' vowel combination.,1,tp,missing vowel after 'c'
+490,clean,kwezokulima,kwezokulima,0,0,tn,score -1.54 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'for farming',0,tn,Correct spelling.
+490,corrupted,kwezokulima,kvwezokulima,1,1,tp,score -8.65 < tau -4.03,1,tp,Missing 'i' in 'kvwezokulima': kwizokulima.,1,tp,Incorrect 'kv' consonant cluster.,1,tp,cluster 'kvw' unlikely
+491,clean,nemithethonkambiso,nemithethonkambiso,0,0,tn,score -0.98 >= tau -4.03,1,fp,Should be 'nemithethonkambiso' (missing 'o').,1,fp,Missing space between 'nemithetho' and 'namkiso',1,fp,Missing 'u' before b in the word.
+491,corrupted,nemithethonkambiso,nemithethonkambiyo,1,0,fn,score -1.46 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,extra consonant 'b' before 'k'
+492,clean,uzozisebenzela,uzozisebenzela,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'that which will serve you',0,tn,Correct spelling.
+492,corrupted,uzozisebenzela,uztozisebenzela,1,1,tp,score -8.25 < tau -4.03,1,tp,Transposed letters: uztozisebenzela.,1,tp,Extra 'z' in the middle of the word.,0,fn,valid verb form
+493,clean,luqalwe,luqalwe,0,0,tn,score -3.03 >= tau -4.03,1,fp,Should be 'luqalweyo' (missing 'yo').,0,tn,Correct spelling of 'that which was asked',0,tn,Correct spelling.
+493,corrupted,luqalwe,ulqalwe,1,1,tp,score -16.22 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,consonant cluster 'ql' invalid
+494,clean,usebenzile,usebenzile,0,0,tn,score -1.54 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'has worked',0,tn,Correct spelling.
+494,corrupted,usebenzile,usebezile,1,0,fn,score -2.75 >= tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,0,fn,correct noun form
+495,clean,ezokhethwa,ezokhethwa,0,0,tn,score -2.42 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'to be chosen',0,tn,Correct spelling.
+495,corrupted,ezokhethwa,ezokhethwea,1,0,fn,score -2.88 >= tau -4.03,1,tp,Missing 'i' in 'ezokhethwea': ezokukhethwa.,1,tp,Extra 'a' at the end of the word.,1,tp,extra vowel 'a' at end
+496,clean,ukuqedelwa,ukuqedelwa,0,0,tn,score -1.65 >= tau -4.03,1,fp,Should be 'ukuqedelwa' (missing 'e').,0,tn,Correct spelling of 'to be completed',0,tn,Correct spelling.
+496,corrupted,ukuqedelwa,ukuqepelwa,1,1,tp,score -11.08 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,1,tp,cluster 'qep' unlikely
+497,clean,abudingwa,abudingwa,0,0,tn,score -2.66 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'the ones who are deaf',0,tn,Correct spelling.
+497,corrupted,abudingwa,abudingw,1,0,fn,score -3.09 >= tau -4.03,1,tp,Missing 'u' in 'abudingw': abudingwa.,1,tp,Missing final vowel for Zulu morphology.,1,tp,missing vowel after 'd'
+498,clean,eyiHalt,eyiHalt,0,1,fp,score -4.34 < tau -4.03,0,tn,Correct spelling.,1,fp,The 'H' should be lowercase in standard orthography,1,fp,"Suffix should be 'i', not 't'."
+498,corrupted,eyiHalt,eyihait,1,1,tp,score -10.74 < tau -4.03,0,fn,Correct spelling.,1,tp,Incorrect 'ai' vowel combination.,1,tp,consonant cluster 'ih' wrong
+499,clean,ubukhulu,ubukhulu,0,0,tn,score -1.83 >= tau -4.03,1,fp,Should be 'ubukhulu' (missing 'u').,0,tn,Correct spelling of 'greatness',0,tn,Correct spelling.
+499,corrupted,ubukhulu,xubukhulu,1,1,tp,score -8.95 < tau -4.03,0,fn,Correct spelling.,0,fn,Correct spelling.,0,fn,valid noun form
+500,clean,nokugculisa,nokugculisa,0,0,tn,score -1.58 >= tau -4.03,0,tn,Correct spelling.,0,tn,Correct spelling of 'and to mourn',0,tn,Correct spelling.
+500,corrupted,nokugculisa,nokugculsia,1,1,tp,score -8.04 < tau -4.03,1,tp,Missing 'u' in 'nokugculsia': nokugcwalisa.,1,tp,Extra 's' in the middle of the word.,1,tp,cluster 'gc' unlikely

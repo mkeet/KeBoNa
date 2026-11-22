@@ -1,0 +1,6 @@
+source,target,label,full_n,full_mf1,full_ratio,sub_n,sub_mf1,sub_ratio
+zulu,zulu,isiZulu (SADiLaR),1008,0.886806,1.0,925,0.889506,1.0
+zulu,xhosa,isiXhosa (SADiLaR),1082,0.798314,0.900213,925,0.794613,0.893319
+zulu,ndebele,isiNdebele (SADiLaR),925,0.866578,0.97719,925,0.865976,0.973546
+zulu,swati,siSwati (SADiLaR),1651,0.706336,0.796494,925,0.700968,0.788042
+zulu,shona,Shona (S10),1287,0.382497,0.43132,925,0.380178,0.427403

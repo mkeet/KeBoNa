@@ -1,0 +1,15 @@
+{
+  "language": "zu",
+  "source_csv": "rq4_corrections_seed0_zu.csv",
+  "total": 366447,
+  "counts": {
+    "success_rank1": 298302,
+    "near_miss": 27960,
+    "miss_outranked": 35927,
+    "miss_too_far": 0,
+    "miss_not_in_vocab": 4258
+  },
+  "near_miss_winner_closer": 3957,
+  "near_miss_winner_tied_on_frequency": 24003,
+  "unfixable_pct": 1.1619688522487563
+}

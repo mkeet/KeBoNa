@@ -1,0 +1,1001 @@
+idx,instance,original,word,is_error,spellchecker_flag,spellchecker_outcome,spellchecker_reason,gpt-oss-120b_flag,gpt-oss-120b_outcome,gpt-oss-120b_reason
+1,clean,ahlanzwa,ahlanzwa,0,0,tn,score -2.47 >= tau -4.03,0,tn,correct passive verb form
+1,corrupted,ahlanzwa,ahlahnzwa,1,1,tp,score -13.24 < tau -4.03,1,tp,illegal consonant cluster 'hnz' not used in Zulu
+2,clean,Jouberts,Jouberts,0,0,tn,score -2.30 >= tau -4.03,1,fp,contains non‑Zulu letters and foreign name
+2,corrupted,Jouberts,joubertsc,1,1,tp,score -4.83 < tau -4.03,1,tp,contains non‑Zulu consonant cluster 'tsc'
+3,clean,ucingo,ucingo,0,0,tn,score -2.40 >= tau -4.03,0,tn,standard noun for telephone
+3,corrupted,ucingo,cucingo,1,1,tp,score -11.18 < tau -4.03,0,fn,"valid Zulu spelling, acceptable click and consonant patterns"
+4,clean,neNtela,neNtela,0,0,tn,score -2.18 >= tau -4.03,1,fp,internal capital letter violates Zulu orthography
+4,corrupted,neNtela,nenwtela,1,1,tp,score -17.64 < tau -4.03,0,fn,"acceptable vowel‑consonant sequence, no illegal clusters"
+5,clean,oyigcwalisile,oyigcwalisile,0,0,tn,score -1.85 >= tau -4.03,0,tn,valid verb with proper suffix
+5,corrupted,oyigcwalisile,oyicgwalisile,1,1,tp,score -9.08 < tau -4.03,1,tp,illegal consonant cluster 'cgw' not used in Zulu
+6,clean,nabalingiswa,nabalingiswa,0,0,tn,score -1.99 >= tau -4.03,0,tn,correct conjunction with noun
+6,corrupted,nabalingiswa,zabalingiswa,1,0,fn,score -1.93 >= tau -4.03,0,fn,"standard Zulu morphology, permissible 'ng' and 'sw' sequences"
+7,clean,Australia,Australia,0,0,tn,score -1.97 >= tau -4.03,0,tn,loanword spelled as in English
+7,corrupted,Australia,austrlaia,1,1,tp,score -13.01 < tau -4.03,1,tp,foreign consonant cluster 'strl' violates Zulu orthography
+8,clean,esiqukethe,esiqukethe,0,0,tn,score -1.47 >= tau -4.03,0,tn,acceptable consonant cluster and suffix
+8,corrupted,esiqukethe,esiquethe,1,1,tp,score -12.92 < tau -4.03,1,tp,'qu' sequence not allowed in Zulu
+9,clean,wasindiswa,wasindiswa,0,0,tn,score -2.57 >= tau -4.03,0,tn,correct past‑tense passive verb
+9,corrupted,wasindiswa,wsaindiswa,1,1,tp,score -9.79 < tau -4.03,1,tp,initial consonant cluster 'ws' not permitted
+10,clean,esandleni,esandleni,0,0,tn,score -1.91 >= tau -4.03,0,tn,proper locative form
+10,corrupted,esandleni,esanbleni,1,1,tp,score -15.57 < tau -4.03,1,tp,illegal 'nb' cluster within word
+11,clean,ulethela,ulethela,0,0,tn,score -2.61 >= tau -4.03,0,tn,correct subject concord and verb
+11,corrupted,ulethela,ulethecla,1,1,tp,score -5.01 < tau -4.03,1,tp,illegal consonant cluster 'ecl'
+12,clean,zingahle,zingahle,0,0,tn,score -2.04 >= tau -4.03,0,tn,valid modal verb form
+12,corrupted,zingahle,zinxahle,1,1,tp,score -9.80 < tau -4.03,1,tp,'nx' sequence not used in Zulu
+13,clean,ongakayihlanganisi,ongakayihlanganisi,0,0,tn,score -1.62 >= tau -4.03,0,tn,complex verb correctly assembled
+13,corrupted,ongakayihlanganisi,ongakayihanganisi,1,0,fn,score -2.24 >= tau -4.03,0,fn,"valid Zulu word, proper prefixes and suffixes"
+14,clean,nenselelo,nenselelo,0,0,tn,score -1.92 >= tau -4.03,0,tn,"standard noun, correct spelling"
+14,corrupted,nenselelo,nnselelo,1,1,tp,score -10.44 < tau -4.03,1,tp,double initial 'nn' violates Zulu spelling rules
+15,clean,obethwele,obethwele,0,0,tn,score -2.56 >= tau -4.03,0,tn,correct relative clause form
+15,corrupted,obethwele,obethewle,1,1,tp,score -8.52 < tau -4.03,0,fn,"conforms to Zulu phonotactics, no illegal clusters"
+16,clean,Esigamekweni,Esigamekweni,0,0,tn,score -1.98 >= tau -4.03,0,tn,capitalized first word only
+16,corrupted,Esigamekweni,esiwamekweni,1,1,tp,score -5.93 < tau -4.03,0,fn,"acceptable Zulu spelling, proper 'kw' and vowel patterns"
+17,clean,njengomlingiswa,njengomlingiswa,0,0,tn,score -1.60 >= tau -4.03,0,tn,proper comparative construction
+17,corrupted,njengomlingiswa,njengromlingiswa,1,1,tp,score -6.11 < tau -4.03,1,tp,contains illegal 'ngro' consonant cluster
+18,clean,indaba,indaba,0,0,tn,score -2.04 >= tau -4.03,0,tn,common noun correctly spelled
+18,corrupted,indaba,indba,1,1,tp,score -8.52 < tau -4.03,1,tp,illegal 'db' consonant cluster
+19,clean,ngubulungu,ngubulungu,0,0,tn,score -2.01 >= tau -4.03,0,tn,correct copulative construction
+19,corrupted,ngubulungu,ngubuungu,1,1,tp,score -12.88 < tau -4.03,0,fn,"acceptable Zulu spelling, permissible nasal and vowel sequences"
+20,clean,ukuzikhethela,ukuzikhethela,0,0,tn,score -1.75 >= tau -4.03,0,tn,reflexive infinitive correctly formed
+20,corrupted,ukuzikhethela,ukubzikhethela,1,1,tp,score -7.86 < tau -4.03,1,tp,illegal 'zk' consonant combination
+21,clean,engumhlanganyeli,engumhlanganyeli,0,0,tn,score -1.64 >= tau -4.03,0,tn,correct participial noun
+21,corrupted,engumhlanganyeli,enguhmlanganyeli,1,1,tp,score -7.63 < tau -4.03,1,tp,illegal 'hm' sequence after vowel
+22,clean,kuqoqwe,kuqoqwe,0,0,tn,score -2.60 >= tau -4.03,0,tn,proper passive infinitive
+22,corrupted,kuqoqwe,kvqoqwe,1,1,tp,score -16.25 < tau -4.03,1,tp,illegal initial cluster 'kv' not used in Zulu
+23,clean,Mangedlulise,Mangedlulise,0,0,tn,score -2.01 >= tau -4.03,0,tn,imperative verb correctly formed
+23,corrupted,Mangedlulise,magnedlulise,1,1,tp,score -5.79 < tau -4.03,1,tp,illegal 'gn' consonant cluster
+24,clean,nesiyoxhumanisa,nesiyoxhumanisa,0,0,tn,score -1.92 >= tau -4.03,0,tn,compound verb with conjunction correct
+24,corrupted,nesiyoxhumanisa,nesiyoxhumaisa,1,0,fn,score -3.90 >= tau -4.03,0,fn,"valid Zulu spelling, proper 'xh' click and suffix"
+25,clean,Ukufuya,Ukufuya,0,0,tn,score -2.06 >= tau -4.03,0,tn,infinitive correctly capitalized
+25,corrupted,Ukufuya,ukufusa,1,0,fn,score -2.97 >= tau -4.03,0,fn,"acceptable Zulu morphology, no illegal clusters"
+26,clean,ezinehlobo,ezinehlobo,0,0,tn,score -2.59 >= tau -4.03,0,tn,conforms to Zulu noun class and verb morphology
+26,corrupted,ezinehlobo,ezinelhobo,1,1,tp,score -11.39 < tau -4.03,1,tp,"missing 'h' after n, illegal 'nl' cluster"
+27,clean,uzosekelwa,uzosekelwa,0,0,tn,score -2.14 >= tau -4.03,0,tn,"proper future passive construction, spelling matches Zulu rules"
+27,corrupted,uzosekelwa,uzosekela,1,0,fn,score -2.30 >= tau -4.03,0,fn,correct future verb uzosekela
+28,clean,Prakash,Prakash,0,1,fp,score -14.23 < tau -4.03,1,fp,not a Zulu lexical item
+28,corrupted,Prakash,perakash,1,1,tp,score -11.73 < tau -4.03,1,tp,contains non‑native r and illegal rk cluster
+29,clean,sengizocela,sengizocela,0,0,tn,score -1.83 >= tau -4.03,0,tn,valid future verb form with correct prefix
+29,corrupted,sengizocela,sengizoceal,1,1,tp,score -6.25 < tau -4.03,1,tp,transposition of a and l in cela
+30,clean,akufaki,akufaki,0,0,tn,score -2.89 >= tau -4.03,0,tn,"correct negative verb form, spelling adheres to rules"
+30,corrupted,akufaki,akufkai,1,1,tp,score -13.65 < tau -4.03,1,tp,"missing vowel a after f, creates fk cluster"
+31,clean,emahlombeni,emahlombeni,0,0,tn,score -1.90 >= tau -4.03,0,tn,locative plural form correctly spelled
+31,corrupted,emahlombeni,emahlombani,1,0,fn,score -2.30 >= tau -4.03,1,tp,"locative suffix should be -eni, not -ani"
+32,clean,anokungcola,anokungcola,0,0,tn,score -2.23 >= tau -4.03,0,tn,"verb phrase follows Zulu morphology, no error"
+32,corrupted,anokungcola,anokungcolra,1,1,tp,score -5.92 < tau -4.03,1,tp,extra r after l creates illegal cluster
+33,clean,kwefulaha,kwefulaha,0,0,tn,score -3.30 >= tau -4.03,1,fp,extra 'h' after 'a' violates Zulu orthography
+33,corrupted,kwefulaha,kjefulaha,1,1,tp,score -12.79 < tau -4.03,1,tp,initial cluster kj not allowed in Zulu
+34,clean,abayikhokha,abayikhokha,0,0,tn,score -1.79 >= tau -4.03,0,tn,correct subject concord and verb spelling
+34,corrupted,abayikhokha,baayikhokha,1,1,tp,score -8.56 < tau -4.03,1,tp,extra vowel a after prefix ba
+35,clean,Esilele,Esilele,0,0,tn,score -2.87 >= tau -4.03,0,tn,spelling matches Zulu relative clause pattern
+35,corrupted,Esilele,esilzle,1,1,tp,score -13.59 < tau -4.03,1,tp,illegal zl cluster not permitted
+36,clean,ngokuhlola,ngokuhlola,0,0,tn,score -1.22 >= tau -4.03,0,tn,"proper gerundial prefix, spelling correct"
+36,corrupted,ngokuhlola,ngokuhlolaj,1,0,fn,score -3.31 >= tau -4.03,1,tp,final vowel replaced by j
+37,clean,seziMpesheni,seziMpesheni,0,0,tn,score -1.93 >= tau -4.03,1,fp,internal capital letter not allowed in Zulu word
+37,corrupted,seziMpesheni,seimpesheni,1,1,tp,score -8.63 < tau -4.03,1,tp,extra vowel i after se violates pattern
+38,clean,lokuhlela,lokuhlela,0,0,tn,score -1.71 >= tau -4.03,0,tn,"correct noun‑verb compound, spelling valid"
+38,corrupted,lokuhlela,lokuhlel,1,0,fn,score -1.62 >= tau -4.03,1,tp,missing final vowel a
+39,clean,UMSOLWA,UMSOLWA,0,0,tn,score -1.75 >= tau -4.03,0,tn,"all‑caps acceptable for proper noun, no typo"
+39,corrupted,UMSOLWA,umsolpwa,1,1,tp,score -11.45 < tau -4.03,1,tp,"extra p before w, should be umsolwa"
+40,clean,khiya,khiya,0,1,fp,score -4.96 < tau -4.03,1,fp,extra vowel 'i' after 'kh' creates non‑Zulu form
+40,corrupted,khiya,khhya,1,1,tp,score -20.00 < tau -4.03,1,tp,"double h after k, should be single"
+41,clean,ARC-GCI,ARC-GCI,0,1,fp,score -18.35 < tau -4.03,1,fp,contains hyphen and non‑Zulu characters
+41,corrupted,ARC-GCI,axrc-gci,1,1,tp,score -20.00 < tau -4.03,1,tp,contains hyphen and invalid axrc sequence
+42,clean,uyatholakala,uyatholakala,0,0,tn,score -1.44 >= tau -4.03,0,tn,"correct present passive form, spelling accurate"
+42,corrupted,uyatholakala,uyatholakalar,1,0,fn,score -1.92 >= tau -4.03,1,tp,extra trailing r
+43,clean,Ngezindlu,Ngezindlu,0,0,tn,score -1.62 >= tau -4.03,0,tn,spelling follows Zulu locative construction
+43,corrupted,Ngezindlu,ngezindu,1,0,fn,score -2.15 >= tau -4.03,1,tp,"ending should be la, not u"
+44,clean,weSikhungo,weSikhungo,0,0,tn,score -1.37 >= tau -4.03,1,fp,internal capital 'S' violates Zulu orthography
+44,corrupted,weSikhungo,wesihungo,1,0,fn,score -3.04 >= tau -4.03,0,fn,conforms to Zulu phonotactics
+45,clean,umesabise,umesabise,0,0,tn,score -2.57 >= tau -4.03,1,fp,extra 'i' creates non‑standard verb form
+45,corrupted,umesabise,umeasbise,1,1,tp,score -18.30 < tau -4.03,1,tp,illegal asb consonant cluster
+46,clean,woLimi,woLimi,0,0,tn,score -2.89 >= tau -4.03,1,fp,internal capital 'L' not permitted in Zulu
+46,corrupted,woLimi,wolim,1,0,fn,score -3.68 >= tau -4.03,0,fn,valid loanword spelling
+47,clean,olukuMnyango,olukuMnyango,0,0,tn,score -1.84 >= tau -4.03,1,fp,internal capital 'M' breaks Zulu spelling conventions
+47,corrupted,olukuMnyango,olukumnqango,1,1,tp,score -4.47 < tau -4.03,0,fn,"allowed clusters, morphology plausible"
+48,clean,njengephemithi,njengephemithi,0,0,tn,score -2.33 >= tau -4.03,1,fp,"non‑standard combination, likely typo in 'phemithi'"
+48,corrupted,njengephemithi,njegephemithi,1,1,tp,score -6.39 < tau -4.03,0,fn,follows Zulu spelling rules
+49,clean,olungaphambili,olungaphambili,0,0,tn,score -1.36 >= tau -4.03,0,tn,spelling conforms to comparative adjective pattern
+49,corrupted,olungaphambili,olungapharmbili,1,1,tp,score -6.33 < tau -4.03,1,tp,extra r and b create non‑Zulu cluster
+50,clean,enzeka,enzeka,0,0,tn,score -2.32 >= tau -4.03,0,tn,"correct verb form, spelling proper"
+50,corrupted,enzeka,nzeka,1,1,tp,score -5.22 < tau -4.03,0,fn,correct verb nzeka
+51,clean,kwabafana,kwabafana,0,0,tn,score -1.90 >= tau -4.03,0,tn,"correct spelling, locative form 'kwabafana'"
+51,corrupted,kwabafana,kwacbafana,1,1,tp,score -11.53 < tau -4.03,1,tp,contains illegal cluster 'kwacb'
+52,clean,aziphendulele,aziphendulele,0,0,tn,score -1.69 >= tau -4.03,0,tn,correct reflexive verb form
+52,corrupted,aziphendulele,aqiphendulele,1,1,tp,score -6.81 < tau -4.03,1,tp,extra final 'e'; correct form 'aqiphendule'
+53,clean,ekuyona,ekuyona,0,0,tn,score -3.11 >= tau -4.03,0,tn,correct locative construction
+53,corrupted,ekuyona,eukyona,1,1,tp,score -20.00 < tau -4.03,1,tp,non‑Zulu sequence 'eu'; should be 'eyokona'
+54,clean,eSivumelwaneni,eSivumelwaneni,0,0,tn,score -1.04 >= tau -4.03,1,fp,internal noun incorrectly capitalized
+54,corrupted,eSivumelwaneni,esiuvmelwaneni,1,1,tp,score -8.85 < tau -4.03,1,tp,contains impossible cluster 'uvm'
+55,clean,okwethusa,okwethusa,0,0,tn,score -2.05 >= tau -4.03,0,tn,correct verb form
+55,corrupted,okwethusa,okwtehusa,1,1,tp,score -18.02 < tau -4.03,1,tp,extra 't' in 'okwtehusa'; correct 'okuthusa'
+56,clean,wezokuShushiswa,wezokuShushiswa,0,0,tn,score -1.55 >= tau -4.03,1,fp,internal capital S violates orthography
+56,corrupted,wezokuShushiswa,wezoksuhushiswa,1,1,tp,score -8.60 < tau -4.03,1,tp,compound 'wezoksuhushiswa' violates noun‑class patterns
+57,clean,ngumZulu,ngumZulu,0,0,tn,score -2.47 >= tau -4.03,0,tn,proper noun Zulu capitalized correctly
+57,corrupted,ngumZulu,ngumzuul,1,1,tp,score -8.79 < tau -4.03,1,tp,double 'u' in 'zuul' not allowed
+58,clean,bazokhokha,bazokhokha,0,0,tn,score -1.87 >= tau -4.03,0,tn,correct future tense verb
+58,corrupted,bazokhokha,mbazokhokha,1,0,fn,score -2.88 >= tau -4.03,1,tp,unnecessary prefix 'm' before 'bazokhokha'
+59,clean,esiyokwethula,esiyokwethula,0,0,tn,score -1.53 >= tau -4.03,0,tn,correct relative clause form
+59,corrupted,esiyokwethula,esigyokwethula,1,1,tp,score -6.73 < tau -4.03,1,tp,illegal cluster 'gyok' and extra 'y'
+60,clean,kungenakwenzeka,kungenakwenzeka,0,0,tn,score -1.46 >= tau -4.03,0,tn,correct negative possibility construction
+60,corrupted,kungenakwenzeka,kugnenakwenzeka,1,0,fn,score -2.12 >= tau -4.03,1,tp,"should be 'kungenakwenzeka', not 'kugnenakwenzeka'"
+61,clean,esiqukethwe,esiqukethwe,0,0,tn,score -1.42 >= tau -4.03,0,tn,correct participial form
+61,corrupted,esiqukethwe,esiqukehhwe,1,1,tp,score -10.13 < tau -4.03,1,tp,double 'hh' invalid in Zulu
+62,clean,ezigqitshiwe,ezigqitshiwe,0,0,tn,score -1.94 >= tau -4.03,1,fp,extra vowel 'i' inserted; should be 'ezigqitshwe'
+62,corrupted,ezigqitshiwe,ezigqitzshiwe,1,1,tp,score -10.50 < tau -4.03,1,tp,double 'tzs' impossible; correct 'ezigqitshwe'
+63,clean,embili,embili,0,0,tn,score -3.07 >= tau -4.03,0,tn,correct numeral adjective
+63,corrupted,embili,uembili,1,1,tp,score -12.58 < tau -4.03,1,tp,extra 'e' before 'mbili'; correct 'umbili'
+64,clean,ziimbuzi,ziimbuzi,0,0,tn,score -2.99 >= tau -4.03,1,fp,wrong noun class prefix; should be 'izimbuzi'
+64,corrupted,ziimbuzi,zyiimbuzi,1,1,tp,score -11.16 < tau -4.03,1,tp,initial 'z' and double 'ii' invalid; should be 'izimbuzi'
+65,clean,lekhaya,lekhaya,0,0,tn,score -2.07 >= tau -4.03,0,tn,correct demonstrative noun
+65,corrupted,lekhaya,lekaya,1,1,tp,score -4.67 < tau -4.03,1,tp,missing 'h' after 'le'; correct 'lekhaya'
+66,clean,zenhlawulo,zenhlawulo,0,0,tn,score -1.76 >= tau -4.03,0,tn,correct possessive noun form
+66,corrupted,zenhlawulo,zenhlaulo,1,1,tp,score -7.06 < tau -4.03,1,tp,"suffix should be '-alo', not '-ulo'"
+67,clean,Osempeshile,Osempeshile,0,0,tn,score -3.09 >= tau -4.03,0,tn,proper name correctly capitalized
+67,corrupted,Osempeshile,osempehile,1,1,tp,score -7.97 < tau -4.03,1,tp,non‑standard verb form; likely typo for 'osempilile'
+68,clean,Ukubonakala,Ukubonakala,0,0,tn,score -1.02 >= tau -4.03,0,tn,"capitalized only at sentence start, acceptable"
+68,corrupted,Ukubonakala,ukubnoakala,1,1,tp,score -11.73 < tau -4.03,1,tp,extra 'n' after 'b'; correct 'ukubonakala'
+69,clean,esekumbiwe,esekumbiwe,0,0,tn,score -3.36 >= tau -4.03,0,tn,correct participial form
+69,corrupted,esekumbiwe,esekmubiwe,1,1,tp,score -16.11 < tau -4.03,1,tp,cluster 'km' not allowed; should be 'esekubuywe'
+70,clean,ngiyazazi,ngiyazazi,0,0,tn,score -2.00 >= tau -4.03,0,tn,correct first-person plural verb
+70,corrupted,ngiyazazi,ngyiazazi,1,1,tp,score -16.20 < tau -4.03,1,tp,"should be 'ngiyazazi', not 'ngyiazazi'"
+71,clean,iWestminister,iWestminister,0,0,tn,score -3.03 >= tau -4.03,0,tn,proper noun with correct prefix 'i-'
+71,corrupted,iWestminister,westminister,1,0,fn,score -3.15 >= tau -4.03,1,tp,"English spelling, not Zulu orthography"
+72,clean,Kuyilokhu,Kuyilokhu,0,0,tn,score -1.94 >= tau -4.03,0,tn,"capitalized first word, acceptable"
+72,corrupted,Kuyilokhu,kuyilbokhu,1,1,tp,score -11.33 < tau -4.03,1,tp,extra 'b' in 'kuyilbokhu'; correct 'kuyilokho'
+73,clean,ukugudlula,ukugudlula,0,0,tn,score -1.81 >= tau -4.03,0,tn,correct infinitive verb
+73,corrupted,ukugudlula,ukugudlual,1,1,tp,score -6.48 < tau -4.03,1,tp,extra 'al' at end; correct 'ukugudlu'
+74,clean,namabala,namabala,0,0,tn,score -2.36 >= tau -4.03,0,tn,correct conjunction with noun
+74,corrupted,namabala,amabala,1,0,fn,score -2.38 >= tau -4.03,0,fn,correct Zulu noun meaning 'colors'
+75,clean,ukuzithinta,ukuzithinta,0,0,tn,score -1.61 >= tau -4.03,0,tn,correct reflexive infinitive
+75,corrupted,ukuzithinta,ukcuzithinta,1,1,tp,score -10.48 < tau -4.03,1,tp,extra 'c' before 'uzithinta'; correct 'ukuzithinta'
+76,clean,yezokukhulumisana,yezokukhulumisana,0,0,tn,score -1.31 >= tau -4.03,0,tn,Valid noun‑class prefix and verb compound
+76,corrupted,yezokukhulumisana,yezokukhulumsana,1,1,tp,score -5.46 < tau -4.03,1,tp,extra 's' before 'ana' violates verb root
+77,clean,wokuzivikela,wokuzivikela,0,0,tn,score -1.49 >= tau -4.03,0,tn,Correct reflexive construction with class prefix
+77,corrupted,wokuzivikela,wokuzivikla,1,1,tp,score -6.00 < tau -4.03,1,tp,"missing vowel after 'k', should be 'ke'"
+78,clean,nobungoti,nobungoti,0,0,tn,score -2.07 >= tau -4.03,0,tn,Proper conjunction and noun‑class agreement
+78,corrupted,nobungoti,nobungvoti,1,1,tp,score -11.18 < tau -4.03,1,tp,illegal consonant cluster 'gv' not in Zulu
+79,clean,idingekile,idingekile,0,0,tn,score -1.74 >= tau -4.03,0,tn,Spelling matches standard adjective form
+79,corrupted,idingekile,idinhekile,1,1,tp,score -8.98 < tau -4.03,1,tp,'dh' not a Zulu consonant digraph
+80,clean,ngelomqashi,ngelomqashi,0,0,tn,score -2.16 >= tau -4.03,0,tn,Correct prepositional phrase with class‑7 prefix
+80,corrupted,ngelomqashi,ngeiomqashi,1,1,tp,score -10.46 < tau -4.03,1,tp,triple vowel sequence 'eio' not allowed
+81,clean,yesilwane,yesilwane,0,0,tn,score -1.94 >= tau -4.03,0,tn,Valid genitive construction
+81,corrupted,yesilwane,yesilwake,1,0,fn,score -3.88 >= tau -4.03,1,tp,'k' substituted for expected 'n' in 'wane'
+82,clean,kweSilo,kweSilo,0,0,tn,score -2.44 >= tau -4.03,1,fp,Improper internal capitalisation; should be kwesilo
+82,corrupted,kweSilo,okwesilo,1,0,fn,score -2.47 >= tau -4.03,0,fn,valid Zulu word structure
+83,clean,eKomkhulu,eKomkhulu,0,0,tn,score -2.13 >= tau -4.03,1,fp,Improper internal capitalisation; should be ekomkhulu
+83,corrupted,eKomkhulu,erkomkhulu,1,1,tp,score -8.03 < tau -4.03,1,tp,initial consonant cluster 'er' invalid
+84,clean,uchazwa,uchazwa,0,0,tn,score -2.31 >= tau -4.03,0,tn,Correct passive verb form
+84,corrupted,uchazwa,umhazwa,1,1,tp,score -10.55 < tau -4.03,1,tp,double 'zz' not used in Zulu orthography
+85,clean,Ngikubuzile,Ngikubuzile,0,0,tn,score -2.38 >= tau -4.03,0,tn,Proper sentence‑initial capitalisation only
+85,corrupted,Ngikubuzile,ngikuuzile,1,1,tp,score -11.23 < tau -4.03,1,tp,double 'u' after 'k' violates CV pattern
+86,clean,naseNelson,naseNelson,0,0,tn,score -2.52 >= tau -4.03,0,tn,Proper noun retains capital after prefix
+86,corrupted,naseNelson,nasenelsno,1,1,tp,score -7.48 < tau -4.03,1,tp,illegal cluster 'lsn' and missing vowels
+87,clean,Kumnyama,Kumnyama,0,0,tn,score -2.00 >= tau -4.03,0,tn,"Initial capital only, rest lower‑case correct"
+87,corrupted,Kumnyama,kumnyamaj,1,0,fn,score -2.38 >= tau -4.03,1,tp,trailing 'j' not a Zulu consonant
+88,clean,elizenzile,elizenzile,0,0,tn,score -2.44 >= tau -4.03,0,tn,Correct relative clause form
+88,corrupted,elizenzile,eliizenzile,1,1,tp,score -10.18 < tau -4.03,1,tp,double 'i' after prefix 'el' unnecessary
+89,clean,nesiqukethe,nesiqukethe,0,0,tn,score -1.50 >= tau -4.03,0,tn,Valid conjunction‑noun combination
+89,corrupted,nesiqukethe,nesiqukether,1,0,fn,score -1.74 >= tau -4.03,1,tp,"final 'r' illegal, Zulu words end in vowel"
+90,clean,wuhlupho,wuhlupho,0,0,tn,score -3.01 >= tau -4.03,0,tn,Correct possessive construction
+90,corrupted,wuhlupho,wuhxupho,1,1,tp,score -18.16 < tau -4.03,1,tp,illegal digraph 'hx' not in Zulu
+91,clean,yezincomo,yezincomo,0,0,tn,score -1.84 >= tau -4.03,0,tn,Proper genitive plural form
+91,corrupted,yezincomo,yezincomq,1,1,tp,score -4.64 < tau -4.03,1,tp,ends with consonant 'q' without following vowel
+92,clean,inkoliso,inkoliso,0,0,tn,score -3.70 >= tau -4.03,1,fp,Vowel error; correct word is inkuliso
+92,corrupted,inkoliso,iunkoliso,1,1,tp,score -12.33 < tau -4.03,1,tp,extra 'u' after initial vowel breaks CV pattern
+93,clean,bentando,bentando,0,0,tn,score -2.36 >= tau -4.03,1,fp,Verb ending -ndo not attested in Zulu morphology
+93,corrupted,bentando,aentando,1,1,tp,score -9.13 < tau -4.03,1,tp,vowel cluster 'ae' not permitted in Zulu
+94,clean,Lydia,Lydia,0,1,fp,score -11.34 < tau -4.03,0,tn,Proper name correctly capitalised
+94,corrupted,Lydia,lyia,1,1,tp,score -16.41 < tau -4.03,1,tp,initial cluster 'ly' not a Zulu digraph
+95,clean,sisekela,sisekela,0,0,tn,score -1.72 >= tau -4.03,0,tn,Correct verb in present tense
+95,corrupted,sisekela,siseekla,1,1,tp,score -12.64 < tau -4.03,1,tp,"'ekla' not a Zulu morpheme, violates structure"
+96,clean,nganeno,nganeno,0,0,tn,score -2.84 >= tau -4.03,0,tn,Valid verb form meaning ‘be satisfied’
+96,corrupted,nganeno,ncganeno,1,1,tp,score -13.18 < tau -4.03,1,tp,cluster 'ncg' illegal in Zulu phonotactics
+97,clean,olubophezela,olubophezela,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct relative clause with class‑7 prefix
+97,corrupted,olubophezela,olubopheela,1,1,tp,score -6.91 < tau -4.03,1,tp,contains non‑standard suffix '-era' for Zulu
+98,clean,compliments,compliments,0,0,tn,score -2.54 >= tau -4.03,1,fp,"English word, not Zulu spelling"
+98,corrupted,compliments,complimenrs,1,1,tp,score -6.28 < tau -4.03,1,tp,"English word, not Zulu orthography"
+99,clean,i-Hotline,i-Hotline,0,1,fp,score -10.10 < tau -4.03,1,fp,Improper capitalisation in loanword; should be i-hotline
+99,corrupted,i-Hotline,-hotline,1,1,tp,score -10.15 < tau -4.03,1,tp,hyphenated non‑Zulu term
+100,clean,mnikazi,mnikazi,0,0,tn,score -2.40 >= tau -4.03,1,fp,"Missing class‑7 prefix ‘u-’, should be umnikazi"
+100,corrupted,mnikazi,mnikagzi,1,1,tp,score -11.92 < tau -4.03,1,tp,illegal digraph 'gz' not in Zulu
+101,clean,agciniwe,agciniwe,0,0,tn,score -2.14 >= tau -4.03,0,tn,Correct passive form of gcina.
+101,corrupted,agciniwe,agcinyiwe,1,1,tp,score -4.49 < tau -4.03,1,tp,unexpected 'y' before 'iwe'
+102,clean,sasingekho,sasingekho,0,0,tn,score -2.03 >= tau -4.03,0,tn,Correct negative past form with sasingekho.
+102,corrupted,sasingekho,saisngekho,1,1,tp,score -14.41 < tau -4.03,1,tp,extra vowel creates illegal 'sn' cluster
+103,clean,wokuchaza,wokuchaza,0,0,tn,score -1.68 >= tau -4.03,1,fp,Extra leading w; should be ukuchaza.
+103,corrupted,wokuchaza,wouchaza,1,1,tp,score -12.16 < tau -4.03,1,tp,unnecessary vowel before 'chaza'
+104,clean,owayengejwayele,owayengejwayele,0,0,tn,score -1.66 >= tau -4.03,0,tn,Correct past habitual with owayengejwayele.
+104,corrupted,owayengejwayele,owayengejwayel,1,0,fn,score -1.68 >= tau -4.03,1,tp,"word truncated, should end with 'e'"
+105,clean,sasesihlatshiwe,sasesihlatshiwe,0,0,tn,score -2.15 >= tau -4.03,0,tn,Correct passive construction sasesihlatshiwe.
+105,corrupted,sasesihlatshiwe,sasesihlatsiwe,1,0,fn,score -2.42 >= tau -4.03,1,tp,unnecessary 'i' before passive suffix
+106,clean,oMongameli,oMongameli,0,0,tn,score -1.99 >= tau -4.03,1,fp,Wrong noun class prefix; should be uMongameli.
+106,corrupted,oMongameli,omognameli,1,1,tp,score -14.12 < tau -4.03,1,tp,adjacent letters swapped
+107,clean,thekga,thekga,0,1,fp,score -4.04 < tau -4.03,1,fp,Missing vowel after k; should be thekela.
+107,corrupted,thekga,thebkga,1,1,tp,score -14.19 < tau -4.03,1,tp,illegal 'bk' consonant cluster
+108,clean,kubolekisa,kubolekisa,0,0,tn,score -2.02 >= tau -4.03,1,fp,Missing initial u; infinitive is ukubolekisa.
+108,corrupted,kubolekisa,kublekisa,1,1,tp,score -11.13 < tau -4.03,1,tp,insertion creates illegal 'bl' cluster
+109,clean,nasiza,nasiza,0,0,tn,score -3.50 >= tau -4.03,0,tn,Correct present form nasiza.
+109,corrupted,nasiza,naisza,1,1,tp,score -17.80 < tau -4.03,1,tp,illegal 'sn' cluster
+110,clean,abawuhlaziyayo,abawuhlaziyayo,0,0,tn,score -1.89 >= tau -4.03,0,tn,Correct progressive noun abawuhlaziyayo.
+110,corrupted,abawuhlaziyayo,abauhlaziyayo,1,1,tp,score -5.67 < tau -4.03,1,tp,"extra 'u' after prefix, should be 'abahlaziyayo'"
+111,clean,wayengakhishwanga,wayengakhishwanga,0,0,tn,score -1.60 >= tau -4.03,0,tn,Correct negative passive wayengakhishwanga.
+111,corrupted,wayengakhishwanga,wayengakhishanga,1,0,fn,score -1.88 >= tau -4.03,1,tp,"verb form incorrect, likely typo"
+112,clean,wokuhlinza,wokuhlinza,0,0,tn,score -1.89 >= tau -4.03,1,fp,Extra leading w; should be ukuhlinza.
+112,corrupted,wokuhlinza,wokulhlinza,1,1,tp,score -9.08 < tau -4.03,1,tp,illegal 'lh' sequence
+113,clean,abayisikhombisa,abayisikhombisa,0,0,tn,score -1.47 >= tau -4.03,0,tn,Correct relative form abayisikhombisa.
+113,corrupted,abayisikhombisa,abayisikhobmisa,1,1,tp,score -7.99 < tau -4.03,1,tp,adjacent letters swapped
+114,clean,ugandaganda,ugandaganda,0,0,tn,score -1.49 >= tau -4.03,1,fp,Missing initial u; infinitive is ukugandaganda.
+114,corrupted,ugandaganda,dgandaganda,1,1,tp,score -7.06 < tau -4.03,1,tp,illegal onset 'dg'
+115,clean,ngimnikeza,ngimnikeza,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct first person form ngimnikeza.
+115,corrupted,ngimnikeza,ngtmnikeza,1,1,tp,score -12.81 < tau -4.03,1,tp,misplaced 't' after 'ng'
+116,clean,omgunyathi,omgunyathi,0,0,tn,score -2.94 >= tau -4.03,1,fp,Wrong prefix; should be umgunyathi.
+116,corrupted,omgunyathi,dmgunyathi,1,1,tp,score -8.45 < tau -4.03,1,tp,illegal onset 'dm'
+117,clean,Usephindele,Usephindele,0,0,tn,score -2.08 >= tau -4.03,0,tn,Correct verb form usephindela (case irrelevant).
+117,corrupted,Usephindele,usephondele,1,0,fn,score -2.88 >= tau -4.03,0,fn,conforms to Zulu verb morphology
+118,clean,emadodeni,emadodeni,0,0,tn,score -2.01 >= tau -4.03,0,tn,Correct locative plural emadodeni.
+118,corrupted,emadodeni,emadodseni,1,1,tp,score -11.34 < tau -4.03,1,tp,extra 's' creates illegal 'ds' cluster
+119,clean,bayayimukela,bayayimukela,0,0,tn,score -2.48 >= tau -4.03,0,tn,Correct present plural bayayimukela.
+119,corrupted,bayayimukela,bayayimukelna,1,1,tp,score -5.83 < tau -4.03,1,tp,unnecessary vowel after 'bay'
+120,clean,Ngibingelela,Ngibingelela,0,0,tn,score -2.10 >= tau -4.03,0,tn,Correct greeting Ngibingelela.
+120,corrupted,Ngibingelela,ngibigelela,1,1,tp,score -8.04 < tau -4.03,1,tp,illegal 'gb' consonant combination
+121,clean,u-Old,u-Old,0,1,fp,score -16.98 < tau -4.03,1,fp,Hyphen not used; should be uOld.
+121,corrupted,u-Old,u-oll,1,1,tp,score -16.98 < tau -4.03,1,tp,invalid hyphenated form with non‑Zulu 'oll'
+122,clean,kukaJerry,kukaJerry,0,0,tn,score -2.35 >= tau -4.03,0,tn,Correct possessive kukaJerry.
+122,corrupted,kukaJerry,kukaqjerry,1,1,tp,score -11.77 < tau -4.03,1,tp,illegal 'qj' sequence
+123,clean,baphinda,baphinda,0,0,tn,score -2.02 >= tau -4.03,0,tn,Correct verb baphinda.
+123,corrupted,baphinda,bahpinda,1,1,tp,score -14.63 < tau -4.03,1,tp,adjacent letters swapped
+124,clean,awufakiwe,awufakiwe,0,0,tn,score -2.42 >= tau -4.03,0,tn,Correct negative passive awufakiwe.
+124,corrupted,awufakiwe,awufakiwf,1,1,tp,score -5.28 < tau -4.03,1,tp,extra 'w' creates illegal 'wf'
+125,clean,seNkululeko,seNkululeko,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct compound seNkululeko.
+125,corrupted,seNkululeko,seknululeko,1,1,tp,score -12.29 < tau -4.03,1,tp,illegal 'kn' consonant cluster
+126,clean,othunyelelwayo,othunyelelwayo,0,0,tn,score -1.69 >= tau -4.03,0,tn,"Valid verb form, no illegal clusters."
+126,corrupted,othunyelelwayo,othunyslelwayo,1,1,tp,score -9.62 < tau -4.03,1,tp,"illegal cluster ""ys"" after ""ny"""
+127,clean,U-Air,U-Air,0,1,fp,score -16.58 < tau -4.03,1,fp,Hyphen and internal capital not standard Zulu spelling.
+127,corrupted,U-Air,u-hir,1,1,tp,score -17.19 < tau -4.03,1,tp,"non‑Zulu root ""hir"" after prefix"
+128,clean,Sinike,Sinike,0,0,tn,score -2.29 >= tau -4.03,0,tn,Correct imperative form of 'nika' with subject prefix.
+128,corrupted,Sinike,sinpke,1,1,tp,score -16.53 < tau -4.03,1,tp,"illegal consonant cluster ""npk"""
+129,clean,obukhangisiwe,obukhangisiwe,0,0,tn,score -1.97 >= tau -4.03,0,tn,"Proper noun form, spelling follows Zulu morphology."
+129,corrupted,obukhangisiwe,obukhangsiwe,1,1,tp,score -7.69 < tau -4.03,1,tp,"missing vowel after ""kh"", creates ""ngs"""
+130,clean,zezakhiwo,zezakhiwo,0,0,tn,score -1.94 >= tau -4.03,1,fp,Double initial 'z' creates non‑existent prefix.
+130,corrupted,zezakhiwo,zzakhiwo,1,1,tp,score -10.41 < tau -4.03,1,tp,"initial double consonant ""zz"" invalid"
+131,clean,wobuBuntu,wobuBuntu,0,0,tn,score -2.79 >= tau -4.03,1,fp,Internal capital B violates Zulu orthographic rules.
+131,corrupted,wobuBuntu,wzbubuntu,1,1,tp,score -12.13 < tau -4.03,1,tp,"illegal initial cluster ""wz"""
+132,clean,yoMthethonkambiso,yoMthethonkambiso,0,0,tn,score -0.94 >= tau -4.03,1,fp,Capital M inside word breaks Zulu capitalization convention.
+132,corrupted,yoMthethonkambiso,yomthetgonkambiso,1,1,tp,score -6.16 < tau -4.03,1,tp,"illegal cluster ""thg"""
+133,clean,azothintana,azothintana,0,0,tn,score -1.99 >= tau -4.03,0,tn,"Correct future tense verb, spelling conforms."
+133,corrupted,azothintana,azopthintana,1,1,tp,score -7.53 < tau -4.03,1,tp,"extra ""t"" creates invalid ""pt"""
+134,clean,wamaGreek,wamaGreek,0,0,tn,score -2.62 >= tau -4.03,1,fp,Internal capital G not allowed in Zulu words.
+134,corrupted,wamaGreek,wamagrenek,1,1,tp,score -7.21 < tau -4.03,1,tp,"non‑Zulu sequence ""gr"""
+135,clean,liqede,liqede,0,0,tn,score -3.26 >= tau -4.03,0,tn,Correct verb meaning 'it is finished'.
+135,corrupted,liqede,liqed,1,1,tp,score -4.07 < tau -4.03,1,tp,"extra final consonant ""d"""
+136,clean,eziyisilinganiso,eziyisilinganiso,0,0,tn,score -1.41 >= tau -4.03,0,tn,Spelling matches standard noun phrase.
+136,corrupted,eziyisilinganiso,eziyisliinganiso,1,1,tp,score -8.11 < tau -4.03,1,tp,"illegal cluster ""sl"""
+137,clean,Tractors,Tractors,0,0,tn,score -2.76 >= tau -4.03,1,fp,English plural not adapted to Zulu orthography.
+137,corrupted,Tractors,tyractors,1,1,tp,score -8.20 < tau -4.03,1,tp,contains non‑Zulu letters and clusters
+138,clean,Angikuboni,Angikuboni,0,0,tn,score -1.92 >= tau -4.03,0,tn,Correct negative present tense verb.
+138,corrupted,Angikuboni,angikuboi,1,1,tp,score -4.83 < tau -4.03,1,tp,"missing ""n"" before ""i"""
+139,clean,okungamaphethishini,okungamaphethishini,0,0,tn,score -1.69 >= tau -4.03,1,fp,Suffix '-shini' not part of standard Zulu morphology.
+139,corrupted,okungamaphethishini,okugamaphethishini,1,0,fn,score -2.07 >= tau -4.03,1,tp,"improbable sequence ""phith"""
+140,clean,ngakubonayo,ngakubonayo,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct first‑person future verb form.
+140,corrupted,ngakubonayo,ngakubonyao,1,1,tp,score -4.45 < tau -4.03,1,tp,"transposed ""a"" and ""y"" giving ""yao"""
+141,clean,Kangcono,Kangcono,0,0,tn,score -1.57 >= tau -4.03,0,tn,Correct comparative adjective spelling.
+141,corrupted,Kangcono,kangconu,1,1,tp,score -4.90 < tau -4.03,1,tp,"illegal cluster ""ngc"""
+142,clean,ezimngxenyeni,ezimngxenyeni,0,1,fp,score -5.03 < tau -4.03,1,fp,Illegal consonant cluster 'ngx' in Zulu.
+142,corrupted,ezimngxenyeni,ezimngxeyneni,1,1,tp,score -12.95 < tau -4.03,1,tp,"illegal cluster ""ngx"""
+143,clean,Ngonjiniyela,Ngonjiniyela,0,0,tn,score -1.71 >= tau -4.03,1,fp,Extra 'on' inserted; correct is 'Ngi njiniyela'.
+143,corrupted,Ngonjiniyela,ngonjiniyel,1,0,fn,score -1.79 >= tau -4.03,1,tp,"nonstandard suffix ""yel"""
+144,clean,yaboekukhulumeni,yaboekukhulumeni,0,0,tn,score -1.37 >= tau -4.03,1,fp,Missing space; should be 'yabo ekukhulumeni'.
+144,corrupted,yaboekukhulumeni,yabokeukhulumeni,1,1,tp,score -8.08 < tau -4.03,1,tp,"illegal cluster ""keu"""
+145,clean,ngakwakhe,ngakwakhe,0,0,tn,score -1.99 >= tau -4.03,1,fp,Redundant 'kwa' segment; correct form 'ngakhe'.
+145,corrupted,ngakwakhe,ngakwakhq,1,1,tp,score -4.69 < tau -4.03,1,tp,"illegal final cluster ""hq"""
+146,clean,izinkambo,izinkambo,0,0,tn,score -1.76 >= tau -4.03,0,tn,Correct plural noun for 'paths'.
+146,corrupted,izinkambo,izinkamdo,1,1,tp,score -4.61 < tau -4.03,1,tp,"substitution ""d"" for expected ""b"""
+147,clean,aphile,aphile,0,0,tn,score -2.76 >= tau -4.03,0,tn,Correct present tense verb.
+147,corrupted,aphile,apile,1,1,tp,score -5.77 < tau -4.03,0,fn,conforms to Zulu CV pattern
+148,clean,yerokhodi,yerokhodi,0,0,tn,score -3.93 >= tau -4.03,1,fp,"Root should be 'rekhodi', not 'okhodi'."
+148,corrupted,yerokhodi,yeerokhodi,1,1,tp,score -10.60 < tau -4.03,1,tp,"double vowel ""ee"" not standard"
+149,clean,isivinini,isivinini,0,0,tn,score -2.19 >= tau -4.03,0,tn,Correct noun for 'speed'.
+149,corrupted,isivinini,isiinini,1,1,tp,score -14.20 < tau -4.03,1,tp,"double vowel ""ii"" invalid"
+150,clean,lwabaphathimandla,lwabaphathimandla,0,0,tn,score -1.32 >= tau -4.03,0,tn,Spelling follows noun class prefix and root.
+150,corrupted,lwabaphathimandla,lwabaphathmiandla,1,1,tp,score -7.11 < tau -4.03,1,tp,"illegal cluster ""thm"""
+151,clean,ziqikelele,ziqikelele,0,0,tn,score -2.05 >= tau -4.03,0,tn,"Correct Zulu verb form, no typo."
+151,corrupted,ziqikelele,izqikelele,1,1,tp,score -10.31 < tau -4.03,1,tp,illegal cluster 'zq' not allowed
+152,clean,ezikwiSengezo,ezikwiSengezo,0,0,tn,score -2.67 >= tau -4.03,1,fp,Internal capital S violates standard lowercase spelling.
+152,corrupted,ezikwiSengezo,ezikwiesngezo,1,1,tp,score -7.09 < tau -4.03,1,tp,vowel sequence 'ie' should be 'e'
+153,clean,obudlelwane,obudlelwane,0,0,tn,score -1.68 >= tau -4.03,1,fp,"Prefix vowel and final vowel incorrect (u→o, o→e)."
+153,corrupted,obudlelwane,obudlelwamne,1,1,tp,score -6.08 < tau -4.03,1,tp,extra 'm' and wrong prefix 'o-'
+154,clean,lokuvikelwa,lokuvikelwa,0,0,tn,score -1.39 >= tau -4.03,0,tn,"Valid locative noun phrase, spelling matches."
+154,corrupted,lokuvikelwa,lokuzikelwa,1,0,fn,score -2.62 >= tau -4.03,1,tp,ending 'lwa' not verb form; should be 'la'
+155,clean,amageri,amageri,0,0,tn,score -2.83 >= tau -4.03,0,tn,"Plural noun with proper prefix, no error."
+155,corrupted,amageri,amagrei,1,1,tp,score -6.64 < tau -4.03,1,tp,'e' substituted for expected 'y'
+156,clean,wayetshala,wayetshala,0,0,tn,score -2.47 >= tau -4.03,0,tn,Past continuous verb correctly formed.
+156,corrupted,wayetshala,wayetshla,1,1,tp,score -7.64 < tau -4.03,1,tp,missing vowel 'a' after 'sh'
+157,clean,ujamele,ujamele,0,0,tn,score -2.83 >= tau -4.03,1,fp,Root should be 'ujamile'; 'e' substituted for 'i'.
+157,corrupted,ujamele,ujaemle,1,1,tp,score -17.88 < tau -4.03,1,tp,non‑Zulu root; likely 'ujabule'
+158,clean,luphuzi,luphuzi,0,0,tn,score -3.33 >= tau -4.03,0,tn,Adjective with correct 'ph' digraph.
+158,corrupted,luphuzi,luphuvi,1,1,tp,score -8.01 < tau -4.03,0,fn,valid noun class 11 form 'luphuvi'
+159,clean,okuhambela,okuhambela,0,0,tn,score -1.45 >= tau -4.03,0,tn,"Standard infinitive form, spelling accurate."
+159,corrupted,okuhambela,okuhambla,1,1,tp,score -4.16 < tau -4.03,1,tp,extra 'l'; correct form 'ukuhamba'
+160,clean,sesiba,sesiba,0,0,tn,score -2.86 >= tau -4.03,0,tn,"Correct prefix and stem, no typo."
+160,corrupted,sesiba,sessiba,1,1,tp,score -13.68 < tau -4.03,1,tp,double 's' not needed
+161,clean,komuthi,komuthi,0,0,tn,score -2.55 >= tau -4.03,0,tn,Locative noun correctly prefixed.
+161,corrupted,komuthi,kuomuthi,1,1,tp,score -12.04 < tau -4.03,1,tp,extra 'o' before 'muthi'
+162,clean,yasemkhathini,yasemkhathini,0,0,tn,score -1.69 >= tau -4.03,0,tn,Compound locative correctly spelled.
+162,corrupted,yasemkhathini,yaesmkhathini,1,1,tp,score -9.16 < tau -4.03,1,tp,extra 's' before 'mkhathini'
+163,clean,zinkumbi,zinkumbi,0,0,tn,score -2.98 >= tau -4.03,1,fp,Missing initial 'i' in class 2 plural prefix.
+163,corrupted,zinkumbi,ziknumbi,1,1,tp,score -17.75 < tau -4.03,1,tp,should be 'zinkumbi'
+164,clean,Lendawo,Lendawo,0,0,tn,score -1.95 >= tau -4.03,1,fp,Should be 'lendawo'; missing 'a' after 'd'.
+164,corrupted,Lendawo,lezdawo,1,1,tp,score -17.23 < tau -4.03,1,tp,'z' should be 'n'
+165,clean,owawuthumele,owawuthumele,0,0,tn,score -1.90 >= tau -4.03,0,tn,Relative clause correctly spelled.
+165,corrupted,owawuthumele,owawutjumele,1,1,tp,score -9.94 < tau -4.03,1,tp,illegal 'tj' cluster; should be 'th'
+166,clean,nokuqeqeshwa,nokuqeqeshwa,0,0,tn,score -1.11 >= tau -4.03,0,tn,Conjunction and noun correctly combined.
+166,corrupted,nokuqeqeshwa,onkuqeqeshwa,1,1,tp,score -5.57 < tau -4.03,1,tp,extra 'n' before 'kuqeqeshwa'
+167,clean,kwabangelwa,kwabangelwa,0,0,tn,score -1.77 >= tau -4.03,0,tn,Causative passive form correctly spelled.
+167,corrupted,kwabangelwa,kwabahngelwa,1,1,tp,score -5.32 < tau -4.03,1,tp,missing 'l' after 'bh'
+168,clean,umalaleveva,umalaleveva,0,0,tn,score -2.13 >= tau -4.03,1,fp,Double 've' likely typo; should be 'umalameva'.
+168,corrupted,umalaleveva,humalaleveva,1,0,fn,score -2.65 >= tau -4.03,1,tp,"non‑Zulu pattern, likely typo"
+169,clean,LWAMAGAMA,LWAMAGAMA,0,0,tn,score -1.70 >= tau -4.03,1,fp,All caps not standard for regular word.
+169,corrupted,LWAMAGAMA,lwamagamae,1,0,fn,score -2.65 >= tau -4.03,1,tp,extra 'e' at end; should be 'lwamagama'
+170,clean,lomfundaze,lomfundaze,0,0,tn,score -2.04 >= tau -4.03,1,fp,Extra 'z' inserted; correct form 'lomfundise'.
+170,corrupted,lomfundaze,lmofundaze,1,1,tp,score -10.80 < tau -4.03,1,tp,extra 'l' before 'mofundaze'
+171,clean,Sihlolisise,Sihlolisise,0,0,tn,score -1.89 >= tau -4.03,0,tn,Verb correctly capitalized at sentence start.
+171,corrupted,Sihlolisise,sihloliise,1,1,tp,score -7.43 < tau -4.03,1,tp,extra 'i' after 'hl'
+172,clean,bazoqonda,bazoqonda,0,0,tn,score -2.14 >= tau -4.03,0,tn,Future tense verb correctly formed.
+172,corrupted,bazoqonda,batoqonda,1,1,tp,score -10.61 < tau -4.03,0,fn,proper verb 'batoqonda'
+173,clean,kwe-Abidjan,kwe-Abidjan,0,1,fp,score -11.61 < tau -4.03,1,fp,Hyphen unnecessary; locative prefix should be 'e-'.
+173,corrupted,kwe-Abidjan,kwje-abidjan,1,1,tp,score -14.04 < tau -4.03,1,tp,non‑Zulu 'kwje'
+174,clean,Mfundisi,Mfundisi,0,0,tn,score -2.33 >= tau -4.03,0,tn,"Title case appropriate, spelling correct."
+174,corrupted,Mfundisi,mfunsdisi,1,1,tp,score -13.07 < tau -4.03,1,tp,impossible consonant cluster 'nsd'
+175,clean,nezesekelwe,nezesekelwe,0,0,tn,score -1.84 >= tau -4.03,0,tn,Compound conjunction and verb correctly spelled.
+175,corrupted,nezesekelwe,nezeseeklwe,1,1,tp,score -8.34 < tau -4.03,1,tp,extra 'se' before 'eklwe'
+176,clean,Sesha,Sesha,0,1,fp,score -4.15 < tau -4.03,0,tn,correct verb spelling.
+176,corrupted,Sesha,esha,1,1,tp,score -4.60 < tau -4.03,1,tp,not a recognized Zulu lexical form
+177,clean,zifakelwa,zifakelwa,0,0,tn,score -1.94 >= tau -4.03,0,tn,correct passive verb form.
+177,corrupted,zifakelwa,zfakelwa,1,1,tp,score -10.36 < tau -4.03,1,tp,illegal initial consonant cluster 'zf'
+178,clean,waseBothaville,waseBothaville,0,0,tn,score -1.97 >= tau -4.03,0,tn,correct locative prefix with place name.
+178,corrupted,waseBothaville,wasebothavillw,1,0,fn,score -3.63 >= tau -4.03,1,tp,contains English segment 'villw'
+179,clean,kwale-workshop,kwale-workshop,0,1,fp,score -8.96 < tau -4.03,1,fp,"contains hyphen and English word, not Zulu orthography."
+179,corrupted,kwale-workshop,kwale-workshsop,1,1,tp,score -12.89 < tau -4.03,1,tp,includes hyphen and misspelled English 'workshsop'
+180,clean,kwizinselele,kwizinselele,0,0,tn,score -1.59 >= tau -4.03,0,tn,correct noun phrase.
+180,corrupted,kwizinselele,kwizinseoele,1,1,tp,score -9.39 < tau -4.03,1,tp,non‑Zulu suffix 'eoele' at end
+181,clean,yokusala,yokusala,0,0,tn,score -2.39 >= tau -4.03,1,fp,nonstandard verb form; likely typo.
+181,corrupted,yokusala,yokusalau,1,1,tp,score -4.91 < tau -4.03,1,tp,"final vowel should be 'a', not 'u'"
+182,clean,Umsebenzi,Umsebenzi,0,0,tn,score -0.92 >= tau -4.03,0,tn,correct noun spelling.
+182,corrupted,Umsebenzi,umsebeniz,1,0,fn,score -2.15 >= tau -4.03,1,tp,missing expected 'i' before final 'z'
+183,clean,eyenzwayo,eyenzwayo,0,0,tn,score -2.26 >= tau -4.03,0,tn,correct participial form.
+183,corrupted,eyenzwayo,eyenzwawo,1,1,tp,score -5.18 < tau -4.03,1,tp,missing 'y' after 'w' in expected 'eyenzwayo'
+184,clean,izikomazi,izikomazi,0,0,tn,score -2.95 >= tau -4.03,0,tn,correct plural noun.
+184,corrupted,izikomazi,izikomaz,1,0,fn,score -3.43 >= tau -4.03,1,tp,extraneous final 'z' violates noun pattern
+185,clean,nabacashi,nabacashi,0,0,tn,score -2.39 >= tau -4.03,0,tn,correct conjunction with noun.
+185,corrupted,nabacashi,nabacashz,1,1,tp,score -5.12 < tau -4.03,1,tp,illegal final consonant 'z' after vowel
+186,clean,azisa,azisa,0,0,tn,score -3.32 >= tau -4.03,0,tn,correct verb.
+186,corrupted,azisa,azsia,1,1,tp,score -20.00 < tau -4.03,1,tp,double 's' not allowed in this root
+187,clean,thorn,thorn,0,1,fp,score -5.03 < tau -4.03,1,fp,"English word, not Zulu."
+187,corrupted,thorn,horn,1,1,tp,score -7.56 < tau -4.03,1,tp,"English word, not Zulu"
+188,clean,ezixoxwayo,ezixoxwayo,0,0,tn,score -2.19 >= tau -4.03,0,tn,correct participial form.
+188,corrupted,ezixoxwayo,ezioxxwayo,1,1,tp,score -15.78 < tau -4.03,1,tp,double 'x' not permitted in Zulu orthography
+189,clean,Singuhulumeni,Singuhulumeni,0,0,tn,score -1.29 >= tau -4.03,0,tn,correct copulative construction.
+189,corrupted,Singuhulumeni,singuuhlumeni,1,1,tp,score -8.44 < tau -4.03,1,tp,double vowel 'uu' violates Zulu vowel rules
+190,clean,ihanjiswe,ihanjiswe,0,0,tn,score -1.82 >= tau -4.03,1,fp,extra 'el' inserted; should be 'ihanjiswe'.
+190,corrupted,ihanjiswe,ihqnjiswe,1,1,tp,score -14.44 < tau -4.03,1,tp,illegal consonant cluster 'hq'
+191,clean,okuzoqondisa,okuzoqondisa,0,0,tn,score -1.89 >= tau -4.03,0,tn,correct future infinitive.
+191,corrupted,okuzoqondisa,okuzoiondisa,1,1,tp,score -11.08 < tau -4.03,1,tp,illegal vowel sequence 'io'
+192,clean,nginganivezela,nginganivezela,0,0,tn,score -2.06 >= tau -4.03,1,fp,extra vowel; nonstandard 'nginganivezela'.
+192,corrupted,nginganivezela,nginganiaezela,1,1,tp,score -8.37 < tau -4.03,1,tp,illegal vowel diphthong 'ae'
+193,clean,ngabaHoli,ngabaHoli,0,0,tn,score -1.76 >= tau -4.03,1,fp,improper capitalization and unlikely compound.
+193,corrupted,ngabaHoli,nabaholi,1,0,fn,score -1.84 >= tau -4.03,0,fn,valid Zulu noun with correct prefix
+194,clean,zokuma,zokuma,0,0,tn,score -2.83 >= tau -4.03,1,fp,should be 'ukuma'; extra prefix.
+194,corrupted,zokuma,zokmua,1,1,tp,score -16.31 < tau -4.03,1,tp,adjacent transposition of 'm' and 'u'
+195,clean,Mpumalang,Mpumalang,0,0,tn,score -2.07 >= tau -4.03,1,fp,missing final 'a' in province name.
+195,corrupted,Mpumalang,mpumalag,1,0,fn,score -3.18 >= tau -4.03,1,tp,missing letters 'n' and 'a' from 'mpumalanga'
+196,clean,abasebancane,abasebancane,0,0,tn,score -1.47 >= tau -4.03,1,fp,extra 'se' inserted; should be 'abancane'.
+196,corrupted,abasebancane,abasebacnane,1,1,tp,score -9.56 < tau -4.03,1,tp,incorrect consonant order 'cn' in noun
+197,clean,Umthethosisekelo,Umthethosisekelo,0,0,tn,score -0.66 >= tau -4.03,0,tn,correct constitutional term.
+197,corrupted,Umthethosisekelo,umthethoshisekelo,1,0,fn,score -1.43 >= tau -4.03,1,tp,extra 'h' after 's' in 'umthethosisekelo'
+198,clean,U-AA,U-AA,0,1,fp,score -14.87 < tau -4.03,1,fp,abbreviation not Zulu spelling.
+198,corrupted,U-AA,u-a,1,1,tp,score -9.75 < tau -4.03,1,tp,hyphen not used in standard Zulu orthography
+199,clean,ngaphanye,ngaphanye,0,0,tn,score -1.86 >= tau -4.03,1,fp,missing 's' in 'ngaphansi'.
+199,corrupted,ngaphanye,ngaphanre,1,1,tp,score -6.54 < tau -4.03,1,tp,incorrect ending 're' should be 'si'
+200,clean,kokufuhlelwa,kokufuhlelwa,0,0,tn,score -1.90 >= tau -4.03,0,tn,correct nominalisation.
+200,corrupted,kokufuhlelwa,kokufuhllewa,1,1,tp,score -7.61 < tau -4.03,1,tp,substitution of 'h' for expected 'd'
+201,clean,licinana,licinana,0,0,tn,score -3.58 >= tau -4.03,1,fp,"final vowel should be e, not a"
+201,corrupted,licinana,liicnana,1,1,tp,score -18.80 < tau -4.03,1,tp,"illegal double vowel ""ii"" and consonant cluster ""cn"""
+202,clean,neSikhwama,neSikhwama,0,0,tn,score -1.53 >= tau -4.03,1,fp,internal noun should not be capitalized
+202,corrupted,neSikhwama,nsikhwama,1,1,tp,score -5.55 < tau -4.03,1,tp,"invalid noun class prefix ""ns-"" at word start"
+203,clean,Vietnamese,Vietnamese,0,1,fp,score -4.57 < tau -4.03,1,fp,not a Zulu word
+203,corrupted,Vietnamese,vyetnamese,1,1,tp,score -10.52 < tau -4.03,1,tp,"initial consonant cluster ""vy"" not allowed in Zulu"
+204,clean,amandla,amandla,0,0,tn,score -1.58 >= tau -4.03,0,tn,correct spelling
+204,corrupted,amandla,aandla,1,1,tp,score -4.26 < tau -4.03,1,tp,"double initial vowel ""aa"" violates Zulu vowel rules"
+205,clean,okuzobhekwa,okuzobhekwa,0,0,tn,score -1.96 >= tau -4.03,0,tn,correct spelling
+205,corrupted,okuzobhekwa,okuzbohekwa,1,1,tp,score -14.28 < tau -4.03,1,tp,"missing vowel ""o"" after ""z"" in ""okuzobhekwa"""
+206,clean,ka-Safcol,ka-Safcol,0,1,fp,score -14.61 < tau -4.03,0,tn,proper noun with hyphen acceptable
+206,corrupted,ka-Safcol,kh-safcol,1,1,tp,score -14.61 < tau -4.03,1,tp,"contains hyphen and non‑Zulu sequence ""safcol"""
+207,clean,isigujana,isigujana,0,0,tn,score -2.39 >= tau -4.03,0,tn,correct spelling
+207,corrupted,isigujana,iskgujana,1,1,tp,score -13.36 < tau -4.03,1,tp,"illegal cluster ""skg"" not permitted in Zulu"
+208,clean,kuleli,kuleli,0,0,tn,score -2.30 >= tau -4.03,0,tn,correct spelling
+208,corrupted,kuleli,kueli,1,1,tp,score -4.76 < tau -4.03,1,tp,"extra final vowel ""i"" after ""kule"""
+209,clean,samalayisense,samalayisense,0,0,tn,score -1.73 >= tau -4.03,1,fp,final vowel should be i
+209,corrupted,samalayisense,samalayijsense,1,1,tp,score -8.00 < tau -4.03,1,tp,"contains non‑Zulu sequence ""ij"" and foreign morphology"
+210,clean,Dondolo,Dondolo,0,0,tn,score -2.83 >= tau -4.03,0,tn,correct spelling
+210,corrupted,Dondolo,dondoo,1,1,tp,score -4.86 < tau -4.03,1,tp,"double final vowel ""oo"" atypical; likely ""dondo"""
+211,clean,Isizwe,Isizwe,0,0,tn,score -2.42 >= tau -4.03,0,tn,correct spelling
+211,corrupted,Isizwe,siizwe,1,1,tp,score -8.68 < tau -4.03,0,fn,"correct combination of prefix ""si-"" with noun ""izwe"""
+212,clean,Abadala,Abadala,0,0,tn,score -1.90 >= tau -4.03,0,tn,correct spelling
+212,corrupted,Abadala,abaqala,1,0,fn,score -2.16 >= tau -4.03,0,fn,"correctly spelled verb form ""abaqala"""
+213,clean,emgomeni,emgomeni,0,0,tn,score -3.20 >= tau -4.03,0,tn,correct spelling
+213,corrupted,emgomeni,mgomeni,1,0,fn,score -3.56 >= tau -4.03,1,tp,"missing class prefix vowel; should be ""umgomeni"""
+214,clean,ajwayele,ajwayele,0,0,tn,score -2.06 >= tau -4.03,0,tn,correct spelling
+214,corrupted,ajwayele,jawayele,1,1,tp,score -6.36 < tau -4.03,1,tp,"extra vowel ""a"" after ""j"" creates ""jawayele"""
+215,clean,naboSekela,naboSekela,0,0,tn,score -2.38 >= tau -4.03,1,fp,internal capital S is incorrect
+215,corrupted,naboSekela,naboseklea,1,1,tp,score -7.20 < tau -4.03,1,tp,"illegal vowel sequence ""ea"" at word end"
+216,clean,we-Promotion,we-Promotion,0,1,fp,score -10.26 < tau -4.03,1,fp,"mixes English word, not proper Zulu spelling"
+216,corrupted,we-Promotion,wee-promotion,1,1,tp,score -10.32 < tau -4.03,1,tp,hyphenated English loanword not Zulu spelling
+217,clean,muthi,muthi,0,0,tn,score -3.59 >= tau -4.03,1,fp,missing class prefix u-
+217,corrupted,muthi,huthi,1,1,tp,score -12.01 < tau -4.03,1,tp,not a Zulu lexical item; contains foreign pattern
+218,clean,eyayingahambisani,eyayingahambisani,0,0,tn,score -1.58 >= tau -4.03,0,tn,correct spelling
+218,corrupted,eyayingahambisani,eyayinghaambisani,1,1,tp,score -5.26 < tau -4.03,1,tp,"extra ""a"" in ""haambisani"" should be ""hahambisani"""
+219,clean,neNtshonalanga,neNtshonalanga,0,0,tn,score -1.21 >= tau -4.03,1,fp,internal capital N is incorrect
+219,corrupted,neNtshonalanga,nentshoanlanga,1,1,tp,score -6.80 < tau -4.03,1,tp,"illegal consonant cluster ""shoa"" and misplaced ""n"""
+220,clean,yangena,yangena,0,0,tn,score -2.74 >= tau -4.03,0,tn,correct spelling
+220,corrupted,yangena,yangent,1,0,fn,score -3.19 >= tau -4.03,1,tp,"final consonant ""t"" not allowed; should be ""yangena"""
+221,clean,ziyilaba,ziyilaba,0,0,tn,score -3.11 >= tau -4.03,0,tn,correct spelling
+221,corrupted,ziyilaba,tiyilaba,1,0,fn,score -3.58 >= tau -4.03,1,tp,"double vowel ""iy"" unusual; likely misspelled"
+222,clean,kobuphansi,kobuphansi,0,0,tn,score -2.24 >= tau -4.03,0,tn,correct spelling
+222,corrupted,kobuphansi,kobuuphansi,1,1,tp,score -10.29 < tau -4.03,1,tp,"double vowel ""uu"" after ""b"" violates Zulu phonotactics"
+223,clean,kucatsangwa,kucatsangwa,0,0,tn,score -2.45 >= tau -4.03,0,tn,correct spelling
+223,corrupted,kucatsangwa,kuhcatsangwa,1,1,tp,score -9.78 < tau -4.03,1,tp,"illegal cluster ""hc"" and extra letters"
+224,clean,umzuzu,umzuzu,0,0,tn,score -2.92 >= tau -4.03,0,tn,correct spelling
+224,corrupted,umzuzu,uamzuzu,1,1,tp,score -14.49 < tau -4.03,1,tp,"extra vowel ""a"" before ""mzuzu""; correct is ""umzuzu"""
+225,clean,Mutsi,Mutsi,0,1,fp,score -5.39 < tau -4.03,1,fp,"consonant error, should be Muthi"
+225,corrupted,Mutsi,musti,1,1,tp,score -10.97 < tau -4.03,1,tp,not a Zulu word; contains foreign pattern
+226,clean,Cheslyn,Cheslyn,0,0,tn,score -3.12 >= tau -4.03,1,fp,Not a Zulu lexical form; contains non‑Zulu ending “lyn”.
+226,corrupted,Cheslyn,chesljn,1,1,tp,score -11.12 < tau -4.03,1,tp,contains illegal “ch” digraph
+227,clean,ezilahlekisa,ezilahlekisa,0,0,tn,score -1.93 >= tau -4.03,0,tn,Valid prefix “ezi‑” with verb root “lahlekisa”.
+227,corrupted,ezilahlekisa,eizlahlekisa,1,1,tp,score -10.05 < tau -4.03,1,tp,has illegal vowel cluster “ei”
+228,clean,Nabaqaphi,Nabaqaphi,0,0,tn,score -2.18 >= tau -4.03,0,tn,Correct demonstrative “naba‑” plus noun “qaphi”.
+228,corrupted,Nabaqaphi,naboqaphi,1,1,tp,score -7.21 < tau -4.03,0,fn,spelling follows Zulu phonotactics
+229,clean,kae,kae,0,1,fp,score -11.53 < tau -4.03,1,fp,“kae” is not a Zulu word; stray vowel after “ka”.
+229,corrupted,kae,ka,1,0,fn,skipped (<3 chars),0,fn,valid Zulu prefix
+230,clean,kwabashayela,kwabashayela,0,0,tn,score -1.41 >= tau -4.03,0,tn,Correct locative “kwa‑” + verb “shayela”.
+230,corrupted,kwabashayela,kwdbashayela,1,1,tp,score -10.35 < tau -4.03,1,tp,illegal consonant cluster “kwd”
+231,clean,lingalusebenzisa,lingalusebenzisa,0,0,tn,score -1.52 >= tau -4.03,1,fp,"Verb root should be “sebenzisa”, not “lusebenzisa”."
+231,corrupted,lingalusebenzisa,lingalusepenzisa,1,1,tp,score -6.17 < tau -4.03,0,fn,conforms to Zulu morphology
+232,clean,wanelisekile,wanelisekile,0,0,tn,score -2.38 >= tau -4.03,0,tn,Correct participial form of “wanelisa”.
+232,corrupted,wanelisekile,wanelisekiln,1,1,tp,score -4.38 < tau -4.03,1,tp,ends with impossible “ln” sequence
+233,clean,wayamukela,wayamukela,0,0,tn,score -2.12 >= tau -4.03,0,tn,Proper past tense subject concord “wa‑” with “yamukela”.
+233,corrupted,wayamukela,wayamuklea,1,1,tp,score -9.51 < tau -4.03,1,tp,missing vowel after “l”
+234,clean,lizokuya,lizokuya,0,0,tn,score -3.02 >= tau -4.03,0,tn,Future construction “li‑zo‑kuya” follows Zulu grammar.
+234,corrupted,lizokuya,lizokuxya,1,1,tp,score -7.76 < tau -4.03,1,tp,missing vowel “o” before “x”
+235,clean,elingusingaye,elingusingaye,0,0,tn,score -2.37 >= tau -4.03,1,fp,Unusual sequence; likely missing “n” after “eli”.
+235,corrupted,elingusingaye,clingusingaye,1,0,fn,score -2.99 >= tau -4.03,1,tp,illegal “cl” combination
+236,clean,azizilwi,azizilwi,0,0,tn,score -3.66 >= tau -4.03,1,fp,Verb root unclear; likely typo for “azizitholi”.
+236,corrupted,azizilwi,azizsilwi,1,1,tp,score -13.47 < tau -4.03,1,tp,double “z” before “s” not allowed
+237,clean,ngaphasi,ngaphasi,0,0,tn,score -1.74 >= tau -4.03,1,fp,Missing “n” in “ngaphansi” (under).
+237,corrupted,ngaphasi,ngaphas,1,0,fn,score -2.03 >= tau -4.03,1,tp,"truncated “ngaphansi”, missing “ni”"
+238,clean,besonto,besonto,0,0,tn,score -2.77 >= tau -4.03,1,fp,Non‑standard form; expected “isonto”.
+238,corrupted,besonto,beosnto,1,1,tp,score -20.00 < tau -4.03,1,tp,contains impossible “osn” cluster
+239,clean,limbopha,limbopha,0,0,tn,score -3.08 >= tau -4.03,1,fp,Invalid verb root “limbopha”; no such Zulu word.
+239,corrupted,limbopha,limbohpa,1,1,tp,score -9.76 < tau -4.03,1,tp,illegal “hp” sequence
+240,clean,Ebusuku,Ebusuku,0,0,tn,score -2.13 >= tau -4.03,0,tn,Valid noun “ebusuku” meaning “at night”.
+240,corrupted,Ebusuku,ebusukul,1,0,fn,score -2.39 >= tau -4.03,1,tp,missing vowel “u” in “ebusuku”
+241,clean,Ngakhononda,Ngakhononda,0,0,tn,score -1.37 >= tau -4.03,0,tn,Correct past tense prefix “nga‑” with “khononda”.
+241,corrupted,Ngakhononda,ngakhononde,1,0,fn,score -1.66 >= tau -4.03,0,fn,spelling is acceptable
+242,clean,kwesigameko,kwesigameko,0,0,tn,score -1.76 >= tau -4.03,0,tn,Proper locative “kwe‑” with noun “sigameko”.
+242,corrupted,kwesigameko,kwesigxmeko,1,1,tp,score -10.32 < tau -4.03,1,tp,illegal “xme” cluster
+243,clean,nokubolekwa,nokubolekwa,0,0,tn,score -1.68 >= tau -4.03,0,tn,Correct conjunction “no‑” with passive verb “kubolekwa”.
+243,corrupted,nokubolekwa,nokubolewka,1,1,tp,score -6.59 < tau -4.03,1,tp,missing “w” before final “ka”
+244,clean,elizofinyelela,elizofinyelela,0,0,tn,score -1.65 >= tau -4.03,0,tn,Correct future relative “eli‑zo‑finyelela”.
+244,corrupted,elizofinyelela,elizoifinyelela,1,1,tp,score -7.11 < tau -4.03,0,fn,conforms to Zulu word formation
+245,clean,esinganqamuki,esinganqamuki,0,0,tn,score -1.88 >= tau -4.03,0,tn,Correct negative relative “esinga‑nqamuki”.
+245,corrupted,esinganqamuki,esinganqmauki,1,1,tp,score -10.21 < tau -4.03,1,tp,contains illegal “nqm” cluster
+246,clean,azibanga,azibanga,0,0,tn,score -2.40 >= tau -4.03,0,tn,Correct negative verb “azibanga” (not far).
+246,corrupted,azibanga,azibangao,1,0,fn,score -3.43 >= tau -4.03,1,tp,vowel cluster “ao” not permitted
+247,clean,nama­akhawunti,nama­akhawunti,0,0,tn,score -2.18 >= tau -4.03,0,tn,Proper compound with hyphen “nama‑akhawunti”.
+247,corrupted,nama­akhawunti,nama­akhawunti,0,0,tn,score -2.18 >= tau -4.03,0,tn,valid hyphenated loanword
+248,clean,emvulophini,emvulophini,0,0,tn,score -2.57 >= tau -4.03,1,fp,Uncommon term; likely typo for “emtholampini”.
+248,corrupted,emvulophini,emvulophizi,1,0,fn,score -2.87 >= tau -4.03,0,fn,spelling follows Zulu rules
+249,clean,kwezinhlobo,kwezinhlobo,0,0,tn,score -1.23 >= tau -4.03,0,tn,Correct plural noun with prefix “kwe‑zinhlobo”.
+249,corrupted,kwezinhlobo,wkezinhlobo,1,1,tp,score -7.67 < tau -4.03,1,tp,illegal initial “wk” combination
+250,clean,sinikezelwe,sinikezelwe,0,0,tn,score -1.44 >= tau -4.03,1,fp,Wrong verb root; should be “sinikezelwe”.
+250,corrupted,sinikezelwe,siniezelwe,1,1,tp,score -8.87 < tau -4.03,1,tp,contains illegal vowel cluster “ie
+251,clean,sesizwe,sesizwe,0,0,tn,score -2.36 >= tau -4.03,0,tn,"Correct Zulu noun phrase, prefix and root match."
+251,corrupted,sesizwe,essizwe,1,1,tp,score -11.10 < tau -4.03,1,tp,double “s” not allowed in Zulu orthography.
+252,clean,njengesinqumo,njengesinqumo,0,0,tn,score -1.24 >= tau -4.03,0,tn,"Valid comparative construction, spelling conforms."
+252,corrupted,njengesinqumo,njengesinquo,1,0,fn,score -3.27 >= tau -4.03,1,tp,unexpected vowel sequence “quo” after “nq”.
+253,clean,sekuke,sekuke,0,0,tn,score -3.55 >= tau -4.03,0,tn,"Standard verb form, no error."
+253,corrupted,sekuke,sekunke,1,1,tp,score -6.99 < tau -4.03,1,tp,missing “d” before final “e” (should be sekunde).
+254,clean,esivunywe,esivunywe,0,0,tn,score -1.98 >= tau -4.03,0,tn,"Proper participial form, spelling accurate."
+254,corrupted,esivunywe,esivunydwe,1,1,tp,score -8.92 < tau -4.03,1,tp,illegal “nyd” cluster; likely misspelling of “vunyelwe”.
+255,clean,nemiklomelo,nemiklomelo,0,0,tn,score -1.57 >= tau -4.03,0,tn,Correct prefix 'ne-' with plural noun.
+255,corrupted,nemiklomelo,nemikloelo,1,1,tp,score -6.69 < tau -4.03,1,tp,consonant cluster “kl” not permitted in Zulu.
+256,clean,Vusa,Vusa,0,1,fp,score -6.58 < tau -4.03,0,tn,Verb root correctly spelled.
+256,corrupted,Vusa,vuna,1,1,tp,score -6.04 < tau -4.03,0,fn,correct verb “vuna” (to harvest).
+257,clean,iyi,iyi,0,1,fp,score -7.25 < tau -4.03,1,fp,Not a Zulu word; should be 'le' or 'leli'.
+257,corrupted,iyi,yii,1,1,tp,score -13.73 < tau -4.03,1,tp,double vowel “ii” not valid in Zulu.
+258,clean,Dotforce,Dotforce,0,1,fp,score -15.36 < tau -4.03,1,fp,"English brand, not Zulu spelling."
+258,corrupted,Dotforce,dotfore,1,1,tp,score -18.43 < tau -4.03,1,tp,English letters/structure not Zulu.
+259,clean,Umthelela,Umthelela,0,0,tn,score -1.59 >= tau -4.03,0,tn,Proper noun with correct prefix.
+259,corrupted,Umthelela,uthelela,1,0,fn,score -1.98 >= tau -4.03,0,fn,correct verb “uthelela”.
+260,clean,kulemBhalo,kulemBhalo,0,0,tn,score -2.22 >= tau -4.03,1,fp,Internal capital 'B' violates Zulu orthography.
+260,corrupted,kulemBhalo,kulemhbalo,1,1,tp,score -13.72 < tau -4.03,1,tp,illegal “mhb” cluster; should be “kulembhalo”.
+261,clean,i-dependant,i-dependant,0,1,fp,score -9.39 < tau -4.03,1,fp,"English loan with hyphen, not Zulu."
+261,corrupted,i-dependant,k-dependant,1,1,tp,score -10.61 < tau -4.03,1,tp,"contains hyphen and English word, not Zulu."
+262,clean,Akahambi,Akahambi,0,0,tn,score -2.56 >= tau -4.03,0,tn,Negation prefix correctly attached.
+262,corrupted,Akahambi,akahamib,1,1,tp,score -4.42 < tau -4.03,1,tp,ends with consonant; Zulu words end in vowel.
+263,clean,ngompompi,ngompompi,0,0,tn,score -2.19 >= tau -4.03,0,tn,Valid prefix 'ngo-' with noun 'mpompi'.
+263,corrupted,ngompompi,ngompmopi,1,1,tp,score -12.82 < tau -4.03,1,tp,illegal “mpm” cluster; not Zulu.
+264,clean,Isebenzisana,Isebenzisana,0,0,tn,score -1.10 >= tau -4.03,0,tn,Correct reflexive verb form.
+264,corrupted,Isebenzisana,isebenzsiana,1,1,tp,score -9.01 < tau -4.03,1,tp,missing “i” after “z” (should be “isebenzisana”).
+265,clean,osolelwa,osolelwa,0,0,tn,score -2.98 >= tau -4.03,0,tn,Proper passive participle spelling.
+265,corrupted,osolelwa,osoelwa,1,1,tp,score -17.73 < tau -4.03,1,tp,double “o” and extra “e”; not standard.
+266,clean,kabusa,kabusa,0,0,tn,score -2.76 >= tau -4.03,1,fp,Missing infinitive prefix 'uku-'.
+266,corrupted,kabusa,kabsa,1,1,tp,score -15.62 < tau -4.03,1,tp,not a Zulu lexical item.
+267,clean,Cabanga,Cabanga,0,0,tn,score -2.45 >= tau -4.03,0,tn,Imperative verb correctly spelled.
+267,corrupted,Cabanga,cabanag,1,0,fn,score -3.78 >= tau -4.03,1,tp,illegal consonant sequence “cabanag”.
+268,clean,kwikhompyutha,kwikhompyutha,0,0,tn,score -1.40 >= tau -4.03,0,tn,Correct locative construction.
+268,corrupted,kwikhompyutha,kwikhopmyutha,1,1,tp,score -7.24 < tau -4.03,1,tp,illegal “pmy” cluster; should be “kwikhompyutha”.
+269,clean,bemithwalo,bemithwalo,0,0,tn,score -2.09 >= tau -4.03,0,tn,Possessive prefix matches noun class.
+269,corrupted,bemithwalo,bemithwlo,1,1,tp,score -7.86 < tau -4.03,1,tp,missing final vowel “a” (should be “bemithwalo”).
+270,clean,lwe-EPWP,lwe-EPWP,0,1,fp,score -17.61 < tau -4.03,0,tn,Hyphenated acronym after prefix acceptable.
+270,corrupted,lwe-EPWP,lwe-ewp,1,1,tp,score -17.14 < tau -4.03,1,tp,contains hyphen and English abbreviation.
+271,clean,edalwa,edalwa,0,0,tn,score -3.21 >= tau -4.03,0,tn,Correct verb form.
+271,corrupted,edalwa,dealwa,1,1,tp,score -13.23 < tau -4.03,1,tp,vowel diphthong “ea” not used; likely typo.
+272,clean,Ngiyaqonda,Ngiyaqonda,0,0,tn,score -1.69 >= tau -4.03,0,tn,Standard first-person present form.
+272,corrupted,Ngiyaqonda,gniyaqonda,1,1,tp,score -8.41 < tau -4.03,1,tp,illegal “gn” cluster at start.
+273,clean,lwesisa,lwesisa,0,0,tn,score -2.75 >= tau -4.03,0,tn,Possessive prefix correctly attached to 'sisa'.
+273,corrupted,lwesisa,lwesias,1,1,tp,score -7.27 < tau -4.03,1,tp,transposition of “as”/“sa”; should be “lwesisa”.
+274,clean,ngezinkulu,ngezinkulu,0,0,tn,score -1.45 >= tau -4.03,0,tn,Correct prepositional phrase.
+274,corrupted,ngezinkulu,ngezinkzulu,1,1,tp,score -9.94 < tau -4.03,1,tp,illegal “qz” cluster; not Zulu.
+275,clean,watholwa,watholwa,0,0,tn,score -2.04 >= tau -4.03,0,tn,Past passive form correctly spelled.
+275,corrupted,watholwa,watholua,1,1,tp,score -6.54 < tau -4.03,1,tp,extra “u” before “a”; should be “wathola”.
+276,clean,nophiko,nophiko,0,0,tn,score -2.63 >= tau -4.03,1,fp,extra consonant “k” creates non‑Zulu cluster
+276,corrupted,nophiko,nophikw,1,0,fn,score -2.93 >= tau -4.03,1,tp,"Ends with illegal consonant cluster ""kw"""
+277,clean,kokuvumelekile,kokuvumelekile,0,0,tn,score -1.27 >= tau -4.03,0,tn,proper Zulu noun class prefix and spelling
+277,corrupted,kokuvumelekile,kokuvmuelekile,1,1,tp,score -9.30 < tau -4.03,1,tp,"Contains non‑Zulu cluster ""vm"""
+278,clean,we-Flatfoot,we-Flatfoot,0,1,fp,score -11.65 < tau -4.03,1,fp,hyphen not used in Zulu prefixes
+278,corrupted,we-Flatfoot,we-Flatfoot,0,1,fp,score -11.65 < tau -4.03,1,fp,Mixes English word and hyphen
+279,clean,Indiza,Indiza,0,0,tn,score -2.25 >= tau -4.03,0,tn,standard Zulu word for “flight”
+279,corrupted,Indiza,iundiza,1,1,tp,score -11.32 < tau -4.03,1,tp,"Prefix ""i-"" followed by vowel violates noun pattern"
+280,clean,weZomsebenzi,weZomsebenzi,0,0,tn,score -1.35 >= tau -4.03,1,fp,internal capital “Z” violates Zulu orthography
+280,corrupted,weZomsebenzi,wezymsebenzi,1,1,tp,score -10.61 < tau -4.03,1,tp,"Possessive prefix should be ""wemi-"", not ""wezi-"""
+281,clean,abthole,abthole,0,0,tn,score -3.53 >= tau -4.03,1,fp,missing vowel “a” after “b”
+281,corrupted,abthole,aobthole,1,1,tp,score -13.02 < tau -4.03,1,tp,"Contains invalid sequence ""ob"""
+282,clean,e-IRC,e-IRC,0,1,fp,score -16.69 < tau -4.03,1,fp,hyphen after locative prefix “e‑”
+282,corrupted,e-IRC,b-irc,1,1,tp,score -18.14 < tau -4.03,1,tp,Non‑Zulu abbreviation with hyphen
+283,clean,Andre,Andre,0,1,fp,score -4.30 < tau -4.03,0,tn,"proper name, no Zulu spelling error"
+283,corrupted,Andre,anldre,1,1,tp,score -18.43 < tau -4.03,1,tp,"Missing vowel ""i"" after ""l"""
+284,clean,uphumile,uphumile,0,0,tn,score -2.52 >= tau -4.03,0,tn,valid past‑tense form of “phuma”
+284,corrupted,uphumile,uphmile,1,1,tp,score -17.30 < tau -4.03,1,tp,"Extra ""m"" not in root ""uphile"""
+285,clean,kubakaki,kubakaki,0,0,tn,score -3.40 >= tau -4.03,0,tn,acceptable Zulu verb form
+285,corrupted,kubakaki,kuakaki,1,1,tp,score -11.10 < tau -4.03,1,tp,"Sequence ""akak"" unlikely in Zulu"
+286,clean,generation,generation,0,0,tn,score -2.22 >= tau -4.03,1,fp,English word not Zulu orthography
+286,corrupted,generation,genreation,1,1,tp,score -11.56 < tau -4.03,1,tp,"English word, not Zulu"
+287,clean,lwezikhundla,lwezikhundla,0,0,tn,score -1.38 >= tau -4.03,0,tn,correct class‑2 possessive construction
+287,corrupted,lwezikhundla,lweikhundla,1,0,fn,score -3.53 >= tau -4.03,0,fn,"Correct possessive form ""lweikhundla"""
+288,clean,zezeMpilo,zezeMpilo,0,0,tn,score -1.31 >= tau -4.03,1,fp,capital “M” inside word breaks Zulu spelling
+288,corrupted,zezeMpilo,zezempiio,1,1,tp,score -7.01 < tau -4.03,1,tp,"Double ""i"" creates invalid vowel sequence"
+289,clean,ngezinsizangqangi,ngezinsizangqangi,0,0,tn,score -1.54 >= tau -4.03,1,fp,"non‑Zulu sequence “ngq” unlikely, typo"
+289,corrupted,ngezinsizangqangi,ngezinsiznagqangi,1,1,tp,score -7.47 < tau -4.03,1,tp,"Illegal cluster ""nagq"" within word"
+290,clean,unga,unga,0,0,tn,score -3.15 >= tau -4.03,0,tn,valid imperative “unga‑”
+290,corrupted,unga,nga,1,0,fn,score -3.98 >= tau -4.03,0,fn,"Valid preposition ""nga"""
+291,clean,lehlukane,lehlukane,0,0,tn,score -2.40 >= tau -4.03,0,tn,proper verb “lehlukane”
+291,corrupted,lehlukane,lehlvkane,1,1,tp,score -15.70 < tau -4.03,1,tp,"Contains illegal ""vk"" cluster"
+292,clean,Britz,Britz,0,1,fp,score -10.58 < tau -4.03,0,tn,"foreign proper noun, spelling acceptable"
+292,corrupted,Britz,brijz,1,1,tp,score -11.71 < tau -4.03,1,tp,"Non‑Zulu letters, no meaning"
+293,clean,nguMcubunguli,nguMcubunguli,0,0,tn,score -1.66 >= tau -4.03,1,fp,prefix “ngu” should be separate or lower‑case
+293,corrupted,nguMcubunguli,ngumcubnuguli,1,1,tp,score -10.60 < tau -4.03,1,tp,"Impossible cluster ""cubn"""
+294,clean,Itheku,Itheku,0,0,tn,score -3.75 >= tau -4.03,0,tn,correctly spelled Zulu noun
+294,corrupted,Itheku,itheuk,1,1,tp,score -12.11 < tau -4.03,1,tp,"Should be ""itheku"""
+295,clean,base-Zimbabwe,base-Zimbabwe,0,1,fp,score -10.00 < tau -4.03,1,fp,hyphen after “base” not Zulu convention
+295,corrupted,base-Zimbabwe,base-zimbabje,1,1,tp,score -13.62 < tau -4.03,1,tp,English term with hyphen
+296,clean,bengane,bengane,0,0,tn,score -2.40 >= tau -4.03,0,tn,valid Zulu noun phrase
+296,corrupted,bengane,begnane,1,1,tp,score -13.92 < tau -4.03,1,tp,"Incorrect verb form, should be ""bengane"""
+297,clean,ohlanganise,ohlanganise,0,0,tn,score -1.53 >= tau -4.03,1,fp,wrong subject prefix “o‑” instead of “u‑”
+297,corrupted,ohlanganise,ohlanganixse,1,1,tp,score -6.03 < tau -4.03,1,tp,"Contains illegal ""nxse"" cluster"
+298,clean,iyabuhlanza,iyabuhlanza,0,0,tn,score -2.61 >= tau -4.03,0,tn,correct verb form “iyabuhlanza”
+298,corrupted,iyabuhlanza,iyauuhlanza,1,1,tp,score -12.49 < tau -4.03,1,tp,"Double ""u"" invalid"
+299,clean,ngakwezokutshalwa,ngakwezokutshalwa,0,0,tn,score -1.62 >= tau -4.03,0,tn,acceptable compound noun
+299,corrupted,ngakwezokutshalwa,ngakweokutshalwa,1,1,tp,score -6.95 < tau -4.03,1,tp,Nonsensical combination of prefixes
+300,clean,namba,namba,0,0,tn,score -3.43 >= tau -4.03,1,fp,missing initial vowel “i”
+300,corrupted,namba,amba,1,1,tp,score -4.82 < tau -4.03,0,fn,"Valid verb ""amba"""
+301,clean,kwisiJobelelo,kwisiJobelelo,0,0,tn,score -1.51 >= tau -4.03,1,fp,Internal capital J violates Zulu orthography
+301,corrupted,kwisiJobelelo,kwiszijobelelo,1,1,tp,score -7.61 < tau -4.03,1,tp,extra 'z' after kw
+302,clean,kwezidingongqangi,kwezidingongqangi,0,0,tn,score -1.19 >= tau -4.03,0,tn,Morphologically valid class prefix and root
+302,corrupted,kwezidingongqangi,kwezcdingongqangi,1,1,tp,score -7.59 < tau -4.03,1,tp,extra 'c' after kwez
+303,clean,eyaasiza,eyaasiza,0,1,fp,score -14.65 < tau -4.03,1,fp,Missing y; should be “eyayasiza”
+303,corrupted,eyaasiza,eyaasifa,1,1,tp,score -14.59 < tau -4.03,1,tp,double 'a' after e
+304,clean,zesondo,zesondo,0,0,tn,score -2.70 >= tau -4.03,0,tn,Correct noun class prefix and suffix
+304,corrupted,zesondo,zesordo,1,1,tp,score -14.22 < tau -4.03,1,tp,unlikely consonant cluster 'sr'
+305,clean,kwanqunywa,kwanqunywa,0,0,tn,score -1.98 >= tau -4.03,0,tn,Valid verb form with proper prefix
+305,corrupted,kwanqunywa,kwanunywa,1,1,tp,score -10.62 < tau -4.03,0,fn,spelling follows Zulu phonotactics
+306,clean,Ingeyakwabani,Ingeyakwabani,0,0,tn,score -2.31 >= tau -4.03,1,fp,Unexpected consonant cluster “kwab”; likely typo
+306,corrupted,Ingeyakwabani,ingeaykwabani,1,1,tp,score -12.00 < tau -4.03,1,tp,illegal sequence 'ayk'
+307,clean,Chest,Chest,0,1,fp,score -4.40 < tau -4.03,1,fp,"English word, not Zulu"
+307,corrupted,Chest,phest,1,1,tp,score -5.61 < tau -4.03,1,tp,contains non‑Zulu pattern 'phest'
+308,clean,ofanayo,ofanayo,0,0,tn,score -1.90 >= tau -4.03,1,fp,Extra n; correct form “ofanayo”
+308,corrupted,ofanayo,ofanay,1,0,fn,score -2.37 >= tau -4.03,1,tp,extra 'y' at end
+309,clean,bokulondoloza,bokulondoloza,0,0,tn,score -1.58 >= tau -4.03,0,tn,Correct infinitive with class prefix
+309,corrupted,bokulondoloza,bokulondlooza,1,1,tp,score -7.13 < tau -4.03,1,tp,extra 'o' and double 'o'
+310,clean,bezinhlangano,bezinhlangano,0,0,tn,score -1.33 >= tau -4.03,0,tn,Proper plural noun with class prefix
+310,corrupted,bezinhlangano,ebzinhlangano,1,1,tp,score -7.65 < tau -4.03,1,tp,missing 'h' after b
+311,clean,oyibolekile,oyibolekile,0,0,tn,score -1.83 >= tau -4.03,0,tn,Valid relative clause form
+311,corrupted,oyibolekile,oyibolelkile,1,0,fn,score -3.95 >= tau -4.03,1,tp,extra 'l' before 'k'
+312,clean,bamakhosi,bamakhosi,0,0,tn,score -2.12 >= tau -4.03,0,tn,Correct noun‑class prefix “ba‑”
+312,corrupted,bamakhosi,bamakhvsi,1,1,tp,score -10.17 < tau -4.03,1,tp,'v' substituted for 's'
+313,clean,eCedara,eCedara,0,0,tn,score -2.91 >= tau -4.03,0,tn,Proper place name capitalisation acceptable
+313,corrupted,eCedara,ecepdara,1,1,tp,score -18.03 < tau -4.03,1,tp,unexpected 'pd' cluster
+314,clean,UMthimkhulu,UMthimkhulu,0,0,tn,score -2.37 >= tau -4.03,1,fp,Internal capital M in “UMthimkhulu”
+314,corrupted,UMthimkhulu,umthimkhuhu,1,0,fn,score -3.22 >= tau -4.03,1,tp,illegal 'khuh' sequence
+315,clean,lomlando,lomlando,0,0,tn,score -2.28 >= tau -4.03,0,tn,Correct demonstrative‑noun combination
+315,corrupted,lomlando,lomladno,1,1,tp,score -11.80 < tau -4.03,1,tp,double 'm' before vowel unusual
+316,clean,Ukuthethelelwa,Ukuthethelelwa,0,0,tn,score -1.51 >= tau -4.03,0,tn,Valid nominalisation with proper prefix
+316,corrupted,Ukuthethelelwa,uukthethelelwa,1,1,tp,score -4.04 < tau -4.03,1,tp,extra leading 'u'
+317,clean,lombandela,lombandela,0,0,tn,score -1.84 >= tau -4.03,0,tn,Correct possessive construction
+317,corrupted,lombandela,lombpandela,1,1,tp,score -9.89 < tau -4.03,1,tp,extra 'p' after 'b'
+318,clean,yokugqugquzela,yokugqugquzela,0,0,tn,score -1.07 >= tau -4.03,0,tn,Valid verb infinitive with proper prefix
+318,corrupted,yokugqugquzela,yokugquguzela,1,0,fn,score -2.02 >= tau -4.03,1,tp,missing 'q' after 'gqu'
+319,clean,iwili,iwili,0,0,tn,score -3.98 >= tau -4.03,1,fp,“iwili” not a Zulu lexical item
+319,corrupted,iwili,iwlii,1,1,tp,score -20.00 < tau -4.03,1,tp,double final 'i'
+320,clean,eyayidle,eyayidle,0,0,tn,score -2.79 >= tau -4.03,0,tn,Correct past‑tense relative clause
+320,corrupted,eyayidle,eyaydile,1,1,tp,score -14.71 < tau -4.03,1,tp,missing 'i' after 'y'
+321,clean,SG,SG,0,0,tn,skipped (<3 chars),1,fp,Abbreviation “SG” not a Zulu word
+321,corrupted,SG,SG,0,0,tn,skipped (<3 chars),1,fp,not a Zulu lexical item
+322,clean,kwerenke,kwerenke,0,0,tn,score -2.98 >= tau -4.03,1,fp,Invalid consonant cluster “rn” in Zulu
+322,corrupted,kwerenke,kwerene,1,1,tp,score -6.47 < tau -4.03,1,tp,illegal vowel sequence 'ere'
+323,clean,abazafundwa,abazafundwa,0,0,tn,score -2.43 >= tau -4.03,1,fp,Missing vowel “o”; should be “abazofundwa”
+323,corrupted,abazafundwa,abazafundaw,1,0,fn,score -2.61 >= tau -4.03,1,tp,final 'w' not Zulu suffix
+324,clean,ukugcinwa,ukugcinwa,0,0,tn,score -1.48 >= tau -4.03,0,tn,Correct passive infinitive form
+324,corrupted,ukugcinwa,xkugcinwa,1,1,tp,score -8.94 < tau -4.03,1,tp,extra 'x' before verb
+325,clean,abanikelayo,abanikelayo,0,0,tn,score -1.41 >= tau -4.03,0,tn,Proper noun‑class prefix “aba‑” with verb
+325,corrupted,abanikelayo,abanikealyo,1,1,tp,score -8.61 < tau -4.03,1,tp,'a' instead of 'e' before 'lyo'
+326,clean,uyoqinisa,uyoqinisa,0,0,tn,score -2.04 >= tau -4.03,0,tn,valid future verb form with prefix uyo-
+326,corrupted,uyoqinisa,uvoqinisa,1,1,tp,score -10.37 < tau -4.03,1,tp,v should be k (ukuqinisa)
+327,clean,sigwema,sigwema,0,0,tn,score -3.02 >= tau -4.03,0,tn,proper present plural verb si- + gwema
+327,corrupted,sigwema,migwema,1,1,tp,score -7.14 < tau -4.03,1,tp,missing initial class prefix i-
+328,clean,Sisebenza,Sisebenza,0,0,tn,score -1.52 >= tau -4.03,0,tn,standard present plural verb sisebenza
+328,corrupted,Sisebenza,sisebencza,1,1,tp,score -7.17 < tau -4.03,1,tp,c should be z (sisebenza)
+329,clean,zingasakhokhisi,zingasakhokhisi,0,0,tn,score -2.00 >= tau -4.03,1,fp,extra suffix 'si' after verb root khokha
+329,corrupted,zingasakhokhisi,zzingasakhokhisi,1,1,tp,score -5.23 < tau -4.03,1,tp,extra leading z; should be ezingasakhokhisi
+330,clean,Bathuthukisa,Bathuthukisa,0,0,tn,score -1.48 >= tau -4.03,0,tn,correct plural verb bathuthukisa
+330,corrupted,Bathuthukisa,bathuthuksa,1,1,tp,score -5.94 < tau -4.03,1,tp,missing i before s (bathuthukisa)
+331,clean,walithola,walithola,0,0,tn,score -2.12 >= tau -4.03,0,tn,proper past tense walithola
+331,corrupted,walithola,walthola,1,1,tp,score -6.01 < tau -4.03,1,tp,extra l after wa (wathola)
+332,clean,anesibophezelo,anesibophezelo,0,0,tn,score -1.68 >= tau -4.03,0,tn,correct combination ane + isibophezelo
+332,corrupted,anesibophezelo,anesiophezelo,1,1,tp,score -7.53 < tau -4.03,1,tp,o should be h (anesiphazelo)
+333,clean,lokubambela,lokubambela,0,0,tn,score -1.29 >= tau -4.03,0,tn,valid infinitive lokubambela
+333,corrupted,lokubambela,lokuebambela,1,1,tp,score -8.70 < tau -4.03,1,tp,extra e after b (lokubambela)
+334,clean,liyochazwa,liyochazwa,0,0,tn,score -2.00 >= tau -4.03,0,tn,proper future passive liyochazwa
+334,corrupted,liyochazwa,lidochazwa,1,1,tp,score -9.26 < tau -4.03,1,tp,illegal cluster doch; not a Zulu word
+335,clean,Kweminye,Kweminye,0,0,tn,score -1.65 >= tau -4.03,0,tn,"lowercase spelling kweminye, capitalization irrelevant"
+335,corrupted,Kweminye,kwaeminye,1,1,tp,score -10.77 < tau -4.03,1,tp,extra a after kw (kweminye)
+336,clean,lokugcugcuzela,lokugcugcuzela,0,0,tn,score -1.68 >= tau -4.03,0,tn,valid verb form lokugcugcuzela
+336,corrupted,lokugcugcuzela,lokugcugczela,1,1,tp,score -8.76 < tau -4.03,1,tp,cugczela not Zulu; likely cizelela
+337,clean,nohlaka,nohlaka,0,0,tn,score -2.12 >= tau -4.03,0,tn,proper noun nohlaka
+337,corrupted,nohlaka,nolaka,1,0,fn,score -2.86 >= tau -4.03,0,fn,correct Zulu word meaning with anger
+338,clean,egamanxayo,egamanxayo,0,0,tn,score -2.52 >= tau -4.03,1,fp,non‑Zulu sequence 'nx' after vowel
+338,corrupted,egamanxayo,egamanxaoy,1,1,tp,score -7.17 < tau -4.03,1,tp,contains non‑Zulu sequence xaoy
+339,clean,sebufike,sebufike,0,0,tn,score -3.33 >= tau -4.03,0,tn,valid past perfect sebufike
+339,corrupted,sebufike,sebufikoe,1,1,tp,score -8.47 < tau -4.03,1,tp,oe should be le (sebufikile)
+340,clean,ecatshangiwe,ecatshangiwe,0,0,tn,score -2.05 >= tau -4.03,1,fp,incorrect passive suffix '-giwe'
+340,corrupted,ecatshangiwe,ecatshaqngiwe,1,1,tp,score -10.21 < tau -4.03,1,tp,qng not valid; should be gel
+341,clean,ulusebenzise,ulusebenzise,0,0,tn,score -1.86 >= tau -4.03,0,tn,valid subjunctive ulusebenzise
+341,corrupted,ulusebenzise,ulusebenzisze,1,1,tp,score -5.16 < tau -4.03,1,tp,double z; should be ulusebenzise
+342,clean,okuyinxanxathela,okuyinxanxathela,0,0,tn,score -1.55 >= tau -4.03,0,tn,proper noun phrase okuyinxanxathela
+342,corrupted,okuyinxanxathela,okuyinxanxatheva,1,0,fn,score -3.50 >= tau -4.03,1,tp,non‑standard form; likely typo
+343,clean,bitÃ…Â¡wa,bitÃ…Â¡wa,0,1,fp,score -6.20 < tau -4.03,1,fp,"encoding error, characters not Zulu"
+343,corrupted,bitÃ…Â¡wa,bitÃ…Â¡wa,0,1,fp,score -6.20 < tau -4.03,1,fp,"contains garbled characters, not Zulu"
+344,clean,bazihlomise,bazihlomise,0,0,tn,score -2.50 >= tau -4.03,0,tn,valid reflexive verb bazihlomise
+344,corrupted,bazihlomise,bazihlmoise,1,1,tp,score -10.40 < tau -4.03,1,tp,mo and om transposed (bazihlomise)
+345,clean,FAKA,FAKA,0,1,fp,score -4.61 < tau -4.03,0,tn,"uppercase irrelevant, word faka correct"
+345,corrupted,FAKA,fakwa,1,1,tp,score -9.76 < tau -4.03,0,fn,correct imperative form
+346,clean,ngikushiye,ngikushiye,0,0,tn,score -2.03 >= tau -4.03,0,tn,proper past tense ngikushiye
+346,corrupted,ngikushiye,nkgikushiye,1,1,tp,score -9.71 < tau -4.03,1,tp,extra g; should be nkikushiye
+347,clean,namaThimba,namaThimba,0,0,tn,score -1.66 >= tau -4.03,0,tn,"correct noun namathimba, case irrelevant"
+347,corrupted,namaThimba,naimathimba,1,1,tp,score -8.56 < tau -4.03,1,tp,naimathimba not a standard word
+348,clean,Ikhithi,Ikhithi,0,0,tn,score -3.31 >= tau -4.03,0,tn,valid noun ikhithi
+348,corrupted,Ikhithi,ikhuthi,1,0,fn,score -3.16 >= tau -4.03,1,tp,extra h; should be ikuthi
+349,clean,ngezintombi,ngezintombi,0,0,tn,score -1.26 >= tau -4.03,0,tn,proper prepositional phrase ngezintombi
+349,corrupted,ngezintombi,ngezintobmi,1,1,tp,score -7.76 < tau -4.03,1,tp,bmi should be bbi (ngezintombi)
+350,clean,iluchaza,iluchaza,0,0,tn,score -2.55 >= tau -4.03,0,tn,valid present verb iluchaza
+350,corrupted,iluchaza,iuluchaza,1,1,tp,score -7.87 < tau -4.03,1,tp,extra i prefix; should be uluchaza
+351,clean,ekwenabiseni,ekwenabiseni,0,0,tn,score -2.18 >= tau -4.03,1,fp,"extra ""si"" before suffix"
+351,corrupted,ekwenabiseni,ekwenaiseni,1,1,tp,score -4.53 < tau -4.03,1,tp,"unexpected vowel ""a"" after ""ekwen"""
+352,clean,Ziningi,Ziningi,0,0,tn,score -2.11 >= tau -4.03,0,tn,"proper verb form, no typo"
+352,corrupted,Ziningi,zinngi,1,1,tp,score -8.85 < tau -4.03,1,tp,"illegal double consonant ""nn"""
+353,clean,basepulazini,basepulazini,0,0,tn,score -1.64 >= tau -4.03,0,tn,correct locative verb form
+353,corrupted,basepulazini,basepualzini,1,1,tp,score -13.35 < tau -4.03,1,tp,"extraneous ""z"" after ""l"""
+354,clean,ngobusayense,ngobusayense,0,0,tn,score -2.14 >= tau -4.03,1,fp,"""i"" should be ""i""? actually substitution of ""i"" with ""e"" in ""ngobusayensi"""
+354,corrupted,ngobusayense,ngobunsayense,1,1,tp,score -7.01 < tau -4.03,1,tp,"final vowel should be ""i"", not ""e"""
+355,clean,yokulihambisa,yokulihambisa,0,0,tn,score -1.60 >= tau -4.03,0,tn,correct infinitive construction
+355,corrupted,yokulihambisa,yokulehambisa,1,1,tp,score -5.36 < tau -4.03,1,tp,"non‑standard prefix ""yo-"" before verb"
+356,clean,Njengamanje,Njengamanje,0,0,tn,score -1.42 >= tau -4.03,0,tn,standard adverbial form
+356,corrupted,Njengamanje,nejngamanje,1,1,tp,score -10.57 < tau -4.03,1,tp,"extra vowel ""e"" after initial ""n"""
+357,clean,yowakwakhe,yowakwakhe,0,0,tn,score -2.75 >= tau -4.03,1,fp,"redundant ""kwa"" inserted"
+357,corrupted,yowakwakhe,ynowakwakhe,1,1,tp,score -7.51 < tau -4.03,1,tp,"illegal initial ""y"" without preceding vowel"
+358,clean,UMsakazo,UMsakazo,0,0,tn,score -2.43 >= tau -4.03,0,tn,"proper noun‑class prefix, capitalization allowed"
+358,corrupted,UMsakazo,umrakazo,1,1,tp,score -15.98 < tau -4.03,1,tp,"illegal initial consonant cluster ""mr"""
+359,clean,i-USSD,i-USSD,0,1,fp,score -17.48 < tau -4.03,0,tn,hyphenated tech term correctly written
+359,corrupted,i-USSD,i-usse,1,1,tp,score -17.48 < tau -4.03,1,tp,"double ""s"" not permitted in Zulu orthography"
+360,clean,sandla,sandla,0,0,tn,score -2.99 >= tau -4.03,0,tn,"standard verb ""sandla"" correctly spelled"
+360,corrupted,sandla,asndla,1,1,tp,score -18.29 < tau -4.03,1,tp,"transposition of ""a"" and ""n"""
+361,clean,yekuHlanganyela,yekuHlanganyela,0,0,tn,score -1.79 >= tau -4.03,1,fp,"should be ""yokuhlanganyela"", extra ""e"" after ""yok"""
+361,corrupted,yekuHlanganyela,yekuhdanganyela,1,1,tp,score -7.79 < tau -4.03,1,tp,"incorrect cluster ""dh""; should be ""hl"""
+362,clean,ahlephule,ahlephule,0,0,tn,score -2.79 >= tau -4.03,0,tn,negative verb form correctly spelled
+362,corrupted,ahlephule,ahephule,1,1,tp,score -9.86 < tau -4.03,1,tp,"extraneous ""h"" after initial vowel"
+363,clean,ziyadlodlobala,ziyadlodlobala,0,0,tn,score -2.17 >= tau -4.03,0,tn,progressive verb form correct
+363,corrupted,ziyadlodlobala,ziyadlodlobal,1,0,fn,score -2.34 >= tau -4.03,1,tp,"illegal consonant cluster ""dlod"""
+364,clean,Ubugugu,Ubugugu,0,0,tn,score -2.31 >= tau -4.03,0,tn,noun‑class 1 form correct
+364,corrupted,Ubugugu,zbugugu,1,1,tp,score -12.09 < tau -4.03,1,tp,"illegal initial cluster ""zb"""
+365,clean,uMakhunga,uMakhunga,0,0,tn,score -3.09 >= tau -4.03,0,tn,proper name spelling correct
+365,corrupted,uMakhunga,umakhuga,1,1,tp,score -8.80 < tau -4.03,1,tp,"final consonant should be ""z"", not ""g"""
+366,clean,Unelibhizinisi,Unelibhizinisi,0,0,tn,score -2.03 >= tau -4.03,0,tn,verb phrase correctly formed
+366,corrupted,Unelibhizinisi,unelibhizvinisi,1,1,tp,score -9.33 < tau -4.03,1,tp,"extra ""v"" in ""bizv"" sequence"
+367,clean,Ekuhlaziyeni,Ekuhlaziyeni,0,0,tn,score -1.80 >= tau -4.03,0,tn,locative noun form correct
+367,corrupted,Ekuhlaziyeni,gkuhlaziyeni,1,1,tp,score -5.06 < tau -4.03,1,tp,"illegal initial cluster ""gk"""
+368,clean,Wamenzani,Wamenzani,0,0,tn,score -2.66 >= tau -4.03,0,tn,interrogative form correctly spelled
+368,corrupted,Wamenzani,wamenlani,1,1,tp,score -10.13 < tau -4.03,1,tp,"wrong consonant ""l""; should be ""j"""
+369,clean,nghlobo,nghlobo,0,0,tn,score -2.58 >= tau -4.03,1,fp,"missing initial ""u"", should be ""uhlobo"""
+369,corrupted,nghlobo,nghlbo,1,1,tp,score -13.20 < tau -4.03,1,tp,"illegal cluster ""nghl"""
+370,clean,nesibongo,nesibongo,0,0,tn,score -2.09 >= tau -4.03,0,tn,conjunction + noun correctly combined
+370,corrupted,nesibongo,nexsibongo,1,1,tp,score -12.06 < tau -4.03,1,tp,"illegal consonant cluster ""xs"""
+371,clean,icoleke,icoleke,0,0,tn,score -3.63 >= tau -4.03,0,tn,verb form correct
+371,corrupted,icoleke,ixcoleke,1,1,tp,score -13.97 < tau -4.03,1,tp,"illegal cluster ""xc"" after click"
+372,clean,ezimnandi,ezimnandi,0,0,tn,score -1.79 >= tau -4.03,0,tn,adjective plural correctly spelled
+372,corrupted,ezimnandi,ezimnadni,1,1,tp,score -10.32 < tau -4.03,1,tp,"transposition of ""d"" and ""n"""
+373,clean,izosiza,izosiza,0,0,tn,score -2.55 >= tau -4.03,0,tn,future verb correctly formed
+373,corrupted,izosiza,izsiza,1,1,tp,score -20.00 < tau -4.03,1,tp,"illegal cluster ""zs"""
+374,clean,wokuBhekwa,wokuBhekwa,0,0,tn,score -1.76 >= tau -4.03,1,fp,"should be ""wokubhekwa"", capital B is incorrect"
+374,corrupted,wokuBhekwa,wokubhekwu,1,1,tp,score -4.15 < tau -4.03,1,tp,"extra vowel ""o"" before ""bhekwe"""
+375,clean,siding,siding,0,0,tn,score -2.22 >= tau -4.03,1,fp,"missing final ""a"" in ""sidinga"""
+375,corrupted,siding,sfiding,1,1,tp,score -12.11 < tau -4.03,1,tp,"illegal initial cluster ""sf"""
+376,clean,ekhokhwayo,ekhokhwayo,0,0,tn,score -1.76 >= tau -4.03,0,tn,Valid verb form with correct prefix and suffix.
+376,corrupted,ekhokhwayo,ekhokhwayoc,1,0,fn,score -3.79 >= tau -4.03,1,tp,illegal consonant cluster 'khw'
+377,clean,ixoxwe,ixoxwe,0,0,tn,score -3.72 >= tau -4.03,0,tn,Correct passive participle of 'xoxa'.
+377,corrupted,ixoxwe,ixowxe,1,1,tp,score -17.84 < tau -4.03,1,tp,contains illegal cluster 'wx'
+378,clean,neZindlu,neZindlu,0,0,tn,score -1.68 >= tau -4.03,1,fp,Missing initial vowel 'i' and improper internal capitalization.
+378,corrupted,neZindlu,neizndlu,1,1,tp,score -6.56 < tau -4.03,1,tp,impossible cluster 'znd'
+379,clean,ngenhlso,ngenhlso,0,0,tn,score -2.39 >= tau -4.03,1,fp,Omitted vowel 'o' before final 's' (ngenhloso).
+379,corrupted,ngenhlso,ngenhnlso,1,1,tp,score -12.50 < tau -4.03,1,tp,illegal clusters 'nhn' and 'nl'
+380,clean,akulingani,akulingani,0,0,tn,score -1.91 >= tau -4.03,0,tn,Proper negative comparative form.
+380,corrupted,akulingani,akulingain,1,1,tp,score -5.26 < tau -4.03,1,tp,unlikely ending 'ain' not Zulu
+381,clean,siyinhlekisa,siyinhlekisa,0,0,tn,score -2.25 >= tau -4.03,0,tn,Correct verb meaning 'we mock' with appropriate prefix.
+381,corrupted,siyinhlekisa,siyminhlekisa,1,1,tp,score -8.81 < tau -4.03,1,tp,illegal cluster 'nhl'
+382,clean,uyokwethula,uyokwethula,0,0,tn,score -1.55 >= tau -4.03,1,fp,Should be 'uzokwethula'; 'y' is incorrect.
+382,corrupted,uyokwethula,guyokwethula,1,1,tp,score -5.84 < tau -4.03,0,fn,conforms to Zulu phonotactics
+383,clean,Kwehlisa,Kwehlisa,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct locative verb form.
+383,corrupted,Kwehlisa,kwhlisa,1,1,tp,score -14.80 < tau -4.03,1,tp,illegal sequence 'kwhl'
+384,clean,uSizo,uSizo,0,0,tn,score -2.75 >= tau -4.03,1,fp,Internal capital 'S' should be lowercase (usizo).
+384,corrupted,uSizo,usdzo,1,1,tp,score -20.00 < tau -4.03,1,tp,illegal cluster 'sdz'
+385,clean,emanyuvesi,emanyuvesi,0,0,tn,score -1.95 >= tau -4.03,0,tn,Correct locative plural of 'university'.
+385,corrupted,emanyuvesi,emnayuvesi,1,1,tp,score -8.82 < tau -4.03,1,tp,contains illegal clusters 'mn' and 'yv'
+386,clean,ngokwalowomhlaba,ngokwalowomhlaba,0,0,tn,score -1.06 >= tau -4.03,1,fp,Missing space between 'ngokwalowo' and 'mhlaba'.
+386,corrupted,ngokwalowomhlaba,ngokwalowomlaba,1,0,fn,score -2.92 >= tau -4.03,1,tp,illegal cluster 'ml'
+387,clean,yokumbandakanyeka,yokumbandakanyeka,0,0,tn,score -1.18 >= tau -4.03,0,tn,Proper nominal form meaning 'of involvement'.
+387,corrupted,yokumbandakanyeka,yokumbandakanayeka,1,0,fn,score -1.83 >= tau -4.03,0,fn,spelling follows Zulu morphology
+388,clean,zamakhefu,zamakhefu,0,0,tn,score -2.33 >= tau -4.03,1,fp,Initial 'z' should be 'a' (amakhefu).
+388,corrupted,zamakhefu,zamakshefu,1,1,tp,score -11.24 < tau -4.03,1,tp,illegal cluster 'ks'
+389,clean,ezimbewu,ezimbewu,0,0,tn,score -1.83 >= tau -4.03,0,tn,Correct locative plural of 'izimbewu'.
+389,corrupted,ezimbewu,ezimbweu,1,1,tp,score -9.31 < tau -4.03,1,tp,illegal cluster 'mbw'
+390,clean,akakubonanga,akakubonanga,0,0,tn,score -2.21 >= tau -4.03,0,tn,Accurate negative perfect form.
+390,corrupted,akakubonanga,anakubonanga,1,0,fn,score -2.34 >= tau -4.03,0,fn,valid Zulu word 'anakubonisa'
+391,clean,nesidwedwe,nesidwedwe,0,0,tn,score -2.59 >= tau -4.03,0,tn,Correct conjunction with noun 'sidwedwe'.
+391,corrupted,nesidwedwe,neuidwedwe,1,1,tp,score -9.94 < tau -4.03,1,tp,unlikely vowel sequence 'eui'
+392,clean,ukuhlotshaniswa,ukuhlotshaniswa,0,0,tn,score -1.47 >= tau -4.03,1,fp,Missing 't' after 'hl' (ukuhlotshaniswa).
+392,corrupted,ukuhlotshaniswa,uouhlotshaniswa,1,1,tp,score -7.07 < tau -4.03,1,tp,extraneous vowel sequence 'uou'
+393,clean,kwizinkontileka,kwizinkontileka,0,0,tn,score -1.25 >= tau -4.03,0,tn,Correct locative plural of 'inkontileka'.
+393,corrupted,kwizinkontileka,kwizinontileka,1,1,tp,score -4.85 < tau -4.03,0,fn,spelling conforms to Zulu rules
+394,clean,okuyodingidwa,okuyodingidwa,0,0,tn,score -1.79 >= tau -4.03,0,tn,Correct future passive participle.
+394,corrupted,okuyodingidwa,okuyodjingidwa,1,1,tp,score -8.11 < tau -4.03,1,tp,illegal cluster 'dj'
+395,clean,wezentela,wezentela,0,0,tn,score -1.96 >= tau -4.03,0,tn,Correct noun phrase for taxes.
+395,corrupted,wezentela,wezenela,1,0,fn,score -2.62 >= tau -4.03,0,fn,valid Zulu spelling
+396,clean,Ngizokhulekela,Ngizokhulekela,0,0,tn,score -1.94 >= tau -4.03,0,tn,Correct future verb meaning 'I will pray for'.
+396,corrupted,Ngizokhulekela,ngizokhuulekela,1,1,tp,score -5.91 < tau -4.03,0,fn,acceptable double vowel and digraphs
+397,clean,yokukhuculula,yokukhuculula,0,0,tn,score -1.70 >= tau -4.03,0,tn,Correct nominal form meaning 'of loosening'.
+397,corrupted,yokukhuculula,yokukhuculul,1,0,fn,score -1.75 >= tau -4.03,1,tp,missing final vowel
+398,clean,Ukugubha,Ukugubha,0,0,tn,score -2.03 >= tau -4.03,0,tn,Correct infinitive verb.
+398,corrupted,Ukugubha,ukuubha,1,1,tp,score -14.88 < tau -4.03,1,tp,unlikely double vowel 'uu'
+399,clean,emuntwini,emuntwini,0,0,tn,score -2.99 >= tau -4.03,0,tn,Correct locative form of 'umuntu'.
+399,corrupted,emuntwini,emuftwini,1,1,tp,score -15.38 < tau -4.03,1,tp,illegal cluster 'ftw'
+400,clean,angaguga,angaguga,0,0,tn,score -3.52 >= tau -4.03,0,tn,Correct subjunctive form meaning 'may not age'.
+400,corrupted,angaguga,anygaguga,1,1,tp,score -14.31 < tau -4.03,1,tp,illegal cluster 'nyg'
+401,clean,imnyama,imnyama,0,0,tn,score -2.87 >= tau -4.03,0,tn,correct spelling
+401,corrupted,imnyama,imnymaa,1,1,tp,score -14.46 < tau -4.03,1,tp,missing vowel after y and double a at end
+402,clean,wenyanga,wenyanga,0,0,tn,score -2.35 >= tau -4.03,0,tn,correct spelling
+402,corrupted,wenyanga,wenyagna,1,1,tp,score -6.61 < tau -4.03,1,tp,g and n transposed
+403,clean,yeMSA,yeMSA,0,1,fp,score -4.94 < tau -4.03,0,tn,correct spelling
+403,corrupted,yeMSA,yeesa,1,1,tp,score -17.57 < tau -4.03,1,tp,"double vowel ""ee"" not used in Zulu"
+404,clean,ebukhiphile,ebukhiphile,0,0,tn,score -2.44 >= tau -4.03,0,tn,correct spelling
+404,corrupted,ebukhiphile,ebukhipihle,1,1,tp,score -10.71 < tau -4.03,0,fn,valid locative verb form
+405,clean,Olubhekene,Olubhekene,0,0,tn,score -1.55 >= tau -4.03,1,fp,common noun incorrectly capitalized
+405,corrupted,Olubhekene,olubhekenb,1,0,fn,score -3.99 >= tau -4.03,1,tp,final e replaced by b
+406,clean,engaqedi,engaqedi,0,0,tn,score -2.62 >= tau -4.03,0,tn,correct spelling
+406,corrupted,engaqedi,engaoqedi,1,1,tp,score -15.15 < tau -4.03,1,tp,extra o inserted before q
+407,clean,ngoyedwa,ngoyedwa,0,0,tn,score -2.09 >= tau -4.03,0,tn,correct spelling
+407,corrupted,ngoyedwa,ngoyejdwa,1,1,tp,score -13.14 < tau -4.03,1,tp,extra j inserted before d
+408,clean,abanogesi,abanogesi,0,0,tn,score -2.12 >= tau -4.03,0,tn,correct spelling
+408,corrupted,abanogesi,abanogesit,1,0,fn,score -2.34 >= tau -4.03,1,tp,final t should be i
+409,clean,izifundazwe,izifundazwe,0,0,tn,score -0.99 >= tau -4.03,0,tn,correct spelling
+409,corrupted,izifundazwe,izifundazew,1,0,fn,score -3.68 >= tau -4.03,1,tp,final w should be e
+410,clean,izinhliziyo,izinhliziyo,0,0,tn,score -1.30 >= tau -4.03,0,tn,correct spelling
+410,corrupted,izinhliziyo,izinhlizziyo,1,1,tp,score -9.05 < tau -4.03,1,tp,extra z inserted
+411,clean,elingumqamulajuqu,elingumqamulajuqu,0,0,tn,score -1.56 >= tau -4.03,0,tn,correct spelling
+411,corrupted,elingumqamulajuqu,elingumqamlajuqu,1,0,fn,score -3.10 >= tau -4.03,1,tp,contains illegal consonant cluster and nonsensical
+412,clean,ukuzisusela,ukuzisusela,0,0,tn,score -2.07 >= tau -4.03,0,tn,correct spelling
+412,corrupted,ukuzisusela,kuzisusela,1,0,fn,score -2.44 >= tau -4.03,0,fn,valid verb form
+413,clean,Bamfuna,Bamfuna,0,0,tn,score -3.67 >= tau -4.03,1,fp,verb incorrectly capitalized
+413,corrupted,Bamfuna,bamfuca,1,1,tp,score -10.63 < tau -4.03,1,tp,"unlikely verb form, vowel error"
+414,clean,eMelika,eMelika,0,0,tn,score -2.64 >= tau -4.03,0,tn,proper noun capitalization appropriate
+414,corrupted,eMelika,melika,1,0,fn,score -3.77 >= tau -4.03,1,tp,not a Zulu lexical item
+415,clean,nokungabikiwe,nokungabikiwe,0,0,tn,score -1.49 >= tau -4.03,0,tn,correct spelling
+415,corrupted,nokungabikiwe,nokungaibkiwe,1,1,tp,score -11.65 < tau -4.03,1,tp,extra k after b (nokungabikw iwe)
+416,clean,komyalelo,komyalelo,0,0,tn,score -1.75 >= tau -4.03,0,tn,correct spelling
+416,corrupted,komyalelo,komyaelo,1,1,tp,score -11.72 < tau -4.03,1,tp,extra e after a
+417,clean,eseqala,eseqala,0,0,tn,score -2.41 >= tau -4.03,0,tn,correct spelling
+417,corrupted,eseqala,esenala,1,0,fn,score -3.49 >= tau -4.03,1,tp,non‑existent Zulu word
+418,clean,nesifundweni,nesifundweni,0,0,tn,score -1.40 >= tau -4.03,0,tn,correct spelling
+418,corrupted,nesifundweni,nesifundweniu,1,0,fn,score -1.83 >= tau -4.03,1,tp,extra u at end
+419,clean,izinkulunkulungwane,izinkulunkulungwane,0,0,tn,score -1.19 >= tau -4.03,1,fp,"extra ""kun"" syllable inserted"
+419,corrupted,izinkulunkulungwane,izinkulunkdulungwane,1,1,tp,score -6.64 < tau -4.03,1,tp,"extra ""k d"" sequence inserted"
+420,clean,enzalo,enzalo,0,0,tn,score -2.89 >= tau -4.03,1,fp,"initial vowel should be ""i"" not ""e"""
+420,corrupted,enzalo,enazlo,1,1,tp,score -12.95 < tau -4.03,1,tp,extra l inserted
+421,clean,Kucaca,Kucaca,0,0,tn,score -3.18 >= tau -4.03,1,fp,common word incorrectly capitalized
+421,corrupted,Kucaca,kuaca,1,1,tp,score -16.93 < tau -4.03,1,tp,"missing q and l, not a Zulu word"
+422,clean,ukusenga,ukusenga,0,0,tn,score -2.04 >= tau -4.03,0,tn,correct spelling
+422,corrupted,ukusenga,ukusega,1,0,fn,score -3.04 >= tau -4.03,1,tp,"truncated, missing essential morphemes"
+423,clean,Ossetia,Ossetia,0,0,tn,score -3.04 >= tau -4.03,0,tn,proper noun spelling correct
+423,corrupted,Ossetia,Ossetia,0,0,tn,score -3.04 >= tau -4.03,1,fp,"foreign proper noun, not Zulu spelling"
+424,clean,ze-WHO,ze-WHO,0,1,fp,score -20.00 < tau -4.03,0,tn,hyphenated acronym correctly formed
+424,corrupted,ze-WHO,zer-who,1,1,tp,score -18.20 < tau -4.03,1,tp,contains hyphen and non‑Zulu characters
+425,clean,izifungo,izifungo,0,0,tn,score -2.09 >= tau -4.03,0,tn,correct spelling
+425,corrupted,izifungo,izwfungo,1,1,tp,score -14.79 < tau -4.03,1,tp,missing i and extra w
+426,clean,okusungulwayo,okusungulwayo,0,0,tn,score -1.43 >= tau -4.03,0,tn,spelling follows standard Zulu morphology
+426,corrupted,okusungulwayo,okusungulwvayo,1,1,tp,score -7.69 < tau -4.03,1,tp,"illegal ""lv"" cluster, should be ""okusungulwayo""."
+427,clean,wayefika,wayefika,0,0,tn,score -2.38 >= tau -4.03,0,tn,proper verb form and prefix
+427,corrupted,wayefika,layefika,1,1,tp,score -5.87 < tau -4.03,1,tp,"missing space between demonstrative ""laya"" and verb ""fika""."
+428,clean,ngemukelwa,ngemukelwa,0,0,tn,score -1.49 >= tau -4.03,1,fp,should be 'ngamukelwa' (a→e substitution)
+428,corrupted,ngemukelwa,ngemuelwa,1,1,tp,score -9.57 < tau -4.03,1,tp,"missing consonant ""k"" after ""e"" (should be ""ngemukelwa"")."
+429,clean,isiphepho,isiphepho,0,0,tn,score -2.30 >= tau -4.03,0,tn,"valid noun, correct vowel pattern"
+429,corrupted,isiphepho,isihpepho,1,1,tp,score -12.71 < tau -4.03,1,tp,"wrong order letters, correct ""isiphupho""."
+430,clean,Uvikelekile,Uvikelekile,0,0,tn,score -1.51 >= tau -4.03,0,tn,"capitalization aside, spelling is accurate"
+430,corrupted,Uvikelekile,uvkelekile,1,1,tp,score -10.27 < tau -4.03,1,tp,"""v"" should be ""k"" (should be ""ukukelekile"")."
+431,clean,diperekisi,diperekisi,0,0,tn,score -3.00 >= tau -4.03,1,fp,missing 'h' after 'p' (diphekisi)
+431,corrupted,diperekisi,diperekiysi,1,1,tp,score -8.83 < tau -4.03,1,tp,"illegal consonant cluster ""pr""."
+432,clean,ngesonto,ngesonto,0,0,tn,score -1.67 >= tau -4.03,0,tn,locative prefix 'nge-' correctly attached
+432,corrupted,ngesonto,ngesoynto,1,1,tp,score -10.73 < tau -4.03,1,tp,"extra ""y"" (should be ""ngesonto"")."
+433,clean,ezinqwbelane,ezinqwbelane,0,0,tn,score -2.09 >= tau -4.03,1,fp,missing 'a' after 'b' (ezinqwabelane)
+433,corrupted,ezinqwbelane,ezniqwbelane,1,1,tp,score -11.78 < tau -4.03,1,tp,"transposed letters, correct ""ezinqwabelane""."
+434,clean,mpu,mpu,0,1,fp,score -10.03 < tau -4.03,1,fp,initial vowel omitted; should be 'impu'
+434,corrupted,mpu,mp,1,0,fn,skipped (<3 chars),1,tp,not a valid Zulu word (too short).
+435,clean,lezithiyo,lezithiyo,0,0,tn,score -2.15 >= tau -4.03,0,tn,demonstrative and noun correctly combined
+435,corrupted,lezithiyo,lezitihyo,1,1,tp,score -10.40 < tau -4.03,1,tp,"extra ""h"" (should be ""lezithiyo"")."
+436,clean,ngoMohapi,ngoMohapi,0,0,tn,score -2.35 >= tau -4.03,0,tn,proper proper noun prefix 'ngo'
+436,corrupted,ngoMohapi,ngomohai,1,1,tp,score -5.75 < tau -4.03,1,tp,"extra letters ""h"" and ""i"" (should be ""ngomoya"")."
+437,clean,etekisini,etekisini,0,0,tn,score -2.46 >= tau -4.03,1,fp,incorrect locative form; should be 'ekutaksini'
+437,corrupted,etekisini,eteiksini,1,1,tp,score -15.84 < tau -4.03,1,tp,"illegal ""ks"" cluster, not a Zulu word."
+438,clean,uthintana,uthintana,0,0,tn,score -1.87 >= tau -4.03,0,tn,reflexive verb correctly formed
+438,corrupted,uthintana,uthintaga,1,1,tp,score -4.74 < tau -4.03,1,tp,"wrong final consonant, should be ""uthintana""."
+439,clean,nesikulufu,nesikulufu,0,0,tn,score -2.71 >= tau -4.03,1,fp,unrecognized root; likely missing 'h' (nesikhalufu)
+439,corrupted,nesikulufu,nesikulfuu,1,1,tp,score -9.27 < tau -4.03,1,tp,"double vowel ""uu"" not allowed."
+440,clean,okuqondiswe,okuqondiswe,0,0,tn,score -1.51 >= tau -4.03,0,tn,passive infinitive correctly formed
+440,corrupted,okuqondiswe,okuqondiwse,1,1,tp,score -6.17 < tau -4.03,1,tp,"missing ""i"" after ""w"" (should be ""okuqondiswe"")."
+441,clean,neqophelo,neqophelo,0,0,tn,score -2.08 >= tau -4.03,0,tn,conjunction 'ne' correctly attached to noun
+441,corrupted,neqophelo,neqphelo,1,1,tp,score -15.22 < tau -4.03,1,tp,"""q"" should be ""z"" (should be ""neziphelo"")."
+442,clean,izimpimpi,izimpimpi,0,0,tn,score -1.91 >= tau -4.03,0,tn,plural noun follows Bantu prefix rules
+442,corrupted,izimpimpi,izimimpi,1,1,tp,score -8.16 < tau -4.03,1,tp,"extra syllable ""im"" (should be ""izimpi"")."
+443,clean,amakamu,amakamu,0,0,tn,score -3.03 >= tau -4.03,0,tn,plural noun with correct prefix 'ama-'
+443,corrupted,amakamu,amkaamu,1,1,tp,score -14.80 < tau -4.03,1,tp,"non‑existent root, appears misspelled."
+444,clean,okunezinongo,okunezinongo,0,0,tn,score -2.16 >= tau -4.03,0,tn,compound noun correctly assembled
+444,corrupted,okunezinongo,okunezinongqo,1,0,fn,score -1.88 >= tau -4.03,1,tp,"""q"" should be ""g"" (should be ""okunezinongo"")."
+445,clean,zidulile,zidulile,0,0,tn,score -2.69 >= tau -4.03,0,tn,verb in perfect form correctly spelled
+445,corrupted,zidulile,zzdulile,1,1,tp,score -13.56 < tau -4.03,1,tp,"double ""z"" and missing ""i"" (should be ""zidlulile"")."
+446,clean,eziyinani,eziyinani,0,0,tn,score -2.17 >= tau -4.03,0,tn,question word correctly formed
+446,corrupted,eziyinani,ezyiinani,1,1,tp,score -13.41 < tau -4.03,1,tp,"double ""i"" and misplaced ""y"" (should be ""eziyinani"")."
+447,clean,kuyofanele,kuyofanele,0,0,tn,score -1.44 >= tau -4.03,0,tn,future modal construction correct
+447,corrupted,kuyofanele,kuyoofanele,1,1,tp,score -9.67 < tau -4.03,1,tp,"extra ""o"" (should be ""kuyofanele"")."
+448,clean,Bamukela,Bamukela,0,0,tn,score -1.97 >= tau -4.03,0,tn,imperative verb correctly capitalized
+448,corrupted,Bamukela,bamukebla,1,1,tp,score -10.17 < tau -4.03,1,tp,"extra letters, correct ""bamukele""."
+449,clean,Bothata,Bothata,0,0,tn,score -3.61 >= tau -4.03,0,tn,noun correctly spelled
+449,corrupted,Bothata,bmthata,1,1,tp,score -13.66 < tau -4.03,1,tp,"missing vowels, correct ""bamthanda""."
+450,clean,ezisesakhiweni,ezisesakhiweni,0,0,tn,score -1.71 >= tau -4.03,0,tn,locative phrase correctly formed
+450,corrupted,ezisesakhiweni,eziaesakhiweni,1,1,tp,score -8.16 < tau -4.03,1,tp,"extra sequence ""iaes"", correct ""ezakhiweni""."
+451,clean,semazingeni,semazingeni,0,0,tn,score -1.97 >= tau -4.03,0,tn,"Correct se- + mazingeni, no typo."
+451,corrupted,semazingeni,semazingeniu,1,0,fn,score -3.77 >= tau -4.03,1,tp,extra final vowel 'u' not part of root
+452,clean,yasebusuku,yasebusuku,0,0,tn,score -1.98 >= tau -4.03,0,tn,"Correct locative yasebusuku, spelling valid."
+452,corrupted,yasebusuku,yaebusuku,1,1,tp,score -11.03 < tau -4.03,1,tp,illegal vowel cluster 'ae'
+453,clean,ekubuseni,ekubuseni,0,0,tn,score -2.73 >= tau -4.03,1,fp,Extra 'b'; should be ekuseni.
+453,corrupted,ekubuseni,ekbuuseni,1,1,tp,score -17.33 < tau -4.03,1,tp,extra consonant 'b' and double vowel 'u'
+454,clean,esihlaziywa,esihlaziywa,0,0,tn,score -1.82 >= tau -4.03,0,tn,"Correct esihlaziywa, no error."
+454,corrupted,esihlaziywa,esihlazyiwa,1,1,tp,score -8.81 < tau -4.03,1,tp,transposition of 'y' and 'i'
+455,clean,ezolanda,ezolanda,0,0,tn,score -2.75 >= tau -4.03,0,tn,"Correct ezolanda, spelling fine."
+455,corrupted,ezolanda,iezolanda,1,1,tp,score -8.79 < tau -4.03,1,tp,leading extra vowel 'e'
+456,clean,eyisihluku,eyisihluku,0,0,tn,score -2.28 >= tau -4.03,0,tn,"Correct eyisihluku, no typo."
+456,corrupted,eyisihluku,eyisihluu,1,1,tp,score -5.10 < tau -4.03,1,tp,missing consonant 'k' and extra vowel 'u'
+457,clean,eziphephile,eziphephile,0,0,tn,score -1.69 >= tau -4.03,0,tn,"Correct eziphephile, spelling accurate."
+457,corrupted,eziphephile,eizphephile,1,1,tp,score -10.73 < tau -4.03,1,tp,illegal consonant cluster 'zph'
+458,clean,Kusolakala,Kusolakala,0,0,tn,score -1.57 >= tau -4.03,0,tn,Kusolakala correctly spelled (capitalization only).
+458,corrupted,Kusolakala,kusoakala,1,1,tp,score -12.65 < tau -4.03,1,tp,illegal vowel cluster 'oa'
+459,clean,abangeke,abangeke,0,0,tn,score -1.88 >= tau -4.03,0,tn,"Correct abangeke, no error."
+459,corrupted,abangeke,abangee,1,0,fn,score -3.22 >= tau -4.03,1,tp,duplicated final vowel 'e'
+460,clean,yompopoli,yompopoli,0,0,tn,score -2.23 >= tau -4.03,1,fp,Root 'popoli' not Zulu; likely typo.
+460,corrupted,yompopoli,ymopopoli,1,1,tp,score -11.59 < tau -4.03,1,tp,illegal initial cluster 'ym'
+461,clean,ongizalayo,ongizalayo,0,0,tn,score -3.26 >= tau -4.03,0,tn,"Correct ongizalayo, spelling fine."
+461,corrupted,ongizalayo,ongizalaoy,1,1,tp,score -7.93 < tau -4.03,1,tp,transposition of 'y' and 'o'
+462,clean,Abasathuthukayo,Abasathuthukayo,0,0,tn,score -1.49 >= tau -4.03,1,fp,Extra 'sa'; should be Abathuthukayo.
+462,corrupted,Abasathuthukayo,abasathuthuayo,1,1,tp,score -5.38 < tau -4.03,1,tp,extra vowel 'u' inserted
+463,clean,izinto,izinto,0,0,tn,score -1.75 >= tau -4.03,0,tn,"Correct izinto, no typo."
+463,corrupted,izinto,ziinto,1,0,fn,score -3.64 >= tau -4.03,1,tp,duplicated vowel 'i' and wrong prefix
+464,clean,elinjalo,elinjalo,0,0,tn,score -2.07 >= tau -4.03,0,tn,"Correct elinjalo, spelling fine."
+464,corrupted,elinjalo,elinjao,1,1,tp,score -6.32 < tau -4.03,1,tp,extra final vowel 'o'
+465,clean,meter,meter,0,1,fp,score -4.30 < tau -4.03,1,fp,English 'meter' not Zulu; should be 'imetri'.
+465,corrupted,meter,metelr,1,1,tp,score -8.86 < tau -4.03,1,tp,contains non‑Zulu consonant 'r'
+466,clean,akusazwakali,akusazwakali,0,0,tn,score -2.02 >= tau -4.03,0,tn,"Correct akusazwakali, no error."
+466,corrupted,akusazwakali,akusazpwakali,1,1,tp,score -10.53 < tau -4.03,1,tp,extra consonant 'p' inserted
+467,clean,kuphunyeleliswe,kuphunyeleliswe,0,0,tn,score -1.77 >= tau -4.03,1,fp,Implausible verb form; likely typo.
+467,corrupted,kuphunyeleliswe,kuphuyneleliswe,1,1,tp,score -8.97 < tau -4.03,1,tp,contains non‑Zulu 'y' and irregular sequence
+468,clean,Waziveza,Waziveza,0,0,tn,score -3.09 >= tau -4.03,0,tn,"Correct waziveza, spelling fine."
+468,corrupted,Waziveza,wazivzeza,1,1,tp,score -13.49 < tau -4.03,1,tp,duplicated consonant 'z'
+469,clean,izigi,izigi,0,0,tn,score -3.14 >= tau -4.03,1,fp,Izigi not standard Zulu; likely misspelled.
+469,corrupted,izigi,zigi,1,1,tp,score -5.87 < tau -4.03,0,fn,correct Zulu spelling
+470,clean,asondele,asondele,0,0,tn,score -2.44 >= tau -4.03,0,tn,"Correct asondele, no typo."
+470,corrupted,asondele,asbndele,1,1,tp,score -16.96 < tau -4.03,1,tp,illegal consonant cluster 'bnd'
+471,clean,uBelelesi,uBelelesi,0,0,tn,score -2.28 >= tau -4.03,0,tn,Proper name uBelelesi acceptable.
+471,corrupted,uBelelesi,ubzlelesi,1,1,tp,score -14.73 < tau -4.03,1,tp,illegal consonant cluster 'bz'
+472,clean,ieksireyi,ieksireyi,0,0,tn,score -2.51 >= tau -4.03,1,fp,Non‑Zulu loan ieksireyi; likely typo.
+472,corrupted,ieksireyi,ieskireyi,1,1,tp,score -13.61 < tau -4.03,1,tp,illegal consonant cluster 'sk'
+473,clean,nokuqashisa,nokuqashisa,0,0,tn,score -1.50 >= tau -4.03,0,tn,"Correct nokuqashisa, spelling valid."
+473,corrupted,nokuqashisa,nokuqashisay,1,0,fn,score -1.40 >= tau -4.03,1,tp,extra final 'y'
+474,clean,noju,noju,0,1,fp,score -6.35 < tau -4.03,1,fp,Missing vowel; should be 'nujusi' or similar.
+474,corrupted,noju,nogju,1,1,tp,score -16.44 < tau -4.03,1,tp,illegal consonant cluster 'gj'
+475,clean,ngamafasilithi,ngamafasilithi,0,0,tn,score -1.78 >= tau -4.03,0,tn,"Correct ngamafasilithi, spelling fine."
+475,corrupted,ngamafasilithi,gamafasilithi,1,0,fn,score -2.33 >= tau -4.03,1,tp,illegal consonant cluster 'fs'
+476,clean,inombolo,inombolo,0,0,tn,score -1.58 >= tau -4.03,0,tn,Standard noun 'inombolo' follows Zulu orthography.
+476,corrupted,inombolo,inomboso,1,0,fn,score -3.16 >= tau -4.03,1,tp,Suffix “so” illegal; likely typo of “inombolo”
+477,clean,iphenduke,iphenduke,0,0,tn,score -2.03 >= tau -4.03,0,tn,Verb form 'iphenduke' correctly uses subject prefix i-.
+477,corrupted,iphenduke,iphjenduke,1,1,tp,score -13.73 < tau -4.03,1,tp,Contains illegal “phj” consonant cluster
+478,clean,lokufunda,lokufunda,0,0,tn,score -1.50 >= tau -4.03,0,tn,Demonstrative prefix lo- correctly attached to 'kufunda'.
+478,corrupted,lokufunda,lokufiunda,1,1,tp,score -11.28 < tau -4.03,1,tp,Extra “i” before “unda”; should be “lokufunda”
+479,clean,limininingi,limininingi,0,0,tn,score -1.44 >= tau -4.03,1,fp,Extra 'mi' inserted; should be 'lininingi'.
+479,corrupted,limininingi,liminimingi,1,1,tp,score -5.03 < tau -4.03,0,fn,"Conforms to Zulu phonotactics, no illegal clusters"
+480,clean,ngase,ngase,0,0,tn,score -2.51 >= tau -4.03,0,tn,Conjunction 'ngase' correctly spelled.
+480,corrupted,ngase,ngsae,1,1,tp,score -20.00 < tau -4.03,1,tp,Initial cluster “ngs” not allowed
+481,clean,lababaleki,lababaleki,0,0,tn,score -2.35 >= tau -4.03,0,tn,Noun class prefix la- correctly forms 'lababaleki'.
+481,corrupted,lababaleki,lababalkei,1,1,tp,score -9.29 < tau -4.03,1,tp,Illegal adjacent “lk” consonants
+482,clean,ngoPamela,ngoPamela,0,0,tn,score -2.45 >= tau -4.03,0,tn,Proper name with locative prefix 'ngo-' correctly attached.
+482,corrupted,ngoPamela,nyopamela,1,1,tp,score -10.39 < tau -4.03,0,fn,Orthographically valid Zulu sequence
+483,clean,kunamabhakede,kunamabhakede,0,0,tn,score -2.19 >= tau -4.03,0,tn,Existential construction 'kunamabhakede' correctly formed.
+483,corrupted,kunamabhakede,kunamabhaekde,1,1,tp,score -8.64 < tau -4.03,1,tp,Contains illegal vowel cluster “ae”
+484,clean,kufakazela,kufakazela,0,0,tn,score -1.42 >= tau -4.03,0,tn,Verb 'kufakazela' correctly spelled.
+484,corrupted,kufakazela,kufakazea,1,1,tp,score -4.21 < tau -4.03,1,tp,Contains illegal vowel cluster “ea”
+485,clean,Lucia,Lucia,0,1,fp,score -4.46 < tau -4.03,0,tn,Foreign proper name 'Lucia' acceptable spelling.
+485,corrupted,Lucia,klucia,1,1,tp,score -13.74 < tau -4.03,1,tp,Initial cluster “kl” not permitted
+486,clean,ezihlomile,ezihlomile,0,0,tn,score -1.78 >= tau -4.03,0,tn,Verb adjective 'ezihlomile' correctly formed.
+486,corrupted,ezihlomile,ezihlomule,1,0,fn,score -1.80 >= tau -4.03,0,fn,Follows Zulu spelling rules
+487,clean,Amakhemikhali,Amakhemikhali,0,0,tn,score -1.43 >= tau -4.03,0,tn,Noun 'Amakhemikhali' correctly capitalized and spelled.
+487,corrupted,Amakhemikhali,amakhemikhai,1,0,fn,score -2.15 >= tau -4.03,1,tp,Illegal vowel cluster “ai”
+488,clean,esingayithola,esingayithola,0,0,tn,score -1.60 >= tau -4.03,0,tn,Relative clause 'esingayithola' correctly constructed.
+488,corrupted,esingayithola,seingayithola,1,1,tp,score -4.11 < tau -4.03,1,tp,Illegal vowel cluster “ei”
+489,clean,yicala,yicala,0,0,tn,score -2.40 >= tau -4.03,0,tn,Demonstrative noun 'yicala' correctly spelled.
+489,corrupted,yicala,yicaoa,1,1,tp,score -12.36 < tau -4.03,1,tp,Illegal vowel cluster “ao”
+490,clean,kwezokulima,kwezokulima,0,0,tn,score -1.54 >= tau -4.03,0,tn,Compound noun 'kwezokulima' correctly formed.
+490,corrupted,kwezokulima,kvwezokulima,1,1,tp,score -8.65 < tau -4.03,1,tp,Initial cluster “kv” not allowed
+491,clean,nemithethonkambiso,nemithethonkambiso,0,0,tn,score -0.98 >= tau -4.03,0,tn,Conjunction 'ne-' correctly joins 'mithethonkambiso'.
+491,corrupted,nemithethonkambiso,nemithethonkambiyo,1,0,fn,score -1.46 >= tau -4.03,0,fn,Respects Zulu orthography
+492,clean,uzozisebenzela,uzozisebenzela,0,0,tn,score -1.76 >= tau -4.03,1,fp,Future tense extra 'zi'; should be 'uzosebenzela'.
+492,corrupted,uzozisebenzela,uztozisebenzela,1,1,tp,score -8.25 < tau -4.03,1,tp,Illegal consonant cluster “zt”
+493,clean,luqalwe,luqalwe,0,0,tn,score -3.03 >= tau -4.03,0,tn,Passive verb 'luqalwe' correctly formed.
+493,corrupted,luqalwe,ulqalwe,1,1,tp,score -16.22 < tau -4.03,0,fn,Correct Zulu word “ulqalwe”
+494,clean,usebenzile,usebenzile,0,0,tn,score -1.54 >= tau -4.03,0,tn,Perfect aspect 'usebenzile' correctly spelled.
+494,corrupted,usebenzile,usebezile,1,0,fn,score -2.75 >= tau -4.03,1,tp,Illegal “bz” consonant cluster
+495,clean,ezokhethwa,ezokhethwa,0,0,tn,score -2.42 >= tau -4.03,0,tn,Passive infinitive 'ezokhethwa' correctly formed.
+495,corrupted,ezokhethwa,ezokhethwea,1,0,fn,score -2.88 >= tau -4.03,1,tp,Ends with illegal vowel cluster “ea”
+496,clean,ukuqedelwa,ukuqedelwa,0,0,tn,score -1.65 >= tau -4.03,0,tn,Infinitive 'ukuqedelwa' correctly spelled.
+496,corrupted,ukuqedelwa,ukuqepelwa,1,1,tp,score -11.08 < tau -4.03,0,fn,Conforms to Zulu spelling conventions
+497,clean,abudingwa,abudingwa,0,0,tn,score -2.66 >= tau -4.03,0,tn,Passive verb 'abudingwa' correctly formed.
+497,corrupted,abudingwa,abudingw,1,0,fn,score -3.09 >= tau -4.03,1,tp,Ends with consonant “w” without vowel; “gw” illegal
+498,clean,eyiHalt,eyiHalt,0,1,fp,score -4.34 < tau -4.03,1,fp,Capital H inside word violates Zulu orthography.
+498,corrupted,eyiHalt,eyihait,1,1,tp,score -10.74 < tau -4.03,1,tp,Word ends with consonant “t” without vowel
+499,clean,ubukhulu,ubukhulu,0,0,tn,score -1.83 >= tau -4.03,0,tn,Noun 'ubukhulu' correctly spelled.
+499,corrupted,ubukhulu,xubukhulu,1,1,tp,score -8.95 < tau -4.03,0,fn,Correct Zulu word “xubukhulu”
+500,clean,nokugculisa,nokugculisa,0,0,tn,score -1.58 >= tau -4.03,0,tn,Conjunction 'no-' correctly attaches to 'kugculisa'.
+500,corrupted,nokugculisa,nokugculsia,1,1,tp,score -8.04 < tau -4.03,1,tp,Illegal “ls” consonant cluster

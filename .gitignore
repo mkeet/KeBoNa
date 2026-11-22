@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# API keys
+.env
+
+# MLflow
+mlflow.db
+mlartifacts/
+mlruns/
+
+# PyInstaller
+build/
+dist/
+
+# corpora are downloaded from their sources (see README)
+data/corpora/
+
+# KenLM models are rebuilt by analysis/kenlm_detect.py
+results/rq3/kenlm_models/
+results/c8/token-based/c8_words_seed0_zu.csv

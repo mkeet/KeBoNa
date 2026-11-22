@@ -1,0 +1,105 @@
+{
+  "version": "v1_single_source",
+  "source": "zulu",
+  "test_set": "UDHR (parallel)",
+  "seeds": 20,
+  "baseline_mf1": 0.8874211415043565,
+  "targets": {
+    "zulu": {
+      "label": "isiZulu (SADiLaR)",
+      "udhr_code": "zul",
+      "n_test_words": 689,
+      "mf1_mean": 0.8874211415043565,
+      "mf1_std": 0.0065769926565612796,
+      "tp": 555.55,
+      "fp": 20.0,
+      "fn": 132.85,
+      "tn": 657.0,
+      "transfer_ratio": 1.0
+    },
+    "xhosa": {
+      "label": "isiXhosa (SADiLaR)",
+      "udhr_code": "xho",
+      "n_test_words": 713,
+      "mf1_mean": 0.7863890306266701,
+      "mf1_std": 0.004587668084287677,
+      "tp": 604.8,
+      "fp": 193.0,
+      "fn": 106.85,
+      "tn": 506.0,
+      "transfer_ratio": 0.8861508858055638
+    },
+    "ndebele": {
+      "label": "isiNdebele (SADiLaR)",
+      "udhr_code": "nbl",
+      "n_test_words": 584,
+      "mf1_mean": 0.8571555553184005,
+      "mf1_std": 0.0068820504814960295,
+      "tp": 479.5,
+      "fp": 60.0,
+      "fn": 103.8,
+      "tn": 504.0,
+      "transfer_ratio": 0.9658949006616523
+    },
+    "swati": {
+      "label": "siSwati (SADiLaR)",
+      "udhr_code": "ssw",
+      "n_test_words": 1023,
+      "mf1_mean": 0.7098510888078244,
+      "mf1_std": 0.004979857527311803,
+      "tp": 895.8,
+      "fp": 445.0,
+      "fn": 126.2,
+      "tn": 558.0,
+      "transfer_ratio": 0.799903287862271
+    },
+    "shona": {
+      "label": "Shona (S10)",
+      "udhr_code": "sna",
+      "n_test_words": 747,
+      "mf1_mean": 0.3972225924679177,
+      "mf1_std": 0.001511927089754905,
+      "tp": 730.6,
+      "fp": 676.0,
+      "fn": 14.4,
+      "tn": 45.0,
+      "transfer_ratio": 0.4476145247053117
+    }
+  },
+  "subsampled": {
+    "n_per_language": 584,
+    "baseline_mf1": 0.8799663872955511,
+    "targets": {
+      "zulu": {
+        "n_test_words": 584,
+        "mf1_mean": 0.8799663872955511,
+        "mf1_std": 0.00887373904586162,
+        "transfer_ratio": 1.0
+      },
+      "xhosa": {
+        "n_test_words": 584,
+        "mf1_mean": 0.7866927785730032,
+        "mf1_std": 0.008231512735077778,
+        "transfer_ratio": 0.8940032141350186
+      },
+      "ndebele": {
+        "n_test_words": 584,
+        "mf1_mean": 0.8561616719264249,
+        "mf1_std": 0.00814523911638503,
+        "transfer_ratio": 0.9729481538013213
+      },
+      "swati": {
+        "n_test_words": 584,
+        "mf1_mean": 0.7049228973623335,
+        "mf1_std": 0.007385143261633715,
+        "transfer_ratio": 0.801079345233642
+      },
+      "shona": {
+        "n_test_words": 584,
+        "mf1_mean": 0.39843831382725614,
+        "mf1_std": 0.0013128349369258476,
+        "transfer_ratio": 0.45278810597731856
+      }
+    }
+  }
+}

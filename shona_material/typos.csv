@@ -1,0 +1,119 @@
+typed,intended,n_edits,edit_types,detail,keyboard_adjacent,phonological,semantic,notes
+chirebma,chiremba,1,transposition,transposition:'bm'->'mb'@5,,no,,motor swap
+hayacho,yacho,2,insertion,insertion:'h'->''@0; insertion:'a'->''@1,,no,,
+chichanubatsira,chichamubatsira,1,substitution,substitution:'n'->'m'@6,yes,yes,,nasal m/n
+yekuvandudwa,yekuvandudzwa,1,deletion,deletion:''->'z'@10,,no,,
+kuchipatare,kuchipatara,1,substitution,substitution:'e'->'a'@10,no,yes,,vowel height
+chemufananidzo,chemifananidzo,1,substitution,substitution:'u'->'i'@4,yes,no,,
+yaive,taive,1,substitution,substitution:'y'->'t'@0,yes,no,,
+dzekugadziriswa,dzekugadzirisa,1,insertion,insertion:'w'->''@13,,no,,
+rwetsiak,rwetsika,1,transposition,transposition:'ak'->'ka'@6,,no,,motor swap
+pavaita,pavakaita,2,deletion,deletion:''->'a'@3; deletion:''->'k'@3,,no,,
+tsaoan,tsaona,1,transposition,transposition:'an'->'na'@4,,no,,motor swap
+mukurora,mukupora,1,substitution,substitution:'r'->'p'@4,no,no,,
+chirobhori,chirobhoti,1,substitution,substitution:'r'->'t'@8,yes,no,,
+irmwe,rimwe,1,transposition,transposition:'ir'->'ri'@0,,no,,motor swap
+apfuuura,apfuura,1,insertion,insertion:'u'->''@3,,no,,
+memidziyo,nemidziyo,1,substitution,substitution:'m'->'n'@0,yes,yes,,nasal m/n
+matanhattu,matanhatu,1,insertion,insertion:'t'->''@7,,no,,
+kushongedzva,kushongedzwa,1,substitution,substitution:'v'->'w'@10,no,yes,,glide/liquid
+zvirinami,zvirinani,1,substitution,substitution:'m'->'n'@7,yes,yes,,nasal m/n
+ekumoadzanyemba,ekumaodzanyemba,1,transposition,transposition:'oa'->'ao'@4,,no,,motor swap
+zvakamaka,zvakanaka,1,substitution,substitution:'m'->'n'@5,yes,yes,,nasal m/n
+inwzi,inzwi,1,transposition,transposition:'wz'->'zw'@2,,no,,motor swap
+oandinofanirwa,pandinofanirwa,1,substitution,substitution:'o'->'p'@0,yes,no,,
+muuzvii,muuzivi,1,transposition,transposition:'vi'->'iv'@4,,no,,motor swap
+akaendreera,akaenderera,1,transposition,transposition:'re'->'er'@6,,no,,motor swap
+irnoita,rinoita,1,transposition,transposition:'ir'->'ri'@0,,no,,motor swap
+maeererano,maererano,1,insertion,insertion:'e'->''@2,,no,,
+abo,ano,1,substitution,substitution:'b'->'n'@1,yes,no,,
+ejuhoriwudhu,ekuhoriwudhu,1,substitution,substitution:'j'->'k'@1,yes,no,,
+chirungi,chirungu,1,substitution,substitution:'i'->'u'@7,yes,no,,
+umusouth,emusouth,1,substitution,substitution:'u'->'e'@0,no,no,,
+chinotayrwa,chinotaurwa,1,substitution,substitution:'y'->'u'@7,yes,no,,
+kutadzanei,kutadzaneni,1,deletion,deletion:''->'n'@9,,no,,
+unokeanisa,unokwanisa,1,substitution,substitution:'e'->'w'@4,yes,no,,
+panau,panhau,1,deletion,deletion:''->'h'@3,,no,,
+kupindira,kupindura,1,substitution,substitution:'i'->'u'@6,yes,no,,
+akan,kana,2,transposition,transposition:'ak'->'ka'@0; transposition:'an'->'na'@2,,no,,motor swap
+ndiasaro,ndidaro,2,"insertion,substitution",insertion:'a'->''@3; substitution:'s'->'d'@4,yes,no,,
+manbo,mambo,1,substitution,substitution:'n'->'m'@2,yes,yes,,nasal m/n
+vakanvumirana,vakabvumirana,1,substitution,substitution:'n'->'b'@4,yes,no,,
+vavakapa,vakavapa,2,substitution,substitution:'v'->'k'@2; substitution:'k'->'v'@4,"no,no",no,,
+akarekhodzwa,akarekodhwa,2,"insertion,substitution",insertion:'h'->''@6; substitution:'z'->'h'@9,no,no,,
+anokwaan,anokwana,1,transposition,transposition:'an'->'na'@6,,no,,motor swap
+nechichirungu,nechirungu,3,insertion,insertion:'c'->''@2; insertion:'h'->''@3; insertion:'i'->''@4,,no,,
+anonyenyera,anonyengera,1,substitution,substitution:'y'->'g'@7,yes,no,,
+munvunzo,mubvunzo,1,substitution,substitution:'n'->'b'@2,yes,no,,
+kuzviva,kuziva,1,insertion,insertion:'v'->''@3,,no,,
+africa,african,1,deletion,deletion:''->'n'@6,,no,,
+zvinireva,zvinoreva,1,substitution,substitution:'i'->'o'@4,yes,no,,
+murusuunnguko,murusununguko,1,transposition,transposition:'un'->'nu'@6,,no,,motor swap
+kuri,kuti,1,substitution,substitution:'r'->'t'@2,yes,no,,
+paaapatimendi,paapatimendi,1,insertion,insertion:'a'->''@1,,no,,
+yandinofanir,yandinofanira,1,deletion,deletion:''->'a'@12,,no,,
+yekuteedzera,yekutevedzera,1,deletion,deletion:''->'v'@6,,no,,
+remashsndisirwo,remashandisirwo,1,substitution,substitution:'s'->'a'@6,yes,no,,
+remashsndisirwo,remashandisirwo,1,substitution,substitution:'s'->'a'@6,yes,no,,
+kna,kana,1,deletion,deletion:''->'a'@1,,no,,
+yakananga,chakananga,2,"deletion,substitution",deletion:''->'c'@0; substitution:'y'->'h'@0,yes,no,,
+kusia,kusiya,1,deletion,deletion:''->'y'@4,,no,,
+kudzida,kudzidza,1,deletion,deletion:''->'z'@6,,no,,
+chimwezce,chimwezve,1,substitution,substitution:'c'->'v'@7,yes,no,,
+yaiva,chaiva,2,"deletion,substitution",deletion:''->'c'@0; substitution:'y'->'h'@0,yes,no,,
+ya,cha,2,"deletion,substitution",deletion:''->'c'@0; substitution:'y'->'h'@0,yes,no,,
+yakanga,chakanga,2,"deletion,substitution",deletion:''->'c'@0; substitution:'y'->'h'@0,yes,no,,
+yazivikanwa,chazivikanwa,2,"deletion,substitution",deletion:''->'c'@0; substitution:'y'->'h'@0,yes,no,,
+kuzvidzdzo,kuzvidzidzo,1,deletion,deletion:''->'i'@7,,no,,
+kwakagadzirira,kwakagadzirirwa,1,deletion,deletion:''->'w'@13,,no,,
+ndeipi,nderipi,1,deletion,deletion:''->'r'@3,,no,,
+ndarara,ndaraira,1,deletion,deletion:''->'i'@5,,no,,
+kuty,kuti,1,substitution,substitution:'y'->'i'@3,no,yes,,glide/liquid
+kuty,kuti,1,substitution,substitution:'y'->'i'@3,no,yes,,glide/liquid
+izvi,izwi,1,substitution,substitution:'v'->'w'@2,no,yes,,glide/liquid
+kunerechikadzi,kune rechikadzi,,word split/merge/extra,,,,,
+pqkugadzirwa,pakugadzirwa,1,substitution,substitution:'q'->'a'@1,yes,no,,
+inokosheswa,inokoshesa,1,insertion,insertion:'w'->''@9,,no,,
+kunyka,kunyika,1,deletion,deletion:''->'i'@4,,no,,
+kna,kana,1,deletion,deletion:''->'a'@1,,no,,
+ndibokurabgaridza,ndinokurangaridza,2,substitution,substitution:'b'->'n'@3; substitution:'b'->'n'@9,"yes,yes",no,,
+zvakasiynaa,zvakasiyana,1,transposition,transposition:'na'->'an'@8,,no,,motor swap
+zvichubvunza,zvichibvunzwa,2,"deletion,substitution",substitution:'u'->'i'@5; deletion:''->'w'@11,yes,no,,
+zvinoyengedza,zvinonyengedza,1,deletion,deletion:''->'n'@5,,no,,
+achiedzs,achiedza,1,substitution,substitution:'s'->'a'@7,yes,no,,
+zvakasiynaa,zvakasiyana,1,transposition,transposition:'na'->'an'@8,,no,,motor swap
+handina kukanganisa,,,word split/merge/extra,,,,,
+wekusakangisa,wekusakanganisa,2,deletion,deletion:''->'a'@10; deletion:''->'n'@10,,no,,
+mukuba,kukupa,2,substitution,substitution:'m'->'k'@0; substitution:'b'->'p'@4,"yes,no",yes,,voicing
+nekuko,neuko,1,insertion,insertion:'k'->''@2,,no,,
+rinkratidza,rikaratidza,2,substitution,substitution:'n'->'k'@2; substitution:'k'->'a'@3,"no,no",no,,
+ukuwanikwa,unowanikwa,2,substitution,substitution:'k'->'n'@1; substitution:'u'->'o'@2,"no,no",yes,,vowel height
+dhodhoro,bhodhoro,1,substitution,substitution:'d'->'b'@0,no,no,,
+yekufanga,yekutanga,1,substitution,substitution:'f'->'t'@4,yes,no,,
+nokukasinga,nokukasika,2,"insertion,substitution",insertion:'n'->''@8; substitution:'g'->'k'@9,no,yes,,voicing
+kekupedzosira,kekupedzisira,1,substitution,substitution:'o'->'i'@8,yes,no,,
+azvishndura,azvishandura,1,deletion,deletion:''->'a'@6,,no,,
+kondikakuchinga,kondikakuchinja,1,substitution,substitution:'g'->'j'@13,no,no,,
+hre,here,1,deletion,deletion:''->'e'@1,,no,,
+tsanngudzo,tsanangudzo,1,deletion,deletion:''->'a'@4,,no,,
+kakuna,hakuna,1,substitution,substitution:'k'->'h'@0,no,no,,
+achiduhmira,achidhumira,1,transposition,transposition:'uh'->'hu'@5,,no,,motor swap
+yetsutugadzike,yesvutugadzike,2,substitution,substitution:'t'->'s'@2; substitution:'s'->'v'@3,"no,no",no,,
+chi,chii,1,deletion,deletion:''->'i'@2,,no,,
+dzdziso,dzidziso,1,deletion,deletion:''->'i'@2,,no,,
+hwestika,hwetsika,1,transposition,transposition:'st'->'ts'@3,,no,,motor swap
+kwaitsngidzisa,kwaitangidzisa,1,substitution,substitution:'s'->'a'@5,yes,no,,
+uchsrangarira,ucharangarira,1,substitution,substitution:'s'->'a'@3,yes,no,,
+hre,here,1,deletion,deletion:''->'e'@1,,no,,
+ndichstsvaga,ndichatsvaga,1,substitution,substitution:'s'->'a'@5,yes,no,,
+nduchawana,ndichawana,1,substitution,substitution:'u'->'i'@2,yes,no,,
+ndogubva,ndokubva,1,substitution,substitution:'g'->'k'@3,no,yes,,voicing
+nekugumbuga,nekugumbuka,1,substitution,substitution:'g'->'k'@9,no,yes,,voicing
+hree,here,1,transposition,transposition:'re'->'er'@1,,no,,motor swap
+vsutugadzike,svutugadzike,1,transposition,transposition:'vs'->'sv'@0,,no,,motor swap
+udzitangidze,uzvitangidze,2,substitution,substitution:'d'->'z'@1; substitution:'z'->'v'@2,"no,no",no,,
+anopidnira,anopindira,1,transposition,transposition:'dn'->'nd'@5,,no,,motor swap
+romhsnys,romhanya,2,substitution,substitution:'s'->'a'@4; substitution:'s'->'a'@7,"yes,yes",no,,
+nhsnya,mhanya,2,substitution,substitution:'n'->'m'@0; substitution:'s'->'a'@2,"yes,yes",yes,,nasal m/n
+nepgungwa,nepfungwa,1,substitution,substitution:'g'->'f'@3,yes,no,,
+dzouys,dzouya,1,substitution,substitution:'s'->'a'@5,yes,no,,

@@ -1,0 +1,87 @@
+{
+  "machine": {
+    "python": "3.12.3",
+    "system": "Linux",
+    "release": "6.18.7-76061807-generic",
+    "processor": "x86_64",
+    "machine": "x86_64",
+    "cpu_count": 24,
+    "mem_total": "28324744 kB"
+  },
+  "language": "zu",
+  "repeats": 5,
+  "scaling": [
+    {
+      "words": 1000,
+      "mean_s": 0.00778159359615529,
+      "std_s": 0.002956316056189599,
+      "words_per_s": 128508.3816885628,
+      "ms_per_word": 0.00778159359615529
+    },
+    {
+      "words": 5000,
+      "mean_s": 0.026346598597592676,
+      "std_s": 0.002272289153708786,
+      "words_per_s": 189777.81824394048,
+      "ms_per_word": 0.005269319719518535
+    },
+    {
+      "words": 10000,
+      "mean_s": 0.054682240799593274,
+      "std_s": 0.002198030782581212,
+      "words_per_s": 182874.7295972988,
+      "ms_per_word": 0.005468224079959327
+    },
+    {
+      "words": 50000,
+      "mean_s": 0.4137957859988092,
+      "std_s": 0.20325389481043063,
+      "words_per_s": 120832.5499963982,
+      "ms_per_word": 0.008275915719976183
+    },
+    {
+      "words": 100000,
+      "mean_s": 0.8422574384021573,
+      "std_s": 0.2505939985719268,
+      "words_per_s": 118728.54478995109,
+      "ms_per_word": 0.008422574384021574
+    }
+  ],
+  "suggestions": {
+    "words": 1000,
+    "detect_only_s": 0.005947546802053694,
+    "detect_plus_suggest_s": 2.874192669599142,
+    "suggestion_overhead_x": 483.25683937563645
+  },
+  "languages_loaded": {
+    "n_models_loaded": 25,
+    "models": [
+      "bemba",
+      "chichewa",
+      "kamba",
+      "kikuyu",
+      "kinyarwanda",
+      "kirundi",
+      "lozi",
+      "luba",
+      "luganda",
+      "lumbu",
+      "nd",
+      "ndebele",
+      "shona",
+      "sotho",
+      "sw",
+      "swahili",
+      "swati",
+      "tswana",
+      "tumbuka",
+      "umbundu",
+      "xh",
+      "xhosa",
+      "yao",
+      "zu",
+      "zulu"
+    ],
+    "note": "models are dict-keyed; per-check cost is O(1) in number of loaded languages"
+  }
+}

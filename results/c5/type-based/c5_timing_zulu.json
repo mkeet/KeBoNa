@@ -1,0 +1,87 @@
+{
+  "machine": {
+    "python": "3.12.3",
+    "system": "Linux",
+    "release": "6.18.7-76061807-generic",
+    "processor": "x86_64",
+    "machine": "x86_64",
+    "cpu_count": 24,
+    "mem_total": "28324744 kB"
+  },
+  "language": "zulu",
+  "repeats": 5,
+  "scaling": [
+    {
+      "words": 1000,
+      "mean_s": 0.004416036400652956,
+      "std_s": 0.0009243906623349667,
+      "words_per_s": 226447.40877863683,
+      "ms_per_word": 0.004416036400652956
+    },
+    {
+      "words": 5000,
+      "mean_s": 0.023401926399674266,
+      "std_s": 0.0012231916094331005,
+      "words_per_s": 213657.62435991576,
+      "ms_per_word": 0.0046803852799348535
+    },
+    {
+      "words": 10000,
+      "mean_s": 0.050600351799221246,
+      "std_s": 0.0020641381422410354,
+      "words_per_s": 197627.08448509054,
+      "ms_per_word": 0.005060035179922124
+    },
+    {
+      "words": 50000,
+      "mean_s": 0.3612731251982041,
+      "std_s": 0.19359196754982438,
+      "words_per_s": 138399.44494229584,
+      "ms_per_word": 0.007225462503964082
+    },
+    {
+      "words": 100000,
+      "mean_s": 0.8137817437993362,
+      "std_s": 0.23959353201180653,
+      "words_per_s": 122883.07124355715,
+      "ms_per_word": 0.008137817437993362
+    }
+  ],
+  "suggestions": {
+    "words": 1000,
+    "detect_only_s": 0.005212758400011808,
+    "detect_plus_suggest_s": 1.0610504625961767,
+    "suggestion_overhead_x": 203.5487511935664
+  },
+  "languages_loaded": {
+    "n_models_loaded": 25,
+    "models": [
+      "bemba",
+      "chichewa",
+      "kamba",
+      "kikuyu",
+      "kinyarwanda",
+      "kirundi",
+      "lozi",
+      "luba",
+      "luganda",
+      "lumbu",
+      "nd",
+      "ndebele",
+      "shona",
+      "sotho",
+      "sw",
+      "swahili",
+      "swati",
+      "tswana",
+      "tumbuka",
+      "umbundu",
+      "xh",
+      "xhosa",
+      "yao",
+      "zu",
+      "zulu"
+    ],
+    "note": "models are dict-keyed; per-check cost is O(1) in number of loaded languages"
+  }
+}

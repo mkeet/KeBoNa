@@ -1,0 +1,8 @@
+system,TP (misspelled words flagged),FP (correct words flagged),FN (misspelled words accepted),TN (correct words accepted),macro_F1
+Claude Opus 5.5,471,18,24,487,0.958
+GPT-6.2 Astra,457,26,38,479,0.936
+Spell checker,405,43,90,462,0.8666
+GPT-OSS-120B,441,153,54,352,0.7913
+Gemma 4 12B,247,55,248,450,0.684
+gpt-oss:20b,277,171,218,334,0.6097
+AfriqueQwen 3.5 9B,247,174,248,331,0.575

@@ -1,0 +1,17 @@
+source,target,guthrie_graph_distance,zone_hops,target_words_tested,valid_words_wrongly_flagged,false_alarm_rate,example_words
+zu,xh,1,0,6072,1292,0.2128,veki izporo available ugutyulo exelwe zi-ofisi encume nkqo
+zu,sw,1,0,3072,1053,0.3428,etfu tadvweba tizatfu imyudi kudvweba titsa yammita takhe
+zu,nd,2,0,6014,1362,0.2265,ze-dti ku-short-term amaembriyo nge-e-mail yifene kikho ama-awa mbawi
+zu,sotho,4,0,3114,2010,0.6455,haho hoja fuweng qeaqea tlsa tjee di-mole tletlebo
+zu,tswana,4,0,3382,2182,0.6452,fiwa tlisa gaabo rutega jaaka tuelo kailwe gaisa
+zu,shona,11,0,8000,7496,0.937,tivarakidze pekubvisa zvambwa ihvu rokudzivirira svipei zvezvirwere zvikavaona
+zu,lozi,27,2,2320,1832,0.7897,fohe fiwa mañwele muuku ñolezi teñi bañata ñola
+zu,swahili,30,3,3950,3340,0.8456,dhidi jicho huwa hizi juhudi waishio tofauti mkwe
+zulu,xhosa,1,0,5356,1676,0.3129,meko ityholo iifama koogqirha orongo ixesha atyumbe ooceba
+zulu,swati,1,0,5278,2794,0.5294,tsite odvwa-nje etfule gezi ativa tibe tawo dvutane
+zulu,ndebele,2,0,5178,1632,0.3152,kizo itlhoga atjheja zeentjhijilo itjhejwe kibomma itjhono mtlhago
+zulu,sotho,4,0,1557,1364,0.876,tlasa kgwedi boithapollo hodimo tletlebo bopile furu mokga
+zulu,tswana,4,0,1691,1540,0.9107,ntšhwa gape raya tlaa boitiriso tsona fiwa rutega
+zulu,shona,11,0,8000,7692,0.9615,dzekuomesa erutsigiro painorira eiziya rikarara zvavanomwa murenje yaairipira
+zulu,lozi,27,2,1160,899,0.775,fapana fohe pili toho fateñi filwe siapalo fiwa
+zulu,swahili,30,3,1975,1697,0.8592,kisiasa jail dhidi nusu hafifu nchi ardhi jicho

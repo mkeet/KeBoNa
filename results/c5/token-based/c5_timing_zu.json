@@ -1,0 +1,87 @@
+{
+  "machine": {
+    "python": "3.12.3",
+    "system": "Linux",
+    "release": "6.18.7-76061807-generic",
+    "processor": "x86_64",
+    "machine": "x86_64",
+    "cpu_count": 24,
+    "mem_total": "28324744 kB"
+  },
+  "language": "zu",
+  "repeats": 5,
+  "scaling": [
+    {
+      "words": 1000,
+      "mean_s": 0.005230960399785545,
+      "std_s": 0.0014026394775152962,
+      "words_per_s": 191169.48391369916,
+      "ms_per_word": 0.005230960399785545
+    },
+    {
+      "words": 5000,
+      "mean_s": 0.031430128602369226,
+      "std_s": 0.013336553649419857,
+      "words_per_s": 159083.02709340796,
+      "ms_per_word": 0.006286025720473845
+    },
+    {
+      "words": 10000,
+      "mean_s": 0.04924059119512094,
+      "std_s": 0.001597583679833405,
+      "words_per_s": 203084.4828888013,
+      "ms_per_word": 0.004924059119512094
+    },
+    {
+      "words": 50000,
+      "mean_s": 0.37099496299924795,
+      "std_s": 0.21817189756850863,
+      "words_per_s": 134772.71927301437,
+      "ms_per_word": 0.007419899259984959
+    },
+    {
+      "words": 100000,
+      "mean_s": 0.7461270395986503,
+      "std_s": 0.2715652546286168,
+      "words_per_s": 134025.433596122,
+      "ms_per_word": 0.007461270395986503
+    }
+  ],
+  "suggestions": {
+    "words": 1000,
+    "detect_only_s": 0.005761601199628786,
+    "detect_plus_suggest_s": 2.8828153873982956,
+    "suggestion_overhead_x": 500.3496923015138
+  },
+  "languages_loaded": {
+    "n_models_loaded": 25,
+    "models": [
+      "bemba",
+      "chichewa",
+      "kamba",
+      "kikuyu",
+      "kinyarwanda",
+      "kirundi",
+      "lozi",
+      "luba",
+      "luganda",
+      "lumbu",
+      "nd",
+      "ndebele",
+      "shona",
+      "sotho",
+      "sw",
+      "swahili",
+      "swati",
+      "tswana",
+      "tumbuka",
+      "umbundu",
+      "xh",
+      "xhosa",
+      "yao",
+      "zu",
+      "zulu"
+    ],
+    "note": "models are dict-keyed; per-check cost is O(1) in number of loaded languages"
+  }
+}

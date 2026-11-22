@@ -1,0 +1,5 @@
+outcome,instances,with_floored_step,share_floored,with_unseen_context
+tp,370017,336996,0.9108,235484
+fp,26388,8185,0.3102,6993
+fn,90875,10523,0.1158,417
+tn,435047,87,0.0002,4

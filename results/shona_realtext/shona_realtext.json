@@ -1,0 +1,63 @@
+{
+  "text": "Melokuhle (translated)",
+  "n_words": 2113,
+  "n_typos": 118,
+  "error_density_pct": 5.5844770468528155,
+  "multi_edit_typos": 23,
+  "error_type_ratio": [
+    {
+      "error_type": "insertion",
+      "count": 13,
+      "real_pct": 10.4,
+      "wrecker_pct": 25.0
+    },
+    {
+      "error_type": "deletion",
+      "count": 30,
+      "real_pct": 24.0,
+      "wrecker_pct": 25.0
+    },
+    {
+      "error_type": "substitution",
+      "count": 63,
+      "real_pct": 50.4,
+      "wrecker_pct": 25.0
+    },
+    {
+      "error_type": "transposition",
+      "count": 19,
+      "real_pct": 15.2,
+      "wrecker_pct": 25.0
+    }
+  ],
+  "detection": [
+    {
+      "corpus": "cleaned",
+      "char_trigrams": 3414,
+      "tp": 73,
+      "fp": 369,
+      "fn": 31,
+      "tn": 1593,
+      "real_word_typos_excluded": 15,
+      "precision": 0.16515837104072398,
+      "recall": 0.7019230769230769,
+      "incorrect_f1": 0.2673992673992674,
+      "correct_f1": 0.8884551031790296,
+      "mf1": 0.5779271852891485
+    },
+    {
+      "corpus": "dirty",
+      "char_trigrams": 7904,
+      "tp": 36,
+      "fp": 284,
+      "fn": 68,
+      "tn": 1678,
+      "real_word_typos_excluded": 15,
+      "precision": 0.1125,
+      "recall": 0.34615384615384615,
+      "incorrect_f1": 0.169811320754717,
+      "correct_f1": 0.9050701186623517,
+      "mf1": 0.5374407197085344
+    }
+  ]
+}

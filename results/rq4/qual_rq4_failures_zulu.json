@@ -1,0 +1,15 @@
+{
+  "language": "zulu",
+  "source_csv": "rq4_corrections_seed0_zulu.csv",
+  "total": 3283,
+  "counts": {
+    "success_rank1": 2348,
+    "near_miss": 199,
+    "miss_outranked": 346,
+    "miss_too_far": 0,
+    "miss_not_in_vocab": 390
+  },
+  "near_miss_winner_closer": 8,
+  "near_miss_winner_tied_on_frequency": 191,
+  "unfixable_pct": 11.879378617118489
+}

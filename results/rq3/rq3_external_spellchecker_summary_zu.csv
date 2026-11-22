@@ -1,0 +1,3 @@
+system,corruption_type,rate,n_eval_words,tp,fp,fn,tn,incorrect_precision,incorrect_recall,incorrect_f1,correct_f1,mf1
+spellchecker,random,1.0,1000,424,78,76,422,0.844622,0.848,0.846307,0.845691,0.845999
+spellchecker,qwerty,1.0,1000,417,78,83,422,0.842424,0.834,0.838191,0.839801,0.838996

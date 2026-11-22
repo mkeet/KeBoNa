@@ -1,0 +1,55 @@
+{
+  "mode": "token",
+  "version_suffix": "_5",
+  "pairs": 420,
+  "grid": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "chosen_weights": {
+    "zone": 10,
+    "group": 3,
+    "lang": 1,
+    "rho": -0.3099535050099451,
+    "p": 8.367814154880165e-11
+  },
+  "weightless_ordering": {
+    "rho": -0.3107426682658738,
+    "p": 7.453454891760503e-11
+  },
+  "one_part_only": {
+    "zone": {
+      "rho": -0.31327329690512323,
+      "p": 5.130934697729886e-11
+    },
+    "group": {
+      "rho": -0.13491519201957147,
+      "p": 0.005616471456527255
+    },
+    "lang": {
+      "rho": -0.13610057588741548,
+      "p": 0.0052071657103777876
+    }
+  },
+  "all_combinations": {
+    "combinations": 728,
+    "rho_min": -0.33594,
+    "rho_median": -0.2484275,
+    "rho_max": -0.134915,
+    "share_negative_and_p_below_0.05": 1.0
+  },
+  "zone_ge_group_ge_lang_gt_0": {
+    "combinations": 120,
+    "rho_min": -0.32665,
+    "rho_median": -0.310794,
+    "rho_max": -0.288433,
+    "share_negative_and_p_below_0.05": 1.0
+  }
+}

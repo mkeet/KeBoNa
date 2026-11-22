@@ -1,0 +1,61 @@
+{
+  "version": "v1",
+  "languages": [
+    "zulu",
+    "xhosa",
+    "ndebele",
+    "swati",
+    "shona"
+  ],
+  "seeds": 30,
+  "distance_primary_weighted": "10*zone_hops + 3*group_diff + 1*lang_diff (zone_hops = BFS over the geographic zone-adjacency graph)",
+  "distance_weightless": "lexicographic key on (zone_hops, group_diff, lang_diff)",
+  "distance_legacy_alphabetical": "10*|zone_index diff| + 3*group_diff + 1*lang_diff",
+  "spearman_graphweighted_vs_transfer_ratio": {
+    "rho": -0.7311686623358218,
+    "p": 0.00024963089325869524,
+    "n_pairs": 20
+  },
+  "spearman_weightless_vs_transfer_ratio": {
+    "rho": -0.7311686623358218,
+    "p": 0.00024963089325869524,
+    "n_pairs": 20
+  },
+  "spearman_alphabetical_vs_transfer_ratio": {
+    "rho": -0.7311686623358218,
+    "p": 0.00024963089325869524,
+    "n_pairs": 20
+  },
+  "spearman_graphweighted_vs_mf1": {
+    "rho": -0.7311686623358218,
+    "p": 0.00024963089325869524,
+    "n_pairs": 20
+  },
+  "matrix": {
+    "zulu->zulu": 0.8839149165761726,
+    "zulu->xhosa": 0.7829205259860328,
+    "zulu->ndebele": 0.7830766913063649,
+    "zulu->swati": 0.6728832106040173,
+    "zulu->shona": 0.37194217229097093,
+    "xhosa->zulu": 0.6894139727347439,
+    "xhosa->xhosa": 0.8681673156168898,
+    "xhosa->ndebele": 0.6828692603875711,
+    "xhosa->swati": 0.5691799351117186,
+    "xhosa->shona": 0.34175398984088046,
+    "ndebele->zulu": 0.6798214256555067,
+    "ndebele->xhosa": 0.6577500494878329,
+    "ndebele->ndebele": 0.8929288749042595,
+    "ndebele->swati": 0.587851358109632,
+    "ndebele->shona": 0.34167887767310573,
+    "swati->zulu": 0.5624981245328221,
+    "swati->xhosa": 0.5055428437129267,
+    "swati->ndebele": 0.559326318993686,
+    "swati->swati": 0.8926840462664039,
+    "swati->shona": 0.34139001665397245,
+    "shona->zulu": 0.4263748364282393,
+    "shona->xhosa": 0.44459031835721524,
+    "shona->ndebele": 0.4399248722973281,
+    "shona->swati": 0.43397881337314104,
+    "shona->shona": 0.8536198276336203
+  }
+}
